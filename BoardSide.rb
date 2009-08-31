@@ -13,8 +13,8 @@ class BoardSide
     @app = app
     @selectedPositionWindowHandler = selectedPositionWindowHandler
     
-    @win.stroke @win.blue
-    @isRed = true
+    @win.stroke @win.orange
+    @isturquoise = true
     @win.strokewidth 2
     @win.nofill
     # @pcbImage = pcbImage
@@ -69,24 +69,24 @@ class BoardSide
       @hoverPositions.each do | pos |
         @win.rect :left => pos.left(), :width => pos.width(), :top => pos.top(), :height => pos.height()
       end
-      @win.stroke @win.blue
+      @win.stroke @win.orange
       @positions.values.each do | pos |
         # debug "POS: #{pos.inspect()}"
         if @selectedPositions.include?(pos) # && @hoverPositions.include?(pos)
-          @win.stroke @win.red
+          @win.stroke @win.turquoise
           # debug "L: " + pos.left().inspect() + ", W:" +  pos.width().inspect() + ", T: " +  pos.top().inspect() + ", H: " + pos.height().inspect()
           @win.rect :left => pos.left(), :width => pos.width(), :top => pos.top(), :height => pos.height()
-          @win.stroke @win.blue
+          @win.stroke @win.orange
         elsif @hoverPositions.include?(pos)
            @win.stroke @win.purple
             # debug "L: " + pos.left().inspect() + ", W:" +  pos.width().inspect() + ", T: " +  pos.top().inspect() + ", H: " + pos.height().inspect()
             @win.rect :left => pos.left(), :width => pos.width(), :top => pos.top(), :height => pos.height()
-            @win.stroke @win.blue
+            @win.stroke @win.orange
         else
           if (pos.name == "")
             @win.stroke @win.deeppink
             @win.rect :left => pos.left(), :width => pos.width(), :top => pos.top(), :height => pos.height()
-            @win.stroke @win.blue
+            @win.stroke @win.orange
           else
             @win.rect :left => pos.left(), :width => pos.width(), :top => pos.top(), :height => pos.height()
           end
