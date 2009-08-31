@@ -87,6 +87,14 @@ r5: !ruby/object:Position
   width: 8
   x: 415
   y: 196
+d3: !ruby/object:Position 
+  components: []
+
+  height: 54
+  name: d3
+  width: 80
+  x: 756
+  y: 45
 r6: !ruby/object:Position 
   components: []
 
@@ -103,14 +111,6 @@ c2: !ruby/object:Position
   width: 25
   x: 422
   y: 376
-"27": !ruby/object:Position 
-  components: []
-
-  height: 54
-  name: d3
-  width: 80
-  x: 756
-  y: 45
 c3: !ruby/object:Position 
   components: []
 
@@ -123,7 +123,7 @@ q10: !ruby/object:Position
   components: []
 
   height: 80
-  name: q10
+  name: d10
   width: 55
   x: 760
   y: 133
@@ -163,7 +163,7 @@ q11: !ruby/object:Position
   components: []
 
   height: 80
-  name: q11
+  name: d11
   width: 56
   x: 760
   y: 327
