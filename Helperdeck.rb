@@ -8,6 +8,16 @@ require 'Position'
 require 'SelectedPosition'
 require 'Stage'
 
+def selectComponent(componentName)
+  debug componentName
+end
+
+class Shoes::App
+  def selectComponent(componentName)
+    debug "This is the Shoes app. Select component '#{componentName}', a #{componentName.class()}."
+  end
+end
+
 Shoes.app(:width => 480, :height => 320) do
 	Shoes.show_log()
 	

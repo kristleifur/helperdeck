@@ -41,7 +41,13 @@ class BuildStage
     @posFlow = @stageWin.stack() do 
       @stageWin.para "Positions: "
       @@positions.each do | pos |
-        @stageWin.para pos.name()
+        @stageWin.stack() do
+          tehPara = @stageWin.para pos.name()
+          @stageWin.click do
+            debug tehPara.inspect()
+            @mainApp.selectComponent(tehPara.text())
+          end
+        end
       end
     end
   end
