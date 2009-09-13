@@ -13,8 +13,10 @@ def selectComponent(componentName)
 end
 
 class Shoes::App
-  def selectComponent(componentName)
-    debug "This is the Shoes app. Select component '#{componentName}', a #{componentName.class()}."
+  def selectComponent(positionName)
+    debug "This is the Shoes app. Select position '#{positionName}', a #{positionName.class()}."
+    @boardTop.selectByName(positionName)
+    @boardBottom.selectByName(positionName)
   end
 end
 

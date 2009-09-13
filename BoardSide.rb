@@ -223,6 +223,14 @@ class BoardSide
     @drawMode = false
   end
   
+  def selectByName(positionName)
+    if @positions[positionName]
+      debug "positionName found on board #{@pcbImage}"
+      selectedPositions.clear()
+      selectedPositions << @positions[positionName]
+    end
+  end
+  
   def updateRanges(newPosition = nil)
     #TODO: un-slow click detection / octree-style array-sorted-by-ranges type of stfff
   end
