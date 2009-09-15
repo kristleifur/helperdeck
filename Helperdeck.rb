@@ -15,9 +15,11 @@ end
 class Shoes::App
   def selectComponent(positionName)
     debug "This is the Shoes app. Select position '#{positionName}', a #{positionName.class()}."
-    @boardTop.selectByName(positionName)
-    @boardBottom.selectByName(positionName)
-  end
+		[@boardTop, @boardBottom].each do | boardSide |
+			boardSide.selectedPositions.clear()
+	    boardSide.selectByName(positionName)
+		end
+	end
 end
 
 Shoes.app(:width => 480, :height => 320) do

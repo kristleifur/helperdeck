@@ -1,5 +1,6 @@
 require 'Position'
 require 'SelectedPosition'
+require 'ExplodingBox'
 require 'yaml'
 
 class Click
@@ -35,6 +36,8 @@ class BoardSide
     
     @freshName = false
     
+    @explodingBoxes = []
+    
     @win.keypress do | key |
       # @liveString << key.to_s()
       if (@selectedPositions.size() == 1)
@@ -62,6 +65,13 @@ class BoardSide
       @win.clear()
       @win.image @pcbImageName
       @win.stroke @win.yellow
+      @explodingBoxes.each do | box |
+        box.step()
+        if box.done?()
+          @explodingBoxes.delete(box)
+        end
+        @win.rect :left => box.x, :top => box.y, :width => box.width, :height => box.height
+      end
       if @tehPos && @tehPos.width > 0 && @tehPos.height > 0
         @win.rect :left => @tehPos.left, :top => @tehPos.top, :width => @tehPos.width, :height => @tehPos.height
       end
@@ -73,10 +83,12 @@ class BoardSide
       @positions.values.each do | pos |
         # debug "POS: #{pos.inspect()}"
         if @selectedPositions.include?(pos) # && @hoverPositions.include?(pos)
+          @win.strokewidth 4.5
           @win.stroke @win.turquoise
           # debug "L: " + pos.left().inspect() + ", W:" +  pos.width().inspect() + ", T: " +  pos.top().inspect() + ", H: " + pos.height().inspect()
           @win.rect :left => pos.left(), :width => pos.width(), :top => pos.top(), :height => pos.height()
           @win.stroke @win.orange
+          @win.strokewidth 2
         elsif @hoverPositions.include?(pos)
            @win.stroke @win.purple
             # debug "L: " + pos.left().inspect() + ", W:" +  pos.width().inspect() + ", T: " +  pos.top().inspect() + ", H: " + pos.height().inspect()
@@ -226,8 +238,9 @@ class BoardSide
   def selectByName(positionName)
     if @positions[positionName]
       debug "positionName found on board #{@pcbImage}"
-      selectedPositions.clear()
+      tehPos = @positions[positionName]
       selectedPositions << @positions[positionName]
+      @explodingBoxes << ExplodingBox.new(tehPos.x, tehPos.y, tehPos.width, tehPos.height)
     end
   end
   
