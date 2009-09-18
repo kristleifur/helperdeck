@@ -15,8 +15,17 @@ class BuildStage
       @stageWin.para "Stage:"
       @stageWin.edit_line ""
     end
-    @posFlow = @stageWin.stack() do 
-      @stageWin.para "Positions: "
+    @posFlow = @stageWin.flow() do 
+      @stageWin.stack do
+        @stageWin.para "Positions: "
+        @stageWin.click do
+          # debug "Clicked the 'Positions' stack"
+          @@positions.each do | pos |
+            # debug "\tPos: #{pos}"
+            @mainApp.selectComponent(pos.name)
+          end
+        end
+      end
       @@positions.each do | pos |
         @stageWin.para << pos.name()
       end
@@ -38,14 +47,26 @@ class BuildStage
       line.text = @stagename
     end
     @posFlow.clear()
-    @posFlow = @stageWin.stack() do 
-      @stageWin.para "Positions: "
-      @@positions.each do | pos |
-        @stageWin.stack() do
-          tehPara = @stageWin.para pos.name()
-          @stageWin.click do
-            debug tehPara.inspect()
-            @mainApp.selectComponent(tehPara.text())
+    @posFlow = @stageWin.flow() do 
+      @stageWin.stack() do
+        @stageWin.para "Positions: "
+        @stageWin.click do
+          debug "Clicked the 'Positions' stack"
+          @@positions.each do | pos |
+            # debug "\tPos: #{pos}"
+            @mainApp.selectComponent(pos.name)
+            @mainApp.selectComponent("")
+          end
+        end
+      end
+      @stageWin.stack() do
+        @@positions.each do | pos |
+          @stageWin.stack() do
+            tehPara = @stageWin.para pos.name()
+            @stageWin.click do
+              # debug tehPara.inspect()
+              @mainApp.selectComponent(tehPara.text())
+            end
           end
         end
       end

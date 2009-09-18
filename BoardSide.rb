@@ -69,8 +69,9 @@ class BoardSide
         box.step()
         if box.done?()
           @explodingBoxes.delete(box)
+        else 
+          @win.rect :left => box.x, :top => box.y, :width => box.width, :height => box.height
         end
-        @win.rect :left => box.x, :top => box.y, :width => box.width, :height => box.height
       end
       if @tehPos && @tehPos.width > 0 && @tehPos.height > 0
         @win.rect :left => @tehPos.left, :top => @tehPos.top, :width => @tehPos.width, :height => @tehPos.height
@@ -237,7 +238,7 @@ class BoardSide
   
   def selectByName(positionName)
     if @positions[positionName]
-      debug "positionName found on board #{@pcbImage}"
+      # debug "positionName found on board #{@pcbImage}"
       tehPos = @positions[positionName]
       selectedPositions << @positions[positionName]
       @explodingBoxes << ExplodingBox.new(tehPos.x, tehPos.y, tehPos.width, tehPos.height)

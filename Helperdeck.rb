@@ -9,12 +9,12 @@ require 'SelectedPosition'
 require 'Stage'
 
 def selectComponent(componentName)
-  debug componentName
+  # debug componentName
 end
 
 class Shoes::App
   def selectComponent(positionName)
-    debug "This is the Shoes app. Select position '#{positionName}', a #{positionName.class()}."
+    # debug "This is the Shoes app. Select position '#{positionName}', a #{positionName.class()}."
 		[@boardTop, @boardBottom].each do | boardSide |
 			boardSide.selectedPositions.clear()
 	    boardSide.selectByName(positionName)
@@ -143,6 +143,10 @@ Shoes.app(:width => 480, :height => 320) do
     @boardBottom.selectedPositions.clear()
     @boardBottom.hoverPositions.clear()
     debug "Loaded"
+
+    debug "Enter Select"
+    @boardTop.selectMode()
+    @boardBottom.selectMode()
   end
   
   @selectedPosition = nil # Position.new()
@@ -156,7 +160,7 @@ Shoes.app(:width => 480, :height => 320) do
     end
     @@stageWindows << tmpWin
     @@stages << BuildStage.new(@@stageWindows[-1], self)
-    debug @@stages[0]
+    # debug @@stages[0]
     
   end
   @@stages[0].stagename = "Power_in"
@@ -170,12 +174,12 @@ Shoes.app(:width => 480, :height => 320) do
     else
       pos ||= @boardTop.positions[i]
       pos ||= @boardBottom.positions[i]
-      debug "Stages 0:"
-      debug @@stages[0]
-      debug "Stages 0 positions:"
-      debug @@stages[0].positions
-      debug "Pos:"
-      debug pos
+      # debug "Stages 0:"
+      # debug @@stages[0]
+      # debug "Stages 0 positions:"
+      # debug @@stages[0].positions
+      # debug "Pos:"
+      # debug pos
       @@stages[0].positions << pos
     end
   end
