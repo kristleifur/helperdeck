@@ -15,7 +15,7 @@ end
 class Shoes::App
   def selectComponent(positionName)
     # debug "This is the Shoes app. Select position '#{positionName}', a #{positionName.class()}."
-		[@boardTop, @boardBottom].each do | boardSide |
+		[@boardTop, @boardBottom, @powerSchematic].each do | boardSide |
 			boardSide.selectedPositions.clear()
 	    boardSide.selectByName(positionName)
 		end
@@ -47,6 +47,12 @@ Shoes.app(:width => 480, :height => 320) do
   end
   @boardBottom = BoardSide.new(@boardBottomWin, @boardBottomImageFilename, self, @selectedPosition)
   
+	@powerSchematicImageFilename = "PowerSchematic.png"
+	@powerShematicWin = window :title => @powerSchematicImageFilename, :width => 644, :height 240 do
+		# do window stuff eh?
+	end
+	@powerSchematic = BoardSide.new(@powerSchematicWin, @powerSchematicImageFilename, self, @selectedPosition)
+
   # @bagWin = window :title => "Bags maybe" do
   #   para "bags???"
   # end
@@ -60,12 +66,14 @@ Shoes.app(:width => 480, :height => 320) do
     debug "Enter Draw"
     @boardTop.drawMode()
     @boardBottom.drawMode()
+		@powerSchematic.drawMode()
   end
   
   button "SELECT" do
     debug "Enter Select"
     @boardTop.selectMode()
     @boardBottom.selectMode()
+		@powerSchematic.drawMode()
   end
   
   button "Save Board Posn's" do
@@ -81,6 +89,10 @@ Shoes.app(:width => 480, :height => 320) do
       f.puts componentYaml
     end
     debug "Saved"
+		componentYaml = @powerSchematic.positions.to_yaml()
+		File.open("PowerSchematic.dump.yaml", "w") do | f |
+			f.puts componentYaml
+		end
   end
   
   @loadButton = button "Load Board Posn's" do
@@ -149,7 +161,7 @@ Shoes.app(:width => 480, :height => 320) do
     @boardBottom.selectMode()
   end
   
-  @selectedPosition = nil # Position.new()
+  @selectedPosition = nil # Position.new() #TODO: fix / use / toss
 
   @@stages = []
   @@stageWindows = []
