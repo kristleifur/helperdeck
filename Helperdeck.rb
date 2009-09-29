@@ -48,7 +48,7 @@ Shoes.app(:width => 480, :height => 320) do
   @boardBottom = BoardSide.new(@boardBottomWin, @boardBottomImageFilename, self, @selectedPosition)
   
 	@powerSchematicImageFilename = "PowerSchematic.png"
-	@powerShematicWin = window :title => @powerSchematicImageFilename, :width => 644, :height 240 do
+	@powerSchematicWin = window :title => @powerSchematicImageFilename, :width => 644, :height => 240 do
 		# do window stuff eh?
 	end
 	@powerSchematic = BoardSide.new(@powerSchematicWin, @powerSchematicImageFilename, self, @selectedPosition)
@@ -73,7 +73,7 @@ Shoes.app(:width => 480, :height => 320) do
     debug "Enter Select"
     @boardTop.selectMode()
     @boardBottom.selectMode()
-		@powerSchematic.drawMode()
+		@powerSchematic.selectMode()
   end
   
   button "Save Board Posn's" do
@@ -122,6 +122,20 @@ Shoes.app(:width => 480, :height => 320) do
     # @boardBottom.positions = YAML.load_file("boardBottom.dump.yaml")
     @boardBottom.selectedPositions.clear()
     @boardBottom.hoverPositions.clear()
+
+		freshPositions = YAML.load_file("PowerSchematic.dump.yaml")
+    @powerSchematic.positions = {}
+    freshPositions.values.each do | i |
+      if (@powerSchematic.positions[i.name])
+        debug "position #{i.name} is duplicated"
+      end
+      @powerSchematic.positions[i.name] = i
+    end
+    
+    # @boardBottom.positions = YAML.load_file("boardBottom.dump.yaml")
+    @powerSchematic.selectedPositions.clear()
+    @powerSchematic.hoverPositions.clear()
+
     debug "Loaded"
   end
   
@@ -159,6 +173,7 @@ Shoes.app(:width => 480, :height => 320) do
     debug "Enter Select"
     @boardTop.selectMode()
     @boardBottom.selectMode()
+		@powerSchematic.selectMode()
   end
   
   @selectedPosition = nil # Position.new() #TODO: fix / use / toss
