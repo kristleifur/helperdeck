@@ -18,6 +18,6 @@ class SelectedPosition
     update()
   end
   def update()
-    @nameLine.text = @livePosition.name
+    @nameLine.text = @livePosition.name if @livePosition
   end
 end
