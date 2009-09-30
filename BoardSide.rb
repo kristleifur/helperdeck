@@ -163,6 +163,7 @@ class BoardSide
   
   def selectMode()
     @win.click do | button, x, y |
+      # debug "BS Click"
       @buttons[button] = true
       @theClick.x = x
       @theClick.y = y
@@ -174,6 +175,13 @@ class BoardSide
           @selectedPositions << pos
         end
       end
+      
+      allNames = []
+      selectedPositions.each do | selPos |
+        allNames << selPos.name()
+      end
+      @app.clearSelections()
+      @app.selectPosition(allNames) # hmm weird
       
       # @liveCompBox.text = ""
       if (@selectedPositions.size == 1)
@@ -198,6 +206,7 @@ class BoardSide
       #       end
     end
     @win.release do | button, x, y |
+      # debug "BS Release"
       if button == 1 && @buttons[button]
         @selectedPositions = []
         @positions.values.each do | pos |
@@ -205,6 +214,7 @@ class BoardSide
             # debug "Found something: #{pos.to_yaml()}"
             @selectedPositions << pos
           end
+          @app.selectPosition(selectedPositions) # hmm weird
         end
       end
       @buttons[button] = false
@@ -237,7 +247,10 @@ class BoardSide
   end
   
   def selectByName(positionName)
+    # debug "BS selectByName:"
+    # debug positionName
     if @positions[positionName]
+      # debug "Found it"
       # debug "positionName found on board #{@pcbImage}"
       tehPos = @positions[positionName]
       selectedPositions << @positions[positionName]

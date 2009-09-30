@@ -13,23 +13,32 @@ def selectComponent(componentName)
 end
 
 class Shoes::App
-  def selectComponent(positionName)
+  def clearSelections()
+    [@boardTop, @boardBottom, @powerSchematic].each do | boardSide |
+      boardSide.selectedPositions.clear()
+    end
+	end
+  
+  def selectPosition(positionNames)
     # debug "This is the Shoes app. Select position '#{positionName}', a #{positionName.class()}."
-		[@boardTop, @boardBottom, @powerSchematic].each do | boardSide |
-			boardSide.selectedPositions.clear()
-	    boardSide.selectByName(positionName)
+		positionNames.each do | positionName | 
+      # debug "Selecting position ..."
+      # debug positionName
+		  [@boardTop, @boardBottom, @powerSchematic].each do | boardSide |
+  	    boardSide.selectByName(positionName)
+	    end
 		end
 	end
 end
 
-Shoes.app(:width => 480, :height => 320) do
+Shoes.app(:width => 480, :height => 50) do
 	Shoes.show_log()
 	
   self.class.class_eval do
     attr_accessor :otherWinStack
   end
 
-  @liveComponentWin = window :title => "Selected component", :width => 250, :height => 250 do
+  @liveComponentWin = window :title => "Selected position", :width => 250, :height => 250 do
     # @@liveComponentBox = edit_box
   end
   # debug @liveComponentWin.inspect()
@@ -168,6 +177,20 @@ Shoes.app(:width => 480, :height => 320) do
     # @boardBottom.positions = YAML.load_file("boardBottom.dump.yaml")
     @boardBottom.selectedPositions.clear()
     @boardBottom.hoverPositions.clear()
+    
+    freshPositions = YAML.load_file("PowerSchematic.dump.yaml")
+    @powerSchematic.positions = {}
+    freshPositions.values.each do | i |
+      if (@powerSchematic.positions[i.name])
+        debug "position #{i.name} is duplicated"
+      end
+      @powerSchematic.positions[i.name] = i
+    end
+    
+    # @boardBottom.positions = YAML.load_file("boardBottom.dump.yaml")
+    @powerSchematic.selectedPositions.clear()
+    @powerSchematic.hoverPositions.clear()
+		
     debug "Loaded"
 
     debug "Enter Select"

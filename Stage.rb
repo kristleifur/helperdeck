@@ -22,7 +22,7 @@ class BuildStage
           # debug "Clicked the 'Positions' stack"
           @@positions.each do | pos |
             # debug "\tPos: #{pos}"
-            @mainApp.selectComponent(pos.name)
+            @mainApp.selectPosition(pos.name)
           end
         end
       end
@@ -51,12 +51,17 @@ class BuildStage
       @stageWin.stack() do
         @stageWin.para "Positions: "
         @stageWin.click do
-          debug "Clicked the 'Positions' stack"
+          # debug "Clicked the 'Positions' stack"
+          @mainApp.clearSelections()
+          posNames = []
           @@positions.each do | pos |
-            # debug "\tPos: #{pos}"
-            @mainApp.selectComponent(pos.name)
-            @mainApp.selectComponent("")
+            posNames << pos.name()
           end
+          @mainApp.selectPosition(posNames)
+          # @@positions.each do | pos |
+          #   @mainApp.clearSelections()
+          #   @mainApp.selectPosition(pos.name)
+          # end
         end
       end
       @stageWin.stack() do
@@ -65,7 +70,8 @@ class BuildStage
             tehPara = @stageWin.para pos.name()
             @stageWin.click do
               # debug tehPara.inspect()
-              @mainApp.selectComponent(tehPara.text())
+              @mainApp.clearSelections()
+              @mainApp.selectPosition(tehPara.text())
             end
           end
         end
