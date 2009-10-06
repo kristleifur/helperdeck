@@ -18,17 +18,17 @@ class BomEat
 	    
 	    component.longname = ""
 	    thisPartLines[0].split(" ")[2...(-1)].each do | word |
-	      component.longname << "#{word}"
+	      component.longname << "#{word} "
       end
-      component.longname.strip()
+      component.longname.strip!()
       
       component.positions = []
       thisPartLines[0].split(" ")[-1].split(",").each do | pos |
         component.positions << pos
       end
       
-      component.comment = thisPartLines[1].gsub("Comment: ", "")
-      component.spec = thisPartLines[1].gsub("Spec: ", "")
+      component.comment = thisPartLines[1].gsub("Comment: ", "").strip()
+      component.spec = thisPartLines[2].gsub("Spec: ", "").strip()
       
       # ... and put it in a bag
 	    bags[bagNo] ||= [] 
@@ -39,5 +39,5 @@ class BomEat
 	end
 end
 
-bags = BomEat.eatBom(File.read(ARGV[1]).split("\n"))
+bags = BomEat.eatBom(File.read(ARGV[0]).split("\n"))
 puts bags.to_yaml()
