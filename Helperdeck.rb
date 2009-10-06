@@ -79,7 +79,7 @@ Shoes.app(:width => 480, :height => 50) do
   end
   
   button "SELECT" do
-    debug "Enter Select"
+    debug "Entering select mode"
     @boardTop.selectMode()
     @boardBottom.selectMode()
 		@powerSchematic.selectMode()
@@ -193,7 +193,7 @@ Shoes.app(:width => 480, :height => 50) do
 		
     debug "Loaded"
 
-    debug "Enter Select"
+    debug "Entering select mode"
     @boardTop.selectMode()
     @boardBottom.selectMode()
 		@powerSchematic.selectMode()
@@ -216,7 +216,7 @@ Shoes.app(:width => 480, :height => 50) do
   @@stages[0].stagename = "Power_in"
   @@stageComponents = {}
   @@stageComponents[@@stages[0].stagename] = @@stages[0].positions
-  debug "remember to sync the stageComponents lookup to the board positions post-load"
+  debug "Developer note: remember to sync the stageComponents lookup to the board positions post-load"
   tmpStageComponents = %w(d10 d11 c28 r13 c29 r20)
   tmpStageComponents.each do | i |
     if @boardTop.positions[i] == nil && @boardBottom.positions[i] == nil

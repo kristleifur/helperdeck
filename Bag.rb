@@ -1,3 +1,5 @@
+require 'component'
+
 class Bag
   attr_accessor :components, :id #, :notes
   def initialize(win, id = nil)
