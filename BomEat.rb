@@ -7,11 +7,15 @@ require 'yaml'
 
 class BomEat
 	def self.eatBom(bomStrings)
-	  bags = []
+	  bags = {}
 	  (bomStrings.size / 3).times do | i |
 	    thisPartLines = bomStrings[((i*3)..(i*3+2))]
 	    component = Component.new()
-	    bagNo = thisPartLines[0].split(" ")[0].to_i()
+	    bagNo = thisPartLines[0].split(" ")[0]# .to_i()
+	    puts "#{bagNo}"
+	    if bagNo.to_i().to_s() == bagNo
+	      bagNo = bagNo.to_i()
+      end
 	    
 	    # fill component ...
 	    component.type = thisPartLines[0].split(" ")[1]
@@ -40,4 +44,5 @@ class BomEat
 end
 
 bags = BomEat.eatBom(File.read(ARGV[0]).split("\n"))
-puts bags.to_yaml()
+
+puts bags.keys()
