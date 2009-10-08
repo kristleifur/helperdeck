@@ -10,9 +10,13 @@ class BomEat
 	  bags = {}
 	  (bomStrings.size / 3).times do | i |
 	    thisPartLines = bomStrings[((i*3)..(i*3+2))]
+        
 	    component = Component.new()
+
+      component.extraInfo = thisPartLines[0]
+
 	    bagNo = thisPartLines[0].split(" ")[0]# .to_i()
-	    puts "#{bagNo}"
+	    # puts "#{bagNo}"
 	    if bagNo.to_i().to_s() == bagNo
 	      bagNo = bagNo.to_i()
       end
@@ -44,5 +48,5 @@ class BomEat
 end
 
 bags = BomEat.eatBom(File.read(ARGV[0]).split("\n"))
-
-puts bags.keys()
+puts bags.to_yaml()
+# puts bags.keys()
