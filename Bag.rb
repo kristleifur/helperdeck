@@ -55,7 +55,7 @@ class Bag
           positions = component.positions.dup()
           component.positions.size.times do | i |
             if (i == 0)
-              str << ": #{component.positions[i]}" 
+              str << ": #{component.positions[i]}, " 
             elsif (i == component.positions.size - 1)
               str << "#{component.positions[i]}"
             else

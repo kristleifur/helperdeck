@@ -49,7 +49,7 @@ class BuildStage
     @posFlow.clear()
     @posFlow = @stageWin.flow() do 
       @stageWin.stack() do
-        @stageWin.para "Positions: "
+        @stageWin.para @stageWin.link("Positions:")
         @stageWin.click do
           # debug "Clicked the 'Positions' stack"
           @mainApp.clearSelections()
@@ -57,6 +57,7 @@ class BuildStage
           @@positions.each do | pos |
             posNames << pos.name()
           end
+          # debug "Selecting ..."
           @mainApp.selectPosition(posNames)
           # @@positions.each do | pos |
           #   @mainApp.clearSelections()
