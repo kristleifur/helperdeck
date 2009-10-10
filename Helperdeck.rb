@@ -62,14 +62,22 @@ Shoes.app(:width => 480, :height => 50) do
 	end
 	@powerSchematic = BoardSide.new(@powerSchematicWin, @powerSchematicImageFilename, self, @selectedPosition)
 
-  # @bagWin = window :title => "Bags maybe" do
-  #   para "bags???"
-  # end
-  # 
-  # @bags = {}
-  # 
-  # tehBag = Bag.new(@bagWin) # new()
-  # @bags[0] = tehBag
+  @uglyBagModel = YAML::load_file("Amp15_BagsAndComponents.yaml")
+  debug "bags: #{@uglyBagModel.keys()}"
+
+  @bagControllers = {}
+  @bagWins = {}
+
+  @uglyBagModel.keys.each do | i |
+    bagWin = window :title => "Bag #{i}" do
+      #
+    end
+    @bagWins[i] = bagWin
+    tehBag = Bag.new(bagWin, self, "#{i}")
+    tehBag.components = @uglyBagModel[i]
+    @bagControllers[i] = tehBag
+    tehBag.update()
+  end
   
   button "DRAW" do
     debug "Enter Draw"

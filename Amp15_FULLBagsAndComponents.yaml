@@ -81,6 +81,16 @@
       - C42
     spec: 0.68μF
     type: hmt
+0: 
+  - !ruby/object:Component 
+    comment: Main power bulk
+    extraInfo: "0 hmt Cap 63V Elect Snap-In 27000uF D40 2 C26,C27 "
+    longname: Cap 63V Elect Snap-In 27000uF D40 2
+    positions: 
+      - C26
+      - C27
+    spec: 27000μF
+    type: hmt
 6: 
   - !ruby/object:Component 
     comment: 5V bulk
@@ -156,6 +166,38 @@
       - R37
       - R38
     spec: 50K
+    type: hmt
+  - !ruby/object:Component 
+    comment: "Mounting screws, non-magnetic"
+    extraInfo: "1 - Screw machine Phil 4-40x1/2 SS 8 Mounting "
+    longname: Screw machine Phil 4-40x1/2 SS 8
+    positions: 
+      - Mounting
+    spec: ''
+    type: "-"
+  - !ruby/object:Component 
+    comment: Non-magnetic
+    extraInfo: "1 - Nut HEX 4-40 SS 8 Mounting "
+    longname: Nut HEX 4-40 SS 8
+    positions: 
+      - Mounting
+    spec: ''
+    type: "-"
+  - !ruby/object:Component 
+    comment: Spacers for corner screws
+    extraInfo: "1 - Spacer nylon nat 6 mm diam 4/6 2 Corners "
+    longname: Spacer nylon nat 6 mm diam 4/6 2
+    positions: 
+      - Corners
+    spec: ''
+    type: "-"
+  - !ruby/object:Component 
+    comment: AC power conn
+    extraInfo: "1 hmt Term Block PCB 3Pos 5.0mm 1 CON3 "
+    longname: Term Block PCB 3Pos 5.0mm 1
+    positions: 
+      - CON3
+    spec: Conn-Block 3 polar
     type: hmt
   - !ruby/object:Component 
     comment: Ground-agnd separators
@@ -261,6 +303,39 @@
     type: hmt¤
 2: 
   - !ruby/object:Component 
+    comment: Insulator for TO-220
+    extraInfo: "2 hmt Heatpad insulator TO-220 4 TO-220 diodes and transistors "
+    longname: Heatpad insulator TO-220 4 TO-220 diodes and
+    positions: 
+      - transistors
+    spec: ''
+    type: hmt
+  - !ruby/object:Component 
+    comment: ''
+    extraInfo: "2 hmt Bushing insulator TO-220 4 TO-220 diodes and transistors "
+    longname: Bushing insulator TO-220 4 TO-220 diodes and
+    positions: 
+      - transistors
+    spec: ''
+    type: hmt
+  - !ruby/object:Component 
+    comment: Mounting stand-offs for TO-220
+    extraInfo: "2 - Spacer nylon nat 3.5 mm diam 4/6 6 TO-220 "
+    longname: Spacer nylon nat 3.5 mm diam 4/6 6
+    positions: 
+      - TO-220
+    spec: ''
+    type: "-"
+  - !ruby/object:Component 
+    comment: Speaker conn
+    extraInfo: "2 hmt Term Block PCB 2 Pos 5.0mm w. pins, 10A 2 CON1,CON2 "
+    longname: "Term Block PCB 2 Pos 5.0mm w. pins, 10A 2"
+    positions: 
+      - CON1
+      - CON2
+    spec: Conn-Block 2 polar
+    type: hmt
+  - !ruby/object:Component 
     comment: Output filters
     extraInfo: "2 hmt Inductor Single shielded 22uH 7A, Box 4 L1,L2,L3,L4 "
     longname: "Inductor Single shielded 22uH 7A, Box 4"
@@ -270,6 +345,14 @@
       - L3
       - L4
     spec: 22μH
+    type: hmt
+  - !ruby/object:Component 
+    comment: Misc jumpers
+    extraInfo: "2 hmt Conn header Single-row gold RM 2.54 10 Jumpers "
+    longname: Conn header Single-row gold RM 2.54 10
+    positions: 
+      - Jumpers
+    spec: ''
     type: hmt
 3: 
   - !ruby/object:Component 
