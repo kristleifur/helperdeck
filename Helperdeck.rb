@@ -20,18 +20,15 @@ class Shoes::App
 	end
   
   def selectPosition(positionNames)
-    @recurs ||= 0
-    @recurs += 1
-    debug "R#{@recurs} - This is the Shoes app. Select positions '#{positionNames}', a #{positionNames.class()}."
+    # debug "This is the Shoes app. Select positions '#{positionNames}', a #{positionNames.class()}."
 		positionNames.each do | positionName | 
-      debug "Selecting position '#{positionName}', a #{positionName.class()}"
+      # debug "Selecting position '#{positionName}', a #{positionName.class()}"
       # debug positionName
 		  [@boardTop, @boardBottom, @powerSchematic].each do | boardSide |
   	    boardSide.selectByName(positionName)
 	    end
 		end
-		debug "R#{@recurs} out"
-		@recurs -= 1
+
 	end
 end
 

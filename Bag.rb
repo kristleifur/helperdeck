@@ -63,6 +63,9 @@ class Bag
             end
           end
           tehPara = @win.para str
+          if (@selectedComponents.include?(component))
+            tehPara.style(:weight => "bold")
+          end
           tehPara.size = "xx-small"
           @win.click do
             # debug tehPara.inspect()

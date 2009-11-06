@@ -16,8 +16,12 @@
   - !ruby/object:Component 
     comment: Power decoupling
     extraInfo: "5 hmt Cap 100V Cer 0.1uF X7R 10% RM2.5 5 C1, C2, C3, C4, C90 "
-    longname: "Cap 100V Cer 0.1uF X7R 10% RM2.5 5 C1, C2, C3, C4,"
+    longname: "Cap 100V Cer 0.1uF X7R 10% RM2.5 5"
     positions: 
+      - C1
+      - C2
+      - C3
+      - C4
       - C90
     spec: ''
     type: hmt
