@@ -23,7 +23,7 @@ class Bag
     @positions ||= {}
     @positions.clear()
     @components.each do | comp |
-      debug comp
+      # debug comp
       comp.positions.each do | compPos |
         @positions[compPos] ||= []
         @positions[compPos] << comp
@@ -68,7 +68,7 @@ class Bag
             # debug tehPara.inspect()
             @mainApp.clearSelections()
             positions.each do | pos |
-              debug "sel #{pos}"
+              # debug "sel #{pos}"
               @mainApp.selectPosition(pos.downcase().split("-")[0].split("x")[0])
             end
           end
