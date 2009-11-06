@@ -209,13 +209,15 @@ class BoardSide
       # debug "BS Release"
       if button == 1 && @buttons[button]
         @selectedPositions = []
+        selectedPosNames = []
         @positions.values.each do | pos |
           if (pos.left <= x && pos.top <= y && pos.left + pos.width >= x && pos.top + pos.height >= y)
             # debug "Found something: #{pos.to_yaml()}"
             @selectedPositions << pos
+            selectedPosNames << pos.name
           end
-          @app.selectPosition(selectedPositions) # hmm weird
         end
+        @app.selectPosition(selectedPosNames) # hmm weird
       end
       @buttons[button] = false
     end
