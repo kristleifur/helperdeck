@@ -55,20 +55,21 @@ class Bag
           positions = component.positions.dup()
           component.positions.size.times do | i |
             if (i == 0)
-              str << ": #{component.positions[i]}, " 
-            elsif (i == component.positions.size - 1)
-              str << "#{component.positions[i]}"
-            else
-              str << "#{component.positions[i]}, "
+              str << ": "
+            end
+            str << "#{component.positions[i]}"
+            if (component.positions.size > 1 && i != component.positions.size - 1)
+              str << ", " 
             end
           end
           tehPara = @win.para str
+          tehPara.size = "xx-small"
           @win.click do
             # debug tehPara.inspect()
             @mainApp.clearSelections()
             positions.each do | pos |
               debug "sel #{pos}"
-              @mainApp.selectPosition(pos.downcase())
+              @mainApp.selectPosition(pos.downcase().split("-")[0].split("x")[0])
             end
           end
         end

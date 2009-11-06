@@ -52,21 +52,23 @@
     type: hmt
 - - !ruby/object:Component 
     comment: Insulator for TO-220
-    longname: Heatpad insulator TO-220 4 TO-220 diodes and
+    longname: Heatpad insulator TO-220 4 TO-220 diodes and transistors
     positions: 
+    - diodes
     - transistors
     spec: ""
     type: hmt
   - !ruby/object:Component 
     comment: ""
-    longname: Bushing insulator TO-220 4 TO-220 diodes and
+    longname: Bushing insulator TO-220 4 TO-220 diodes and transistors
     positions: 
+    - diodes
     - transistors
     spec: ""
     type: hmt
   - !ruby/object:Component 
     comment: Mounting stand-offs for TO-220
-    longname: Spacer nylon nat 3.5 mm diam 4/6 6
+    longname: Spacer nylon nat 3.5 mm diam 4/6 6 TO-220
     positions: 
     - TO-220
     spec: ""
@@ -118,8 +120,9 @@
     type: hmt
   - !ruby/object:Component 
     comment: 5V setpoint, Power supply snubbers / filter
-    longname: Res Ax. Met. Film 0.4W 3.4mm 120R 3 R47,
+    longname: Res Ax. Met. Film 0.4W 3.4mm 120R 3
     positions: 
+    - R47
     - R13
     - R20
     spec: 120R
@@ -276,8 +279,12 @@
     type: hmt
   - !ruby/object:Component 
     comment: Power decoupling
-    longname: Cap 100V Cer 0.1uF X7R 10% RM2.5 5 C1, C2, C3, C4,
+    longname: Cap 100V Cer 0.1uF X7R 10% RM2.5 5
     positions: 
+    - C1
+	- C2
+	- C3
+	- C4
     - C90
     spec: ""
     type: hmt
@@ -399,21 +406,21 @@
     positions: 
     - IC1
     spec: TA3020
-    type: "hmt\xC2\xA4"
+    type: "hmt ⚡"
   - !ruby/object:Component 
     comment: Led driver
     longname: LED 3mm Hi-eff Red Diffused 1
     positions: 
     - D3
     spec: "Spec:"
-    type: "hmt\xC2\xA4"
+    type: "hmt ⚡"
   - !ruby/object:Component 
     comment: 5V regulator
     longname: Voltage Reg Pos Adj 100mA TO-92 1
     positions: 
     - IC3
     spec: LM317LZ
-    type: "hmt\xC2\xA4"
+    type: "hmt ⚡"
   - !ruby/object:Component 
     comment: Pre-regulators
     longname: Trans NPN 3A 100V TO-220AB TIP31 2
@@ -421,29 +428,31 @@
     - Q3
     - Q4
     spec: 100V NPN TO220
-    type: "hmt\xC2\xA4"
+    type: "hmt ⚡"
   - !ruby/object:Component 
     comment: Boot diodes, gate overshoot protection
-    longname: Diode U-fast1A 200V SMB 4 D1,D2,
+    longname: Diode U-fast1A 200V SMB 4
     positions: 
+    - D1
+    - D2
     - D6
     - D7
     spec: MURS SMB 200V
-    type: "smt\xC2\xA4"
+    type: "smt ⚡"
   - !ruby/object:Component 
     comment: Pre-reg Voltage setting
     longname: Diode Zener 10V 500mW DO35 1
     positions: 
     - D4
     spec: 10V
-    type: "hmt\xC2\xA4"
+    type: "hmt ⚡"
   - !ruby/object:Component 
     comment: VN10 Pre-reg Voltage setting
     longname: Diode Zener 15V 500mW DO35 1
     positions: 
     - D5
     spec: 15V zener
-    type: "hmt\xC2\xA4"
+    type: "hmt ⚡"
   - !ruby/object:Component 
     comment: Power diodes
     longname: Diode Dual Ser. Ult-fast 2x8A 200V TO-220 2
@@ -451,7 +460,7 @@
     - D10
     - D11
     spec: Dual Diode Series TO220
-    type: "hmt\xC2\xA4"
+    type: "hmt ⚡"
   - !ruby/object:Component 
     comment: Regulator protection
     longname: Diode 1N4003 2
@@ -459,7 +468,7 @@
     - D8
     - D9
     spec: 1N4003
-    type: "hmt\xC2\xA4"
+    type: "hmt ⚡"
   - !ruby/object:Component 
     comment: 10V regulator
     longname: Voltage Reg Pos 10V 100mA TO-92 1
@@ -474,4 +483,4 @@
     - Q1
     - Q2
     spec: IRFI4019H-117P, no substitute
-    type: "hmt\xC2\xA4"
+    type: "hmt ⚡"
