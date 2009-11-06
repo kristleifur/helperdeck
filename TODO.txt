@@ -1,0 +1,2 @@
+Sub-links in bag windows for each position (e.g. click C40 and C41 separately)
+GLOBAL SELECT
