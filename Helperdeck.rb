@@ -69,7 +69,8 @@ Shoes.app(:width => 480, :height => 50) do
   @bagWins = {}
 
   @uglyBagModel.keys.each do | i |
-    bagWin = window :title => "Bag #{i}" do
+    winHeight = 32 * (@uglyBagModel[i].size + 1)
+    bagWin = window :title => "Bag #{i}, #{@uglyBagModel[i].size} pieces", :width => 310, :height => winHeight do
       #
     end
     @bagWins[i] = bagWin

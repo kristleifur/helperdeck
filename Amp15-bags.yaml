@@ -1,15 +1,15 @@
 --- 
 - - !ruby/object:Component 
     comment: Main power bulk
-    longname: Cap 63V Elect Snap-In 27000uF D40 2
+    longname: Cap 63V 27000µF D40 2
     positions: 
     - C26
     - C27
-    spec: "27000\xCE\xBCF"
+    spec: "27000µF"
     type: hmt
 - - !ruby/object:Component 
     comment: Offset trimmers
-    longname: Trim pot Cerm 50Kohm 25TRN Top 2
+    longname: Trimpot 50KΩ Top 2
     positions: 
     - R37
     - R38
@@ -17,13 +17,13 @@
     type: hmt
   - !ruby/object:Component 
     comment: Mounting screws, non-magnetic
-    longname: Screw machine Phil 4-40x1/2 SS 8
+    longname: Screw 4-40x1/2 SS 8
     positions: 
     - Mounting
     spec: ""
     type: "-"
   - !ruby/object:Component 
-    comment: Non-magnetic
+    comment: Non-magnetic nut
     longname: Nut HEX 4-40 SS 8
     positions: 
     - Mounting
@@ -31,28 +31,28 @@
     type: "-"
   - !ruby/object:Component 
     comment: Spacers for corner screws
-    longname: Spacer nylon nat 6 mm diam 4/6 2
+    longname: Corner screw spacers 6mm 4/6 2
     positions: 
     - Corners
     spec: ""
     type: "-"
   - !ruby/object:Component 
     comment: AC power conn
-    longname: Term Block PCB 3Pos 5.0mm 1
+    longname: Termblock 3Pos 5.0mm 1
     positions: 
     - CON3
     spec: Conn-Block 3 polar
     type: hmt
   - !ruby/object:Component 
     comment: Ground-agnd separators
-    longname: Choke bead core 3.5X5mm Axial 1
+    longname: Choke bead 3.5X5mm 1
     positions: 
     - L5
     spec: HF Inductor-Choke Axial
     type: hmt
 - - !ruby/object:Component 
     comment: Insulator for TO-220
-    longname: Heatpad insulator TO-220 4 TO-220 diodes and transistors
+    longname: Heatpad insulator TO-220
     positions: 
     - diodes
     - transistors
@@ -60,7 +60,7 @@
     type: hmt
   - !ruby/object:Component 
     comment: ""
-    longname: Bushing insulator TO-220 4 TO-220 diodes and transistors
+    longname: Bushing insulator TO-220
     positions: 
     - diodes
     - transistors
@@ -68,14 +68,14 @@
     type: hmt
   - !ruby/object:Component 
     comment: Mounting stand-offs for TO-220
-    longname: Spacer nylon nat 3.5 mm diam 4/6 6 TO-220
+    longname: Spacer nylon 3.5mmm diam TO-220
     positions: 
     - TO-220
     spec: ""
     type: "-"
   - !ruby/object:Component 
     comment: Speaker conn
-    longname: Term Block PCB 2 Pos 5.0mm w. pins, 10A 2
+    longname: Termblock 2pos 5.0mm w pins, 10A 2
     positions: 
     - CON1
     - CON2
@@ -83,24 +83,24 @@
     type: hmt
   - !ruby/object:Component 
     comment: Output filters
-    longname: Inductor Single shielded 22uH 7A, Box 4
+    longname: Inductor 22µH, Box 4
     positions: 
     - L1
     - L2
     - L3
     - L4
-    spec: "22\xCE\xBCH"
+    spec: "22µH"
     type: hmt
   - !ruby/object:Component 
     comment: Misc jumpers
-    longname: Conn header Single-row gold RM 2.54 10
+    longname: Conn header RM 2.54 10
     positions: 
     - Jumpers
     spec: ""
     type: hmt
 - - !ruby/object:Component 
     comment: Current sensing
-    longname: Res 0.01ohm 2W 2% 0830 4
+    longname: Res 0.01Ω 2W 0830 4
     positions: 
     - R1
     - R2
@@ -110,7 +110,7 @@
     type: smt
   - !ruby/object:Component 
     comment: Gate drive
-    longname: Res Ax. Met. Film 0.4W 3.4mm 5R6 4
+    longname: Res 5R6 4
     positions: 
     - R5
     - R6
@@ -120,7 +120,7 @@
     type: hmt
   - !ruby/object:Component 
     comment: 5V setpoint, Power supply snubbers / filter
-    longname: Res Ax. Met. Film 0.4W 3.4mm 120R 3
+    longname: Res 120R 3
     positions: 
     - R47
     - R13
@@ -129,7 +129,7 @@
     type: hmt
   - !ruby/object:Component 
     comment: Boot cap current limit
-    longname: Res Ax. Met. Film 0.4W 3.4mm 220R 2
+    longname: Res 220R 2
     positions: 
     - R9
     - R10
@@ -137,7 +137,7 @@
     type: hmt
   - !ruby/object:Component 
     comment: Feedback network
-    longname: Res Ax. Met. Film 0.4W 3.4mm 1Kohm 4
+    longname: Res 1KΩ 4
     positions: 
     - R25
     - R26
@@ -147,7 +147,7 @@
     type: hmt
   - !ruby/object:Component 
     comment: Led driver, voltage sensing
-    longname: Res Ax. Met. Film 0.4W 3.4mm 2.2Kohm 3
+    longname: Res 2.2KΩ 3
     positions: 
     - R14
     - R15
@@ -156,7 +156,7 @@
     type: hmt
   - !ruby/object:Component 
     comment: Feedback network
-    longname: Res Ax. Met. Film 0.4W 3.4mm 10Kohm 8
+    longname: Res 10KΩ 8
     positions: 
     - R33
     - R34
@@ -170,7 +170,7 @@
     type: hmt
   - !ruby/object:Component 
     comment: Current sensing
-    longname: Res Ax. Met. Film 0.4W 3.4mm 18Kohm 2
+    longname: Res 18KΩ 2
     positions: 
     - R11
     - R12
@@ -178,7 +178,7 @@
     type: hmt
   - !ruby/object:Component 
     comment: Signal input and feedback
-    longname: Res Ax. Met. Film 0.4W 3.4mm 22Kohm 4
+    longname: Res 22KΩ 4
     positions: 
     - R100
     - R101
@@ -188,7 +188,7 @@
     type: hmt
 - - !ruby/object:Component 
     comment: Voltage sense
-    longname: Res Ax. Met. Film 0.4W 3.4mm 33Kohm 2
+    longname: Res 33KΩ 2
     positions: 
     - R17-2
     - R18-2
@@ -196,14 +196,14 @@
     type: hmt
   - !ruby/object:Component 
     comment: Voltage sensing
-    longname: Res Ax. Met. Film 0.4W 3.4mm 180Kohm 1
+    longname: Res 180KΩ 1
     positions: 
     - R16-2
     spec: 1.18M = 1M + 180K
     type: hmt
   - !ruby/object:Component 
     comment: Voltage sensing
-    longname: Res Ax. Met. Film 0.4W 3.4mm 390Kohm 3
+    longname: Res 390KΩ 3
     positions: 
     - R17-1
     - R18-1
@@ -212,14 +212,14 @@
     type: hmt
   - !ruby/object:Component 
     comment: Current sense
-    longname: Res Ax. Met. Film 0.4W 3.4mm 1Mohm 1
+    longname: Res 1MΩ 1
     positions: 
     - R16-1
     spec: 1.18M = 1M + 180K
     type: hmt
   - !ruby/object:Component 
     comment: Feedback network
-    longname: Res Ax. Met. Film 0.25W 3.4mm 1.1Kohm 4
+    longname: Res 0.25W 3.4mm 1.1KΩ 4
     positions: 
     - R29
     - R30
@@ -229,14 +229,14 @@
     type: hmt
   - !ruby/object:Component 
     comment: Reference voltage
-    longname: Res Ax. Met. Film 0.125W 3.4mm 8.25K 1
+    longname: Res 0.125W 3.4mm 8.25K 1
     positions: 
     - R825
     spec: 8.25K
     type: hmt
   - !ruby/object:Component 
     comment: 5V and 9V input filter
-    longname: Res Ax. Met. Film 2W 10mm 220R 2
+    longname: Res 2W 10mm 220R 2
     positions: 
     - R41
     - R44
@@ -244,14 +244,14 @@
     type: hmt
   - !ruby/object:Component 
     comment: 5V setpoint
-    longname: Res Ax. Met. Film 0.125W 3.4mm 360R 1
+    longname: Res 0.125W 360R 1
     positions: 
     - R48
     spec: 360R
     type: hmt
   - !ruby/object:Component 
     comment: Output filter
-    longname: Res Ax. Met. Film 2W 12.5mm 10R 4
+    longname: Res 2W 12.5mm 10R 4
     positions: 
     - R21x2
     - R22x2
@@ -259,7 +259,7 @@
     type: hmt
   - !ruby/object:Component 
     comment: Power supply bleeders
-    longname: Res Ax. Met. Film 2W 10mm 3.9K 2
+    longname: Res 2W 10mm 3.9K 2
     positions: 
     - R23
     - R24
@@ -267,7 +267,7 @@
     type: hmt
 - - !ruby/object:Component 
     comment: Output filter and rail-rail decoupling
-    longname: Cap 160V Film 0.22uF Polyprop RM10 6
+    longname: Cap 160V 0.22µF Polyprop RM10 6
     positions: 
     - C20
     - C23
@@ -275,11 +275,11 @@
     - C25
     - C39
     - C40
-    spec: "0.22\xCE\xBCF, RM10"
+    spec: "0.22µF, RM10"
     type: hmt
   - !ruby/object:Component 
     comment: Power decoupling
-    longname: Cap 100V Cer 0.1uF X7R 10% RM2.5 5
+    longname: Cap 100V 0.1µF X7R RM2.5 5
     positions: 
     - C1
 	- C2
@@ -290,7 +290,7 @@
     type: hmt
   - !ruby/object:Component 
     comment: Misc decoupling
-    longname: Cap 50V Cer 0.1uF X7R 10% RM2.5 7
+    longname: Cap 50V 0.1µF X7R RM2.5 7
     positions: 
     - C13
     - C14
@@ -303,7 +303,7 @@
     type: hmt
   - !ruby/object:Component 
     comment: Deglitching
-    longname: Cap 50V Cer 220pF NPO/COG 5% RM2.5 3
+    longname: Cap 50V 220pF NPO RM2.5 3
     positions: 
     - C17
     - C18
@@ -312,7 +312,7 @@
     type: hmt
   - !ruby/object:Component 
     comment: Input filter
-    longname: Cap 100V Film 0.1uF Polyester 5% RM5 2
+    longname: Cap 100V 0.1µF Polyester RM5 2
     positions: 
     - C28
     - C29
@@ -320,7 +320,7 @@
     type: hmt
   - !ruby/object:Component 
     comment: Input filters
-    longname: Cap 50V Cer 100pF NPO/COG 5% RM2.5 2
+    longname: Cap 50V 100pF NPO RM2.5 2
     positions: 
     - C101
     - C201
@@ -328,14 +328,14 @@
     type: hmt
   - !ruby/object:Component 
     comment: Feedback network
-    longname: Cap 50V Cer 330pF NPO/COG 5% RM2.5 1
+    longname: Cap 50V 330pF NPO RM2.5 1
     positions: 
     - C30
     spec: 330pF
     type: hmt
   - !ruby/object:Component 
     comment: Misc decoupling
-    longname: Cap 63V Film 0.68uF Polyerster 6x7mm RM5 3
+    longname: Cap 63V 0.68µF Polyester 6x7mm RM5 3
     positions: 
     - C32
     - C41
@@ -344,21 +344,21 @@
     type: hmt
 - - !ruby/object:Component 
     comment: 5V bulk
-    longname: Cap 10V Elect 1000uF Low ESR 1
+    longname: Cap 10V 1000µF 1
     positions: 
     - C38
     spec: "1000\xCE\xBCF 10V"
     type: hmt
   - !ruby/object:Component 
     comment: Feedback network
-    longname: Cap 50V Cer 390pF NPO/COG 5% RM2.5 1
+    longname: Cap 50V 390pF NPO RM2.5 1
     positions: 
     - C31
     spec: 390pF
     type: hmt
   - !ruby/object:Component 
     comment: Boot caps, 5V adj damping
-    longname: Cap 25V Elect 47uF U-low ESR D5 3
+    longname: Cap 25V 47µF D5 3
     positions: 
     - C11
     - C12
@@ -367,15 +367,15 @@
     type: hmt
   - !ruby/object:Component 
     comment: Input DC blocking
-    longname: Cap 63V Film 2.2uF Polyester RM10 2
+    longname: Cap 63V 2.2µF Polyester RM10 2
     positions: 
     - C100
     - C200
-    spec: C_BIPOLAR 2.2uF
+    spec: C_BIPOLAR 2.2µF
     type: hmt
   - !ruby/object:Component 
     comment: Decoupling of VN10
-    longname: Cap 25V Elect 220uF U-low ESR D8 3
+    longname: Cap 25V 220µF D8 3
     positions: 
     - C10
     - C35
@@ -384,17 +384,17 @@
     type: hmt
   - !ruby/object:Component 
     comment: Main Rail Decoupling
-    longname: Cap 63V Elect 680uF U-Low ESR D12 4
+    longname: Cap 63V 680µF D12 4
     positions: 
     - C5
     - C6
     - C7
     - C8
-    spec: Min 330uF 63V
+    spec: Min 330µF 63V
     type: hmt
   - !ruby/object:Component 
     comment: Decoupling
-    longname: Cap 63V Elect 220uF U-Low ESR D10 2
+    longname: Cap 63V 220µF D10 2
     positions: 
     - C33
     - C34
@@ -409,21 +409,21 @@
     type: "hmt ⚡"
   - !ruby/object:Component 
     comment: Led driver
-    longname: LED 3mm Hi-eff Red Diffused 1
+    longname: Red LED 1
     positions: 
     - D3
     spec: "Spec:"
     type: "hmt ⚡"
   - !ruby/object:Component 
     comment: 5V regulator
-    longname: Voltage Reg Pos Adj 100mA TO-92 1
+    longname: Pos Reg Adj 100mA TO-92 1
     positions: 
     - IC3
     spec: LM317LZ
     type: "hmt ⚡"
   - !ruby/object:Component 
     comment: Pre-regulators
-    longname: Trans NPN 3A 100V TO-220AB TIP31 2
+    longname: NPN 3A 100V TO-220AB TIP31 2
     positions: 
     - Q3
     - Q4
@@ -441,21 +441,21 @@
     type: "smt ⚡"
   - !ruby/object:Component 
     comment: Pre-reg Voltage setting
-    longname: Diode Zener 10V 500mW DO35 1
+    longname: Zener 10V 500mW DO35 1
     positions: 
     - D4
     spec: 10V
     type: "hmt ⚡"
   - !ruby/object:Component 
     comment: VN10 Pre-reg Voltage setting
-    longname: Diode Zener 15V 500mW DO35 1
+    longname: Zener 15V 500mW DO35 1
     positions: 
     - D5
     spec: 15V zener
     type: "hmt ⚡"
   - !ruby/object:Component 
     comment: Power diodes
-    longname: Diode Dual Ser. Ult-fast 2x8A 200V TO-220 2
+    longname: Diode Dual 2x8A 200V TO-220 2
     positions: 
     - D10
     - D11
@@ -471,14 +471,14 @@
     type: "hmt ⚡"
   - !ruby/object:Component 
     comment: 10V regulator
-    longname: Voltage Reg Pos 10V 100mA TO-92 1
+    longname: Pos Reg 10V 100mA TO-92 1
     positions: 
     - IC2
     spec: 78L10 TO92
     type: hmt
   - !ruby/object:Component 
     comment: Power FETs
-    longname: MOSFET N-ch dual 9A 200V TO-220-5 2
+    longname: N-MOSFET dual 9A 200V TO-220-5 2
     positions: 
     - Q1
     - Q2
