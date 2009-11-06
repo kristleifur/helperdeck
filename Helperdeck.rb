@@ -20,7 +20,7 @@ class Shoes::App
 	end
   
   def selectPosition(positionNames)
-    # debug "This is the Shoes app. Select position '#{positionName}', a #{positionName.class()}."
+    debug "This is the Shoes app. Select position '#{positionName}', a #{positionName.class()}."
 		positionNames.each do | positionName | 
       # debug "Selecting position ..."
       # debug positionName
