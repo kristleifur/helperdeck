@@ -282,9 +282,9 @@
     longname: Cap 100V 0.1µF X7R RM2.5 5
     positions: 
     - C1
-	- C2
-	- C3
-	- C4
+    - C2
+    - C3
+    - C4
     - C90
     spec: ""
     type: hmt
