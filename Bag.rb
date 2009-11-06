@@ -38,13 +38,22 @@ class Bag
   #   end
   # end
   def selectPosition(position)
+    puts "Selecting components for position #{position} in bag #{id}"
+    shouldUpdate = false
     @positions[position].each do | component |
       unless @selectedComponents.include?(component)
         @selectedComponents << component
+        puts "Found component for #{position}"
+        shouldUpdate = true
       end
+    end
+    if (shouldUpdate)
+      puts "Should be updating ..."
+      update()
     end
   end
   def update()
+    puts "Updating bag #{id}"
     @nameFlow.clear()
     @nameFlow = @win.para("Bag #{id}")
     @componentFlow.clear()
