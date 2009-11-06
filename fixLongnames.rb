@@ -37,6 +37,7 @@ badComponents.values.each do | bag |
       puts "Funny! shortNames (#{shortNames.keys.size}): #{shortNames.keys} / #{shortNames.values}"
     else
       newname = shortNames.keys[0]
+      badPart.longname = newname
       # if badPart.longname.size <= newname.size
         puts "'#{badPart.longname}'   ->   '#{newname}'"
         puts "\t#{badPart.longname.size}   ->   #{newname.size}"
@@ -44,3 +45,12 @@ badComponents.values.each do | bag |
     end
   end
 end
+
+puts " --- "
+outfilename = ARGV[1].gsub(".yaml", ".shortnames.yaml")
+puts "Saving to '#{outfilename}'"
+File.open(outfilename, "w") do | f |
+  f.puts(badComponents.to_yaml())
+end
+puts "... saved."
+
