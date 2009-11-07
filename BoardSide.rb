@@ -217,6 +217,7 @@ class BoardSide
             selectedPosNames << pos.name
           end
         end
+        @app.clearSelections()
         @app.selectPosition(selectedPosNames) # hmm weird
       end
       @buttons[button] = false

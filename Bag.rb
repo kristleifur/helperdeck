@@ -25,8 +25,8 @@ class Bag
     @components.each do | comp |
       # debug comp
       comp.positions.each do | compPos |
-        @positions[compPos] ||= []
-        @positions[compPos] << comp
+        @positions[compPos.downcase().split("-")[0].split("x")[0]] ||= []
+        @positions[compPos.downcase().split("-")[0].split("x")[0]] << comp
       end
     end
   end
@@ -37,27 +37,35 @@ class Bag
   #     end
   #   end
   # end
+  def clearSelection()
+    if (@selectedComponents.size > 0)
+      @selectedComponents.clear()
+      update()
+    end
+  end
   def selectPosition(position)
-    puts "Selecting components for position #{position} in bag #{id}"
+    # debug "Selecting components for position #{position} in bag #{id}"
     shouldUpdate = false
-    if (@positions[position])
-      @positions[position].each do | component |
+    if (@positions[position.downcase().split("-")[0].split("x")[0]])
+      @positions[position.downcase().split("-")[0].split("x")[0]].each do | component |
         unless @selectedComponents.include?(component)
           @selectedComponents << component
-          puts "Found component for #{position}"
+          # debug "Found component for #{position}"
           shouldUpdate = true
         end
       end
     end
     if (shouldUpdate)
-      puts "Should be updating ..."
+      # debug "Should be updating ..."
       update()
     end
   end
   def update()
-    puts "Updating bag #{id}"
+    # debug "Updating bag #{id}"
     @nameFlow.clear()
-    @nameFlow = @win.para("Bag #{id}")
+    @nameFlow = @win.flow() do 
+      @win.para("Bag #{id}")
+    end
     @componentFlow.clear()
     @componentFlow = @win.flow() do
       @components.each do | component |
@@ -75,7 +83,7 @@ class Bag
           end
           tehPara = @win.para str
           if (@selectedComponents.include?(component))
-            tehPara.style(:weight => "bold")
+            tehPara.style(:weight => 900, :fill => @win.turquoise) # 900 is ultrabold (bold is 800)
           end
           tehPara.size = "xx-small"
           @win.click do

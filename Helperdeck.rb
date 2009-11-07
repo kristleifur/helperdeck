@@ -9,7 +9,7 @@ require 'SelectedPosition'
 require 'Stage'
 
 def selectComponent(componentName)
-  debug "helperdeck:selectComponent() - inactive method"
+  debug "helperdeck.selectComponent() - inactive method"
   debug componentName
 end
 
@@ -17,6 +17,9 @@ class Shoes::App
   def clearSelections()
     [@boardTop, @boardBottom, @powerSchematic].each do | boardSide |
       boardSide.selectedPositions.clear()
+    end
+    @bagControllers.values.each do | bag |
+      bag.clearSelection()
     end
 	end
   
@@ -26,11 +29,11 @@ class Shoes::App
       # debug "Selecting position '#{positionName}', a #{positionName.class()}"
       # debug positionName
 		  [@boardTop, @boardBottom, @powerSchematic].each do | boardSide |
-  	    boardSide.selectByName(positionName)
+  	    boardSide.selectByName(positionName.downcase().split("-")[0].split("x")[0])
 	    end
       # debug @bagControllers
 	    @bagControllers.values.each do | bag |
-	      bag.selectPosition(positionName)
+	      bag.selectPosition(positionName.downcase().split("-")[0].split("x")[0])
 	    end
 		end
 	end
