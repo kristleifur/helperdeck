@@ -147,7 +147,7 @@ backspace: !ruby/object:Position
   components: []
 
   height: 8
-  name: backspace
+  name: r100
   width: 21
   x: 111
   y: 346
@@ -707,7 +707,7 @@ Un-mute: !ruby/object:Position
   components: []
 
   height: 30
-  name: Un-mute
+  name: unmute
   width: 14
   x: 114
   y: 142

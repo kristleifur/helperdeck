@@ -183,7 +183,7 @@
   extraInfo: "7 hmt\xC2\xA4 LED 3mm Hi-eff Red Diffused 1 D3 "
   longname: Red LED 1
   positions: 
-  - D3
+  - led
   spec: "Spec:"
   type: "hmt\xC2\xA4"
 - !ruby/object:Component 
