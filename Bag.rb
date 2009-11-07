@@ -40,11 +40,13 @@ class Bag
   def selectPosition(position)
     puts "Selecting components for position #{position} in bag #{id}"
     shouldUpdate = false
-    @positions[position].each do | component |
-      unless @selectedComponents.include?(component)
-        @selectedComponents << component
-        puts "Found component for #{position}"
-        shouldUpdate = true
+    if (@positions[position])
+      @positions[position].each do | component |
+        unless @selectedComponents.include?(component)
+          @selectedComponents << component
+          puts "Found component for #{position}"
+          shouldUpdate = true
+        end
       end
     end
     if (shouldUpdate)

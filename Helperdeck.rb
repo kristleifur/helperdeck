@@ -9,7 +9,8 @@ require 'SelectedPosition'
 require 'Stage'
 
 def selectComponent(componentName)
-  # debug componentName
+  debug "helperdeck:selectComponent() - inactive method"
+  debug componentName
 end
 
 class Shoes::App
@@ -27,8 +28,11 @@ class Shoes::App
 		  [@boardTop, @boardBottom, @powerSchematic].each do | boardSide |
   	    boardSide.selectByName(positionName)
 	    end
+      # debug @bagControllers
+	    @bagControllers.values.each do | bag |
+	      bag.selectPosition(positionName)
+	    end
 		end
-
 	end
 end
 
