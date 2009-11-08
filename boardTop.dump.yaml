@@ -399,11 +399,11 @@ r22: !ruby/object:Position
   width: 14
   x: 470
   y: 42
-c3: !ruby/object:Position 
+ic3: !ruby/object:Position 
   components: []
 
   height: 18
-  name: c3
+  name: ic3
   width: 19
   x: 115
   y: 448
