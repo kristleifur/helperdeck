@@ -218,23 +218,28 @@ Shoes.app(:width => 480, :height => 50) do
   
   @selectedPosition = nil # Position.new() #TODO: fix / use / toss
 
-  @@stages = []
-  @@stageWindows = []
-  @@numberOfStages = 1
-  @@numberOfStages.times do | i |
+  @stages = []
+  @stageWindows = []
+  @stageComponents = {}
+
+  @numberOfStages = 5
+  @numberOfStages.times do | i |
     tmpWin = window :title => "Stage", :width => 250, :height => 300 do
       # ;
     end
-    @@stageWindows << tmpWin
-    @@stages << BuildStage.new(@@stageWindows[-1], self)
-    # debug @@stages[0]
-    
+    @stageWindows << tmpWin
+    @stages << BuildStage.new(@stageWindows[-1], self)
+    # debug @stages[0]
+	@stageComponents[@stages[i].stagename] = @stages[i].positions
   end
-  @@stages[0].stagename = "Power_in"
-  @@stageComponents = {}
-  @@stageComponents[@@stages[0].stagename] = @@stages[0].positions
+  @stages[0].stagename = "Power_in"
+  @stages[1].stagename = "8v"
+  @stages[2].stagename = "5v"
+  @stages[3].stagename = "vpp+14v"
+  @stages[4].stagename = "vpp+9v"
+  
   debug "Developer note: remember to sync the stageComponents lookup to the board positions post-load"
-  tmpStageComponents = %w(d10 d11 c28 r13 c29 r20)
+  tmpStageComponents = %w(d10 d11 c28 r13 c29 r20) 	
   tmpStageComponents.each do | i |
     if @boardTop.positions[i] == nil && @boardBottom.positions[i] == nil
       debug "#{i} not found on the boards, perhaps new it?"
@@ -242,15 +247,15 @@ Shoes.app(:width => 480, :height => 50) do
       pos ||= @boardTop.positions[i]
       pos ||= @boardBottom.positions[i]
       # debug "Stages 0:"
-      # debug @@stages[0]
+      # debug @stages[0]
       # debug "Stages 0 positions:"
-      # debug @@stages[0].positions
+      # debug @stages[0].positions
       # debug "Pos:"
       # debug pos
-      @@stages[0].positions << pos
+      @stages[0].positions << pos
     end
   end
-  @@stages[0].update()
+  @stages[0].update()
 
   # tehBag.components
     
