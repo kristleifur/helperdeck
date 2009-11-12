@@ -9,7 +9,7 @@ require 'SelectedPosition'
 require 'Stage'
 
 def selectComponent(componentName)
-  debug "helperdeck.selectComponent() - inactive method"
+  debug "Warning - helperdeck.selectComponent() called - inactive method"
   debug componentName
 end
 
@@ -46,7 +46,7 @@ Shoes.app(:width => 480, :height => 50) do
     attr_accessor :otherWinStack
   end
 
-  @liveComponentWin = window :title => "Selected position", :width => 250, :height => 250 do
+  @liveComponentWin = window :title => "Selected position", :width => 250, :height => 60 do
     # @@liveComponentBox = edit_box
   end
   # debug @liveComponentWin.inspect()
@@ -77,8 +77,8 @@ Shoes.app(:width => 480, :height => 50) do
   @bagWins = {}
 
   @uglyBagModel.keys.each do | i |
-    winHeight = 32 * (@uglyBagModel[i].size + 1)
-    bagWin = window :title => "Bag #{i}, #{@uglyBagModel[i].size} pieces", :width => 310, :height => winHeight do
+    winHeight = 22 + 26 * (@uglyBagModel[i].size + 1)
+    bagWin = window :title => "Bag #{i}, #{@uglyBagModel[i].size} pieces", :width => 400, :height => winHeight do
       #
     end
     @bagWins[i] = bagWin
@@ -224,13 +224,13 @@ Shoes.app(:width => 480, :height => 50) do
 
   @numberOfStages = 5
   @numberOfStages.times do | i |
-    tmpWin = window :title => "Stage", :width => 250, :height => 300 do
+    tmpWin = window :title => "Stage #{i}", :width => 250, :height => 60 do
       # ;
     end
     @stageWindows << tmpWin
-    @stages << BuildStage.new(@stageWindows[-1], self)
+    @stages << BuildStage.new(tmpWin, self)
     # debug @stages[0]
-	@stageComponents[@stages[i].stagename] = @stages[i].positions
+    # @stageComponents[@stages[i].stagename] = @stages[i].positions
   end
   @stages[0].stagename = "Power_in"
   @stages[1].stagename = "8v"
@@ -239,23 +239,38 @@ Shoes.app(:width => 480, :height => 50) do
   @stages[4].stagename = "vpp+9v"
   
   debug "Developer note: remember to sync the stageComponents lookup to the board positions post-load"
-  tmpStageComponents = %w(d10 d11 c28 r13 c29 r20) 	
-  tmpStageComponents.each do | i |
-    if @boardTop.positions[i] == nil && @boardBottom.positions[i] == nil
-      debug "#{i} not found on the boards, perhaps new it?"
-    else
-      pos ||= @boardTop.positions[i]
-      pos ||= @boardBottom.positions[i]
-      # debug "Stages 0:"
-      # debug @stages[0]
-      # debug "Stages 0 positions:"
-      # debug @stages[0].positions
-      # debug "Pos:"
-      # debug pos
-      @stages[0].positions << pos
+  tmpStageComponents = {}
+  tmpStageComponents[0] = %w(d10 d11 c28 r13 c29 r20)
+  tmpStageComponents[1] = %w(d8 r41 c33 r42 q3 d4 c36)
+  tmpStageComponents[2] = %w(l5 c41 c37 ic3 r47 c38 r48)
+  tmpStageComponents[3] = %w(d9 r44 c34 r45 d5 q4 c35)
+  tmpStageComponents[4] = %w(ic2 c10)
+  # debug tmpStageComponents
+  #   debug tmpStageComponents[0]
+  #   debug tmpStageComponents[0].class()
+  tmpStageComponents.each do | stageNr, stage |
+    # debug "Populating stage '#{stageNr}'"
+    stage.each do | i |
+      # debug "Looking for position '#{i}'"
+      if @boardTop.positions[i] == nil && @boardBottom.positions[i] == nil
+        debug "Stage init - warning - position #{i} not found on the board"
+      else
+        pos ||= @boardTop.positions[i]
+        pos ||= @boardBottom.positions[i]
+        # debug "Stages 0:"
+        # debug @stages[0]
+        # debug "Stages 0 positions:"
+        # debug @stages[0].positions
+        # debug "Pos:"
+        # debug pos
+        # debug "Putting pos '#{pos}' into @stages[#{stageNr}]"
+        @stages[stageNr].positions << pos
+      end
     end
+    # debug "Updating stage nr. #{stageNr}, name '#{@stages[stageNr].stagename}'"
+    @stages[stageNr].update()
   end
-  @stages[0].update()
+  # @stages[0].update()
 
   # tehBag.components
     

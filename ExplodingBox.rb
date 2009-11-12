@@ -3,7 +3,7 @@ class ExplodingBox
   
   def initialize(x, y, width, height)
     @@maxPixelGrowth = 35.0
-    @@stepsToTake = 36.0
+    @@stepsToTake = 15.0
     @currentStep = 1
     @x = x
     @y = y

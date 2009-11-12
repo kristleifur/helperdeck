@@ -64,12 +64,13 @@ class Bag
     # debug "Updating bag #{id}"
     @nameFlow.clear()
     @nameFlow = @win.flow() do 
-      @win.para("Bag #{id}")
+      titlePara = @win.para("Bag #{id}")
+      titlePara.size = "large"
     end
     @componentFlow.clear()
     @componentFlow = @win.flow() do
       @components.each do | component |
-        @win.stack() do
+        # @win.flow() do
           str = "#{component.longname}"
           positions = component.positions.dup()
           component.positions.size.times do | i |
@@ -81,12 +82,13 @@ class Bag
               str << ", " 
             end
           end
-          tehPara = @win.para str
+          tehLink = @win.link str
+          tehPara = @win.para tehLink, "\n"
           if (@selectedComponents.include?(component))
-            tehPara.style(:weight => 900, :fill => @win.turquoise) # 900 is ultrabold (bold is 800)
+            tehLink.style(:weight => 900, :fill => @win.turquoise) # 900 is ultrabold (bold is 800)
           end
-          tehPara.size = "xx-small"
-          @win.click do
+          tehPara.size = "small"
+          tehLink.click do
             # debug tehPara.inspect()
             @mainApp.clearSelections()
             positions.each do | pos |
@@ -94,7 +96,7 @@ class Bag
               @mainApp.selectPosition(pos.downcase().split("-")[0].split("x")[0])
             end
           end
-        end
+        # end
       end
     end
   end

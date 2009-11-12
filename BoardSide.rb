@@ -61,7 +61,7 @@ class BoardSide
       
     end
     
-    @win.animate(24) do
+    @win.animate(10) do
       @win.clear()
       @win.image @pcbImageName
       @win.stroke @win.yellow
