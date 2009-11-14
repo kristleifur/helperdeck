@@ -87,11 +87,11 @@ r35: !ruby/object:Position
   width: 24
   x: 279
   y: 433
-q3: !ruby/object:Position 
+d3: !ruby/object:Position 
   components: []
 
   height: 14
-  name: q3
+  name: d3
   width: 16
   x: 200
   y: 444

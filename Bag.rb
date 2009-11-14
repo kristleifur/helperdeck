@@ -69,7 +69,7 @@ class Bag
     end
     @componentFlow.clear()
     @componentFlow = @win.flow() do
-      @components.each do | component |
+      @components.each_with_index do | component, compIndex |
         # @win.flow() do
           str = "#{component.longname}"
           positions = component.positions.dup()
@@ -83,11 +83,15 @@ class Bag
             end
           end
           tehLink = @win.link str
-          tehPara = @win.para tehLink, "\n"
+          if (compIndex != @components.size - 1)
+            tehPara = @win.para tehLink, "\n"
+          else
+            tehPara = @win.para tehLink
+          end
           if (@selectedComponents.include?(component))
             tehLink.style(:weight => 900, :fill => @win.turquoise) # 900 is ultrabold (bold is 800)
           end
-          tehPara.size = "small"
+          tehPara.size = "x-small"
           tehLink.click do
             # debug tehPara.inspect()
             @mainApp.clearSelections()

@@ -15,14 +15,14 @@
   type: hmt
 - !ruby/object:Component 
   comment: Power decoupling
-  extraInfo: "5 hmt Cap 100V Cer 0.1uF X7R 10% RM2.5 5 C1, C2, C3, C4, C90 "
+  extraInfo: "5 hmt Cap 100V Cer 0.1uF X7R 10% RM2.5 5 C1, C2, C3, C4, C9 "
   longname: "Cap 100V 0.1\xC2\xB5F X7R RM2.5 5"
   positions: 
   - C1
   - C2
   - C3
   - C4
-  - C90
+  - C9
   spec: ""
   type: hmt
 - !ruby/object:Component 
@@ -208,6 +208,8 @@
   extraInfo: "7 smt\xC2\xA4 Diode U-fast1A 200V SMB 4 D1,D2, D6,D7 "
   longname: Diode U-fast1A 200V SMB 4
   positions: 
+  - D1
+  - D2
   - D6
   - D7
   spec: MURS SMB 200V
@@ -300,9 +302,10 @@
   type: hmt
 - !ruby/object:Component 
   comment: 5V setpoint, Power supply snubbers / filter
-  extraInfo: "3 hmt Res Ax. Met. Film 0.4W 3.4mm 120R 3 R47, R13,R20 "
+  extraInfo: "3 hmt Res Ax. Met. Film 0.4W 3.4mm 120R 3 R47,R13,R20 "
   longname: Res 120R 3
   positions: 
+  - R47
   - R13
   - R20
   spec: 120R
