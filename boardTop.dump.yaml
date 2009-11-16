@@ -87,14 +87,6 @@ r35: !ruby/object:Position
   width: 24
   x: 279
   y: 433
-d3: !ruby/object:Position 
-  components: []
-
-  height: 14
-  name: d3
-  width: 16
-  x: 200
-  y: 444
 r825: !ruby/object:Position 
   components: []
 
@@ -143,14 +135,14 @@ c11: !ruby/object:Position
   width: 26
   x: 291
   y: 389
-backspace: !ruby/object:Position 
+ic3: !ruby/object:Position 
   components: []
 
-  height: 8
-  name: r100
-  width: 21
-  x: 111
-  y: 346
+  height: 18
+  name: ic3
+  width: 19
+  x: 115
+  y: 448
 c32: !ruby/object:Position 
   components: []
 
@@ -207,6 +199,14 @@ r37: !ruby/object:Position
   width: 53
   x: 208
   y: 82
+unmute: !ruby/object:Position 
+  components: []
+
+  height: 30
+  name: unmute
+  width: 14
+  x: 114
+  y: 142
 d9: !ruby/object:Position 
   components: []
 
@@ -215,11 +215,11 @@ d9: !ruby/object:Position
   width: 49
   x: 550
   y: 37
-c13: !ruby/object:Position 
+c18: !ruby/object:Position 
   components: []
 
   height: 25
-  name: c13
+  name: c18
   width: 12
   x: 191
   y: 318
@@ -399,14 +399,6 @@ r22: !ruby/object:Position
   width: 14
   x: 470
   y: 42
-ic3: !ruby/object:Position 
-  components: []
-
-  height: 18
-  name: ic3
-  width: 19
-  x: 115
-  y: 448
 jp5: !ruby/object:Position 
   components: []
 
@@ -415,6 +407,14 @@ jp5: !ruby/object:Position
   width: 15
   x: 113
   y: 367
+r100: !ruby/object:Position 
+  components: []
+
+  height: 8
+  name: r100
+  width: 21
+  x: 111
+  y: 346
 c39: !ruby/object:Position 
   components: []
 
@@ -703,14 +703,6 @@ l5: !ruby/object:Position
   width: 43
   x: 279
   y: 486
-Un-mute: !ruby/object:Position 
-  components: []
-
-  height: 30
-  name: unmute
-  width: 14
-  x: 114
-  y: 142
 c25: !ruby/object:Position 
   components: []
 
@@ -767,6 +759,22 @@ c26: !ruby/object:Position
   width: 151
   x: 553
   y: 80
+c101: !ruby/object:Position 
+  components: []
+
+  height: 11
+  name: c101
+  width: 27
+  x: 108
+  y: 331
+d3: !ruby/object:Position 
+  components: []
+
+  height: 14
+  name: d3
+  width: 16
+  x: 200
+  y: 444
 c27: !ruby/object:Position 
   components: []
 

@@ -55,6 +55,14 @@ d1: !ruby/object:Position
   width: 26
   x: 329
   y: 278
+q3: !ruby/object:Position 
+  components: []
+
+  height: 54
+  name: q3
+  width: 80
+  x: 756
+  y: 45
 d10: !ruby/object:Position 
   components: []
 
@@ -103,14 +111,6 @@ d11: !ruby/object:Position
   width: 56
   x: 760
   y: 327
-q3: !ruby/object:Position 
-  components: []
-
-  height: 54
-  name: q3
-  width: 80
-  x: 756
-  y: 45
 r6: !ruby/object:Position 
   components: []
 
