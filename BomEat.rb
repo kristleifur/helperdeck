@@ -50,3 +50,4 @@ end
 bags = BomEat.eatBom(File.read(ARGV[0]).split("\n"))
 puts bags.to_yaml()
 # puts bags.keys()
+

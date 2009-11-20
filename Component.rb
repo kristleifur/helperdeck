@@ -10,3 +10,4 @@ class Component
   #   @positions = positions
   # end
 end
+

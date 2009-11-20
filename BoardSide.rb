@@ -272,3 +272,4 @@ class BoardSide
     return @positions[name]
   end
 end
+

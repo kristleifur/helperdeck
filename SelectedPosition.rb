@@ -21,3 +21,4 @@ class SelectedPosition
     @nameLine.text = @livePosition.name if @livePosition
   end
 end
+

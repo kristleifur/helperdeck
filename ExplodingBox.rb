@@ -40,3 +40,4 @@ class ExplodingBox
     return (@currentStep >= @@stepsToTake)
   end
 end
+

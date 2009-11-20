@@ -58,3 +58,4 @@ class Position
     return @y + @height
   end
 end
+
