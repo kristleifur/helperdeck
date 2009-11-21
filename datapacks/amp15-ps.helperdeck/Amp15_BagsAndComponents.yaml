@@ -1,0 +1,467 @@
+--- 
+5: 
+- !ruby/object:Component 
+  comment: Output filter and rail-rail decoupling
+  extraInfo: "5 hmt Cap 160V Film 0.22uF Polyprop RM10 6 C20,C23,C24,C25,C39,C40 "
+  longname: "Cap 160V 0.22\xC2\xB5F Polyprop RM10 6"
+  positions: 
+  - C20
+  - C23
+  - C24
+  - C25
+  - C39
+  - C40
+  spec: "0.22\xCE\xBCF, RM10"
+  type: hmt
+- !ruby/object:Component 
+  comment: Power decoupling
+  extraInfo: "5 hmt Cap 100V Cer 0.1uF X7R 10% RM2.5 5 C1, C2, C3, C4, C9 "
+  longname: "Cap 100V 0.1\xC2\xB5F X7R RM2.5 5"
+  positions: 
+  - C1
+  - C2
+  - C3
+  - C4
+  - C9
+  spec: ""
+  type: hmt
+- !ruby/object:Component 
+  comment: Misc decoupling
+  extraInfo: "5 hmt Cap 50V Cer 0.1uF X7R 10% RM2.5 7 C13,C14,C15,C16,C19,C21,C22 "
+  longname: "Cap 50V 0.1\xC2\xB5F X7R RM2.5 7"
+  positions: 
+  - C13
+  - C14
+  - C15
+  - C16
+  - C19
+  - C21
+  - C22
+  spec: "0.1\xCE\xBCF"
+  type: hmt
+- !ruby/object:Component 
+  comment: Deglitching
+  extraInfo: "5 hmt Cap 50V Cer 220pF NPO/COG 5% RM2.5 3 C17,C18,C825 "
+  longname: Cap 50V 220pF NPO RM2.5 3
+  positions: 
+  - C17
+  - C18
+  - C825
+  spec: 220pF
+  type: hmt
+- !ruby/object:Component 
+  comment: Input filter
+  extraInfo: "5 hmt Cap 100V Film 0.1uF Polyester 5% RM5 2 C28,C29 "
+  longname: "Cap 100V 0.1\xC2\xB5F Polyester RM5 2"
+  positions: 
+  - C28
+  - C29
+  spec: "0,1\xCE\xBCF 100V"
+  type: hmt
+- !ruby/object:Component 
+  comment: Input filters
+  extraInfo: "5 hmt Cap 50V Cer 100pF NPO/COG 5% RM2.5 2 C101,C201 "
+  longname: Cap 50V 100pF NPO RM2.5 2
+  positions: 
+  - C101
+  - C201
+  spec: 100pF
+  type: hmt
+- !ruby/object:Component 
+  comment: Feedback network
+  extraInfo: "5 hmt Cap 50V Cer 330pF NPO/COG 5% RM2.5 1 C30 "
+  longname: Cap 50V 330pF NPO RM2.5 1
+  positions: 
+  - C30
+  spec: 330pF
+  type: hmt
+- !ruby/object:Component 
+  comment: Misc decoupling
+  extraInfo: "5 hmt Cap 63V Film 0.68uF Polyerster 6x7mm RM5 3 C32,C41,C42 "
+  longname: "Cap 63V 0.68\xC2\xB5F Polyester 6x7mm RM5 3"
+  positions: 
+  - C32
+  - C41
+  - C42
+  spec: "0.68\xCE\xBCF"
+  type: hmt
+6: 
+- !ruby/object:Component 
+  comment: 5V bulk
+  extraInfo: "6 hmt Cap 10V Elect 1000uF Low ESR 1 C38 "
+  longname: "Cap 10V 1000\xC2\xB5F 1"
+  positions: 
+  - C38
+  spec: "1000\xCE\xBCF 10V"
+  type: hmt
+- !ruby/object:Component 
+  comment: Feedback network
+  extraInfo: "6 hmt Cap 50V Cer 390pF NPO/COG 5% RM2.5 1 C31 "
+  longname: Cap 50V 390pF NPO RM2.5 1
+  positions: 
+  - C31
+  spec: 390pF
+  type: hmt
+- !ruby/object:Component 
+  comment: Boot caps, 5V adj damping
+  extraInfo: "6 hmt Cap 25V Elect 47uF U-low ESR D5 3 C11,C12,C37 "
+  longname: "Cap 25V 47\xC2\xB5F D5 3"
+  positions: 
+  - C11
+  - C12
+  - C37
+  spec: "47\xCE\xBCF"
+  type: hmt
+- !ruby/object:Component 
+  comment: Input DC blocking
+  extraInfo: "6 hmt Cap 63V Film 2.2uF Polyester RM10 2 C100,C200 "
+  longname: "Cap 63V 2.2\xC2\xB5F Polyester RM10 2"
+  positions: 
+  - C100
+  - C200
+  spec: C_BIPOLAR 2.2uF
+  type: hmt
+- !ruby/object:Component 
+  comment: Decoupling of VN10
+  extraInfo: "6 hmt Cap 25V Elect 220uF U-low ESR D8 3 C10,C35,C36 "
+  longname: "Cap 25V 220\xC2\xB5F D8 3"
+  positions: 
+  - C10
+  - C35
+  - C36
+  spec: "Min 150\xCE\xBCF 25V"
+  type: hmt
+- !ruby/object:Component 
+  comment: Main Rail Decoupling
+  extraInfo: "6 hmt Cap 63V Elect 680uF U-Low ESR D12 4 C5,C6,C7,C8 "
+  longname: "Cap 63V 680\xC2\xB5F D12 4"
+  positions: 
+  - C5
+  - C6
+  - C7
+  - C8
+  spec: Min 330uF 63V
+  type: hmt
+- !ruby/object:Component 
+  comment: Decoupling
+  extraInfo: "6 hmt Cap 63V Elect 220uF U-Low ESR D10 2 C33,C34 "
+  longname: "Cap 63V 220\xC2\xB5F D10 2"
+  positions: 
+  - C33
+  - C34
+  spec: "220\xCE\xBCF"
+  type: hmt
+1: 
+- !ruby/object:Component 
+  comment: Offset trimmers
+  extraInfo: "1 hmt Trim pot Cerm 50Kohm 25TRN Top 2 R37,R38 "
+  longname: "Trimpot 50K\xCE\xA9 Top 2"
+  positions: 
+  - R37
+  - R38
+  spec: 50K
+  type: hmt
+- !ruby/object:Component 
+  comment: Ground-agnd separators
+  extraInfo: "1 hmt Choke bead core 3.5X5mm Axial 1 L5 "
+  longname: Choke bead 3.5X5mm 1
+  positions: 
+  - L5
+  spec: HF Inductor-Choke Axial
+  type: hmt
+7: 
+- !ruby/object:Component 
+  comment: Main chip
+  extraInfo: "7 hmt\xC2\xA4 Tripath TA3020 1 IC1 "
+  longname: Tripath TA3020 1
+  positions: 
+  - IC1
+  spec: TA3020
+  type: "hmt\xC2\xA4"
+- !ruby/object:Component 
+  comment: Led driver
+  extraInfo: "7 hmt\xC2\xA4 LED 3mm Hi-eff Red Diffused 1 D3 "
+  longname: Red LED 1
+  positions: 
+  - led
+  spec: "Spec:"
+  type: "hmt\xC2\xA4"
+- !ruby/object:Component 
+  comment: 5V regulator
+  extraInfo: "7 hmt\xC2\xA4 Voltage Reg Pos Adj 100mA TO-92 1 IC3 "
+  longname: Pos Reg Adj 100mA TO-92 1
+  positions: 
+  - IC3
+  spec: LM317LZ
+  type: "hmt\xC2\xA4"
+- !ruby/object:Component 
+  comment: Pre-regulators
+  extraInfo: "7 hmt\xC2\xA4 Trans NPN 3A 100V TO-220AB TIP31 2 Q3,Q4 "
+  longname: NPN 3A 100V TO-220AB TIP31 2
+  positions: 
+  - Q3
+  - Q4
+  spec: 100V NPN TO220
+  type: "hmt\xC2\xA4"
+- !ruby/object:Component 
+  comment: Boot diodes, gate overshoot protection
+  extraInfo: "7 smt\xC2\xA4 Diode U-fast1A 200V SMB 4 D1,D2, D6,D7 "
+  longname: Diode U-fast1A 200V SMB 4
+  positions: 
+  - D1
+  - D2
+  - D6
+  - D7
+  spec: MURS SMB 200V
+  type: "smt\xC2\xA4"
+- !ruby/object:Component 
+  comment: Pre-reg Voltage setting
+  extraInfo: "7 hmt\xC2\xA4 Diode Zener 10V 500mW DO35 1 D4 "
+  longname: Zener 10V 500mW DO35 1
+  positions: 
+  - D4
+  spec: 10V
+  type: "hmt\xC2\xA4"
+- !ruby/object:Component 
+  comment: VN10 Pre-reg Voltage setting
+  extraInfo: "7 hmt\xC2\xA4 Diode Zener 15V 500mW DO35 1 D5 "
+  longname: Zener 15V 500mW DO35 1
+  positions: 
+  - D5
+  spec: 15V zener
+  type: "hmt\xC2\xA4"
+- !ruby/object:Component 
+  comment: Power diodes
+  extraInfo: "7 hmt\xC2\xA4 Diode Dual Ser. Ult-fast 2x8A 200V TO-220 2 D10,D11 "
+  longname: Diode Dual 2x8A 200V TO-220 2
+  positions: 
+  - D10
+  - D11
+  spec: Dual Diode Series TO220
+  type: "hmt\xC2\xA4"
+- !ruby/object:Component 
+  comment: Regulator protection
+  extraInfo: "7 hmt\xC2\xA4 Diode 1N4003 2 D8,D9 "
+  longname: Diode 1N4003 2
+  positions: 
+  - D8
+  - D9
+  spec: 1N4003
+  type: "hmt\xC2\xA4"
+- !ruby/object:Component 
+  comment: 10V regulator
+  extraInfo: "7 hmt Voltage Reg Pos 10V 100mA TO-92 1 IC2 "
+  longname: Pos Reg 10V 100mA TO-92 1
+  positions: 
+  - IC2
+  spec: 78L10 TO92
+  type: hmt
+- !ruby/object:Component 
+  comment: Power FETs
+  extraInfo: "7 hmt\xC2\xA4 MOSFET N-ch dual 9A 200V TO-220-5 2 Q1,Q2 "
+  longname: N-MOSFET dual 9A 200V TO-220-5 2
+  positions: 
+  - Q1
+  - Q2
+  spec: IRFI4019H-117P, no substitute
+  type: "hmt\xC2\xA4"
+2: 
+- !ruby/object:Component 
+  comment: Output filters
+  extraInfo: "2 hmt Inductor Single shielded 22uH 7A, Box 4 L1,L2,L3,L4 "
+  longname: "Inductor 22\xC2\xB5H, Box 4"
+  positions: 
+  - L1
+  - L2
+  - L3
+  - L4
+  spec: "22\xCE\xBCH"
+  type: hmt
+3: 
+- !ruby/object:Component 
+  comment: Current sensing
+  extraInfo: "3 smt Res 0.01ohm 2W 2% 0830 4 R1,R2,R3,R4 "
+  longname: "Res 0.01\xCE\xA9 2W 0830 4"
+  positions: 
+  - R1
+  - R2
+  - R3
+  - R4
+  spec: 0R01
+  type: smt
+- !ruby/object:Component 
+  comment: Gate drive
+  extraInfo: "3 hmt Res Ax. Met. Film 0.4W 3.4mm 5R6 4 R5,R6,R7,R8 "
+  longname: Res 5R6 4
+  positions: 
+  - R5
+  - R6
+  - R7
+  - R8
+  spec: 5R6
+  type: hmt
+- !ruby/object:Component 
+  comment: 5V setpoint, Power supply snubbers / filter
+  extraInfo: "3 hmt Res Ax. Met. Film 0.4W 3.4mm 120R 3 R47,R13,R20 "
+  longname: Res 120R 3
+  positions: 
+  - R47
+  - R13
+  - R20
+  spec: 120R
+  type: hmt
+- !ruby/object:Component 
+  comment: Boot cap current limit
+  extraInfo: "3 hmt Res Ax. Met. Film 0.4W 3.4mm 220R 2 R9,R10 "
+  longname: Res 220R 2
+  positions: 
+  - R9
+  - R10
+  spec: 220R
+  type: hmt
+- !ruby/object:Component 
+  comment: Feedback network
+  extraInfo: "3 hmt Res Ax. Met. Film 0.4W 3.4mm 1Kohm 4 R25,R26,R27,R28 "
+  longname: "Res 1K\xCE\xA9 4"
+  positions: 
+  - R25
+  - R26
+  - R27
+  - R28
+  spec: 1K
+  type: hmt
+- !ruby/object:Component 
+  comment: Led driver, voltage sensing
+  extraInfo: "3 hmt Res Ax. Met. Film 0.4W 3.4mm 2.2Kohm 3 R14,R15,R19-2 "
+  longname: "Res 2.2K\xCE\xA9 3"
+  positions: 
+  - R14
+  - R15
+  - R19-2
+  spec: 2.2K
+  type: hmt
+- !ruby/object:Component 
+  comment: Feedback network
+  extraInfo: "3 hmt Res Ax. Met. Film 0.4W 3.4mm 10Kohm 8 R33,R34,R35,R36,R39,R40,R42,R45 "
+  longname: "Res 10K\xCE\xA9 8"
+  positions: 
+  - R33
+  - R34
+  - R35
+  - R36
+  - R39
+  - R40
+  - R42
+  - R45
+  spec: 10K
+  type: hmt
+- !ruby/object:Component 
+  comment: Current sensing
+  extraInfo: "3 hmt Res Ax. Met. Film 0.4W 3.4mm 18Kohm 2 R11,R12 "
+  longname: "Res 18K\xCE\xA9 2"
+  positions: 
+  - R11
+  - R12
+  spec: 18K
+  type: hmt
+- !ruby/object:Component 
+  comment: Signal input and feedback
+  extraInfo: "3 hmt Res Ax. Met. Film 0.4W 3.4mm 22Kohm 4 R100,R101,R200,R201 "
+  longname: "Res 22K\xCE\xA9 4"
+  positions: 
+  - R100
+  - R101
+  - R200
+  - R201
+  spec: 22K
+  type: hmt
+4: 
+- !ruby/object:Component 
+  comment: Voltage sense
+  extraInfo: "4 hmt Res Ax. Met. Film 0.4W 3.4mm 33Kohm 2 R17-2,R18-2 "
+  longname: "Res 33K\xCE\xA9 2"
+  positions: 
+  - R17-2
+  - R18-2
+  spec: ""
+  type: hmt
+- !ruby/object:Component 
+  comment: Voltage sensing
+  extraInfo: "4 hmt Res Ax. Met. Film 0.4W 3.4mm 180Kohm 1 R16-2 "
+  longname: "Res 180K\xCE\xA9 1"
+  positions: 
+  - R16-2
+  spec: 1.18M = 1M + 180K
+  type: hmt
+- !ruby/object:Component 
+  comment: Voltage sensing
+  extraInfo: "4 hmt Res Ax. Met. Film 0.4W 3.4mm 390Kohm 3 R17-1,R18-1,R19-1 "
+  longname: "Res 390K\xCE\xA9 3"
+  positions: 
+  - R17-1
+  - R18-1
+  - R19-1
+  spec: 423K (=390K + 33K) , 392K (=390K + 2.2K)
+  type: hmt
+- !ruby/object:Component 
+  comment: Current sense
+  extraInfo: "4 hmt Res Ax. Met. Film 0.4W 3.4mm 1Mohm 1 R16-1 "
+  longname: "Res 1M\xCE\xA9 1"
+  positions: 
+  - R16-1
+  spec: 1.18M = 1M + 180K
+  type: hmt
+- !ruby/object:Component 
+  comment: Feedback network
+  extraInfo: "4 hmt Res Ax. Met. Film 0.25W 3.4mm 1.1Kohm 4 R29,R30,R31,R32 "
+  longname: "Res 0.25W 3.4mm 1.1K\xCE\xA9 4"
+  positions: 
+  - R29
+  - R30
+  - R31
+  - R32
+  spec: 1.1K
+  type: hmt
+- !ruby/object:Component 
+  comment: Reference voltage
+  extraInfo: "4 hmt Res Ax. Met. Film 0.125W 3.4mm 8.25K 1 R825 "
+  longname: Res 0.125W 3.4mm 8.25K 1
+  positions: 
+  - R825
+  spec: 8.25K
+  type: hmt
+- !ruby/object:Component 
+  comment: 5V and 9V input filter
+  extraInfo: "4 hmt Res Ax. Met. Film 2W 10mm 220R 2 R41,R44 "
+  longname: Res 2W 10mm 220R 2
+  positions: 
+  - R41
+  - R44
+  spec: 220R 2W
+  type: hmt
+- !ruby/object:Component 
+  comment: 5V setpoint
+  extraInfo: "4 hmt Res Ax. Met. Film 0.125W 3.4mm 360R 1 R48 "
+  longname: Res 0.125W 360R 1
+  positions: 
+  - R48
+  spec: 360R
+  type: hmt
+- !ruby/object:Component 
+  comment: Output filter
+  extraInfo: "4 hmt Res Ax. Met. Film 2W 12.5mm 10R 4 R21x2,R22x2 "
+  longname: Res 2W 12.5mm 10R 4
+  positions: 
+  - R21x2
+  - R22x2
+  spec: 2x10R 2W
+  type: hmt
+- !ruby/object:Component 
+  comment: Power supply bleeders
+  extraInfo: "4 hmt Res Ax. Met. Film 2W 10mm 3.9K 2 R23,R24 "
+  longname: Res 2W 10mm 3.9K 2
+  positions: 
+  - R23
+  - R24
+  spec: 3.9K 2W
+  type: hmt
