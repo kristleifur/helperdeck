@@ -1,0 +1,90 @@
+--- 
+- !ruby/object:Component 
+  comment: Voltage sense
+  extraInfo: "4 hmt Res Ax. Met. Film 0.4W 3.4mm 33Kohm 2 R17-2,R18-2 "
+  longname: "Res 33K\xCE\xA9 2"
+  positions: 
+  - R17-2
+  - R18-2
+  spec: ""
+  type: hmt
+- !ruby/object:Component 
+  comment: Voltage sensing
+  extraInfo: "4 hmt Res Ax. Met. Film 0.4W 3.4mm 180Kohm 1 R16-2 "
+  longname: "Res 180K\xCE\xA9 1"
+  positions: 
+  - R16-2
+  spec: 1.18M = 1M + 180K
+  type: hmt
+- !ruby/object:Component 
+  comment: Voltage sensing
+  extraInfo: "4 hmt Res Ax. Met. Film 0.4W 3.4mm 390Kohm 3 R17-1,R18-1,R19-1 "
+  longname: "Res 390K\xCE\xA9 3"
+  positions: 
+  - R17-1
+  - R18-1
+  - R19-1
+  spec: 423K (=390K + 33K) , 392K (=390K + 2.2K)
+  type: hmt
+- !ruby/object:Component 
+  comment: Current sense
+  extraInfo: "4 hmt Res Ax. Met. Film 0.4W 3.4mm 1Mohm 1 R16-1 "
+  longname: "Res 1M\xCE\xA9 1"
+  positions: 
+  - R16-1
+  spec: 1.18M = 1M + 180K
+  type: hmt
+- !ruby/object:Component 
+  comment: Feedback network
+  extraInfo: "4 hmt Res Ax. Met. Film 0.25W 3.4mm 1.1Kohm 4 R29,R30,R31,R32 "
+  longname: "Res 0.25W 3.4mm 1.1K\xCE\xA9 4"
+  positions: 
+  - R29
+  - R30
+  - R31
+  - R32
+  spec: 1.1K
+  type: hmt
+- !ruby/object:Component 
+  comment: Reference voltage
+  extraInfo: "4 hmt Res Ax. Met. Film 0.125W 3.4mm 8.25K 1 R825 "
+  longname: Res 0.125W 3.4mm 8.25K 1
+  positions: 
+  - R825
+  spec: 8.25K
+  type: hmt
+- !ruby/object:Component 
+  comment: 5V and 9V input filter
+  extraInfo: "4 hmt Res Ax. Met. Film 2W 10mm 220R 2 R41,R44 "
+  longname: Res 2W 10mm 220R 2
+  positions: 
+  - R41
+  - R44
+  spec: 220R 2W
+  type: hmt
+- !ruby/object:Component 
+  comment: 5V setpoint
+  extraInfo: "4 hmt Res Ax. Met. Film 0.125W 3.4mm 360R 1 R48 "
+  longname: Res 0.125W 360R 1
+  positions: 
+  - R48
+  spec: 360R
+  type: hmt
+- !ruby/object:Component 
+  comment: Output filter
+  extraInfo: "4 hmt Res Ax. Met. Film 2W 12.5mm 10R 4 R21x2,R22x2 "
+  longname: Res 2W 12.5mm 10R 4
+  positions: 
+  - R21x2
+  - R22x2
+  spec: 2x10R 2W
+  type: hmt
+- !ruby/object:Component 
+  comment: Power supply bleeders
+  extraInfo: "4 hmt Res Ax. Met. Film 2W 10mm 3.9K 2 R23,R24 "
+  longname: Res 2W 10mm 3.9K 2
+  positions: 
+  - R23
+  - R24
+  spec: 3.9K 2W
+  type: hmt

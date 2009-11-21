@@ -1,0 +1,18 @@
+--- 
+- !ruby/object:Component 
+  comment: Offset trimmers
+  extraInfo: "1 hmt Trim pot Cerm 50Kohm 25TRN Top 2 R37,R38 "
+  longname: "Trimpot 50K\xCE\xA9 Top 2"
+  positions: 
+  - R37
+  - R38
+  spec: 50K
+  type: hmt
+- !ruby/object:Component 
+  comment: Ground-agnd separators
+  extraInfo: "1 hmt Choke bead core 3.5X5mm Axial 1 L5 "
+  longname: Choke bead 3.5X5mm 1
+  positions: 
+  - L5
+  spec: HF Inductor-Choke Axial
+  type: hmt

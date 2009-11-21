@@ -1,0 +1,88 @@
+--- 
+- !ruby/object:Component 
+  comment: Output filter and rail-rail decoupling
+  extraInfo: "5 hmt Cap 160V Film 0.22uF Polyprop RM10 6 C20,C23,C24,C25,C39,C40 "
+  longname: "Cap 160V 0.22\xC2\xB5F Polyprop RM10 6"
+  positions: 
+  - C20
+  - C23
+  - C24
+  - C25
+  - C39
+  - C40
+  spec: "0.22\xCE\xBCF, RM10"
+  type: hmt
+- !ruby/object:Component 
+  comment: Power decoupling
+  extraInfo: "5 hmt Cap 100V Cer 0.1uF X7R 10% RM2.5 5 C1, C2, C3, C4, C9 "
+  longname: "Cap 100V 0.1\xC2\xB5F X7R RM2.5 5"
+  positions: 
+  - C1
+  - C2
+  - C3
+  - C4
+  - C9
+  spec: ""
+  type: hmt
+- !ruby/object:Component 
+  comment: Misc decoupling
+  extraInfo: "5 hmt Cap 50V Cer 0.1uF X7R 10% RM2.5 7 C13,C14,C15,C16,C19,C21,C22 "
+  longname: "Cap 50V 0.1\xC2\xB5F X7R RM2.5 7"
+  positions: 
+  - C13
+  - C14
+  - C15
+  - C16
+  - C19
+  - C21
+  - C22
+  spec: !binary |
+    MC4xzrxG
+
+  type: hmt
+- !ruby/object:Component 
+  comment: Deglitching
+  extraInfo: "5 hmt Cap 50V Cer 220pF NPO/COG 5% RM2.5 3 C17,C18,C825 "
+  longname: Cap 50V 220pF NPO RM2.5 3
+  positions: 
+  - C17
+  - C18
+  - C825
+  spec: 220pF
+  type: hmt
+- !ruby/object:Component 
+  comment: Input filter
+  extraInfo: "5 hmt Cap 100V Film 0.1uF Polyester 5% RM5 2 C28,C29 "
+  longname: "Cap 100V 0.1\xC2\xB5F Polyester RM5 2"
+  positions: 
+  - C28
+  - C29
+  spec: "0,1\xCE\xBCF 100V"
+  type: hmt
+- !ruby/object:Component 
+  comment: Input filters
+  extraInfo: "5 hmt Cap 50V Cer 100pF NPO/COG 5% RM2.5 2 C101,C201 "
+  longname: Cap 50V 100pF NPO RM2.5 2
+  positions: 
+  - C101
+  - C201
+  spec: 100pF
+  type: hmt
+- !ruby/object:Component 
+  comment: Feedback network
+  extraInfo: "5 hmt Cap 50V Cer 330pF NPO/COG 5% RM2.5 1 C30 "
+  longname: Cap 50V 330pF NPO RM2.5 1
+  positions: 
+  - C30
+  spec: 330pF
+  type: hmt
+- !ruby/object:Component 
+  comment: Misc decoupling
+  extraInfo: "5 hmt Cap 63V Film 0.68uF Polyerster 6x7mm RM5 3 C32,C41,C42 "
+  longname: "Cap 63V 0.68\xC2\xB5F Polyester 6x7mm RM5 3"
+  positions: 
+  - C32
+  - C41
+  - C42
+  spec: "0.68\xCE\xBCF"
+  type: hmt
