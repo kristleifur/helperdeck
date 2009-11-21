@@ -37,19 +37,48 @@ class Shoes::App
 	    end
 		end
 	end
+	
+	def loadDatapack(datapackName)
+	  debug "LOL"
+	  datapackFiles = Dir["datapacks/#{datapackName}.helperdeck/*"]
+	  datapackFiles.each do | file |
+	    if File.directory?(file)
+	      debug "#{file} is a directory"
+	      if file =~ /bags$/
+	        debug "Bags dir found"
+	        bagDirContents = Dir["#{file}/*"]
+          debug bagDirContents
+        end
+        if file =~ /build_stages$/
+          debug "Build-stages dir found"
+          stageDirContents = Dir["#{file}/*"]
+          debug stageDirContents
+        end
+      else
+        debug "#{file} is a file"
+        debug file.inspect()
+        debug file.class()
+        if file.include?(".yaml")
+          debug "#{file} is YAML"
+          if (datapackFiles.include?(file.gsub(".yaml", ".png")))
+            debug "found matching image"
+          else
+            debug "Image not found for '#{file}', ignoring"
+          end
+        else
+        end
+	    end
+    end
+  end
 end
 
 Shoes.app(:width => 480, :height => 50) do
 	Shoes.show_log()
 	
-  self.class.class_eval do
-    attr_accessor :otherWinStack
-  end
-
+	loadDatapack("amp15-ps")
+	
   @liveComponentWin = window :title => "Selected position", :width => 250, :height => 60 do
-    # @@liveComponentBox = edit_box
   end
-  # debug @liveComponentWin.inspect()
   @selectedPosition = SelectedPosition.new(@liveComponentWin, self)
 
   @boardTopImageFilename = "amp15top_858x537.png"
@@ -273,10 +302,6 @@ Shoes.app(:width => 480, :height => 50) do
   # @stages[0].update()
 
   # tehBag.components
-    
-  # @otherWin = window() #  :title => "fufu" do
-    # @otherWinStack = stack { para "This is the other window yeah" }
-  # end
 
 end
 
