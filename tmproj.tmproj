@@ -2,8 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>currentDocument</key>
-	<string>Stage.rb</string>
 	<key>documents</key>
 	<array>
 		<dict>
@@ -20,44 +18,10 @@
 	<key>fileHierarchyDrawerWidth</key>
 	<integer>262</integer>
 	<key>metaData</key>
-	<dict>
-		<key>Helperdeck.rb</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>76</integer>
-				<key>line</key>
-				<integer>269</integer>
-			</dict>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>237</integer>
-		</dict>
-		<key>Stage.rb</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>42</integer>
-				<key>line</key>
-				<integer>73</integer>
-			</dict>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>0</integer>
-		</dict>
-	</dict>
-	<key>openDocuments</key>
-	<array>
-		<string>Helperdeck.rb</string>
-		<string>Stage.rb</string>
-	</array>
+	<dict/>
 	<key>showFileHierarchyDrawer</key>
 	<true/>
 	<key>windowFrame</key>
-	<string>{{274, 0}, {848, 832}}</string>
+	<string>{{428, 0}, {848, 832}}</string>
 </dict>
 </plist>
