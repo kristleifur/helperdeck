@@ -60,8 +60,23 @@ class Shoes::App
         debug file.class()
         if file.include?(".yaml")
           debug "#{file} is YAML"
-          if (datapackFiles.include?(file.gsub(".yaml", ".png")))
+          imagename = file.gsub(".yaml", ".png")
+          if (datapackFiles.include?(imagename))
             debug "found matching image"
+            @boards ||= []
+            wintitle = ""
+            file.split("/")[(-2)..(-1)].each do | bit |
+              wintitle << "#{bit}/"
+            end
+            wintitle.gsub!(".yaml/", "").gsub!(".helperdeck", "")
+            imgsize = imagesize(imagename)
+            width = imgsize[0]
+            height = imgsize[1]
+            debug "Image width: #{imgsize[0]}, height: #{imgsize[1]}"
+
+            boardWin = window :title => wintitle, :width => width, :height => height do
+            end
+            @boards << BoardSide.new(boardWin, imagename, self, @selectedPosition)
           else
             debug "Image not found for '#{file}', ignoring"
           end
@@ -75,11 +90,11 @@ end
 Shoes.app(:width => 480, :height => 50) do
 	Shoes.show_log()
 	
-	loadDatapack("amp15-ps")
-	
-  @liveComponentWin = window :title => "Selected position", :width => 250, :height => 60 do
+	@liveComponentWin = window :title => "Selected position", :width => 250, :height => 60 do
   end
   @selectedPosition = SelectedPosition.new(@liveComponentWin, self)
+  
+	loadDatapack("amp15-ps")
 
   @boardTopImageFilename = "amp15top_858x537.png"
   @boardWin = window :title => @boardTopImageFilename, :width => 858, :height => 537 do
