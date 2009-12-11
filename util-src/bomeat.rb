@@ -47,6 +47,11 @@ class BomEat
 	end
 end
 
+if ARGV.size != 1
+	puts "Usage: bomEat.rb [41hz-amp-bom.txt]"
+	exit
+end
+
 bags = BomEat.eatBom(File.read(ARGV[0]).split("\n"))
 puts bags.to_yaml()
 # puts bags.keys()
