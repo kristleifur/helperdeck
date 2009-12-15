@@ -1,0 +1,72 @@
+1 Cap 50V Elect 3.3uF Low ESR D5 2 hmt C14,C15
+Comment: Input DC blocking
+Spec: Low ESR 3.3uF 10V D5 RM2
+1 Cap 25V Cer 1uF X7R 10% 1206 1 smt C5
+Comment: Charge pump cap
+Spec: X7R 16V
+1 Cap 16V Elect 330uF U-low ESR D8 2 hmt C18,C19
+Comment: Close-up supply capacitors
+Spec: U-low ESR 16V 220 uF, max 10 mm tall
+1 Cap 25V Elect 10uF std Low Prof 1 hmt C2
+Comment: 5V bulk cap
+Spec: 10uF min 10V
+1 Res 22.0Kohm 1/10W 0.5% 0805 4 smt R2,R4,R5,R6
+Comment: Input and input feedback
+Spec: Low noise 1%
+1 Cap 50V Cer 10000pF X7R 0805 2 smt C29,C30
+Comment: Output speaker cables ESR damping
+Spec: X7R 0805 0.01 uF
+2 Cap 50V Cer 0.1uF X7R 0805 8 smt C1,C3,C7,C9,C17,C16,C20,C26,C50
+Comment: Decoupling
+Spec: X7R 0805 25V
+2 Ferrite chip 60 Ohm 3000mA 0805 1 smt L11
+Comment: Separates AGND <=> GND
+Spec: HF choke 60 to 300 ohm 100MHz 0805
+2 Res 10R 1/4W 1% 1206 2 smt R9,R10
+Comment: Output filter
+Spec: 10 ohm 0.25W
+2 Cap 50V Cer 0.22uF X7R 0805 2 smt C12,C13
+Comment: Output filter
+Spec: 0.22uF 25V X7R 0805
+2 Cap 25V Cer 0.47uF 10% X7R 0805 4 smt C22,C25,C27,C28
+Comment: Output filter
+Spec: 0.47uF 25V X7R 0805
+2 Res 1.0Mohm 1/8W 5% 0805 1 smt R1
+Comment: Pull-up for sleep pin
+Spec: Between 470K and 1.2 M 0805
+3 Res 47Kohm 1/10W 0.5% 0805 2 smt R2,R4,R5,R6
+Comment: Alternate Input Feedback
+Spec: Low Noise 1% alternate value
+3 Cap 50V Cer 1000pF X7R 0805 1 smt C21
+Comment: Power supp ESR damping
+Spec: X7R or NPO 0805
+3 Cap 50V Cer 100pF NP0 0805 2 smt C23,C24
+Comment: Input cable EMI reduction
+Spec: NPO 100pF 0805
+3 Res 8.2Kohm 1/10W 0.5% 0805 1 smt R7
+Comment: REF voltage
+Spec: 8.2Kohm 1% 0805
+4 Res 5.6Kohm 1/10W 0.5% 0805 1 smt R3
+Comment: Current limiting for LED
+Spec: 2 mA from 12V 0805, see LED spec.
+4 Ferrite 6A 50 ohm 1206 SMD 1 smt L10
+Comment: Power supp EMI damping
+Spec: 6A Ferrite choke 50-100 Ohm at 100MHz
+4 Cap 10V Cer 2.2uF 10% X7R 0805 2 smt C14,C15
+Comment: Input DC blocking capacitors alternative type
+Spec: X7R 10V 0805
+4 Dual inductor 10uH 5A SMD 2 smt L1,L2
+Comment: Output filter
+Spec: 5A, Good linearity, non-standard footprint
+5 Tripath TA2021B 1 smt¤ U1
+Comment: Main Tripath chip
+Spec:
+5 LED 3mm Hi-eff Red Diffused 1 hmt¤ Off‐board
+Comment: MUTE indicator
+Spec: 2 to 3 mA radial LED red, diffused
+5 Diode Schottky 1A 60V SMA 8 smt¤ D5,D6,D7,D8,D9,D10,D11,D12
+Comment: Output clamping
+Spec: 30V, 1A Ultra-fast or Schottky
+5 MOSFET N-ch 115mA 60V SOT23 (702) 1 smt¤ Q3
+Comment: LED driver
+Spec: N-chan FET 25V, 50 mA SOT23 package

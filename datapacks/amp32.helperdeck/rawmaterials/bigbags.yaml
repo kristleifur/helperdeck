@@ -1,0 +1,230 @@
+--- 
+5: 
+- !ruby/object:Component 
+  comment: Main Tripath chip
+  extraInfo: "5 Tripath TA2021B 1 smt\xC2\xA4 U1"
+  longname: "TA2021B 1 smt\xC2\xA4"
+  positions: 
+  - U1
+  spec: "Spec:"
+  type: Tripath
+- !ruby/object:Component 
+  comment: MUTE indicator
+  extraInfo: "5 LED 3mm Hi-eff Red Diffused 1 hmt\xC2\xA4 Off\xE2\x80\x90board"
+  longname: "3mm Hi-eff Red Diffused 1 hmt\xC2\xA4"
+  positions: 
+  - "Off\xE2\x80\x90board"
+  spec: 2 to 3 mA radial LED red, diffused
+  type: LED
+- !ruby/object:Component 
+  comment: Output clamping
+  extraInfo: "5 Diode Schottky 1A 60V SMA 8 smt\xC2\xA4 D5,D6,D7,D8,D9,D10,D11,D12"
+  longname: "Schottky 1A 60V SMA 8 smt\xC2\xA4"
+  positions: 
+  - D5
+  - D6
+  - D7
+  - D8
+  - D9
+  - D10
+  - D11
+  - D12
+  spec: 30V, 1A Ultra-fast or Schottky
+  type: Diode
+- !ruby/object:Component 
+  comment: LED driver
+  extraInfo: "5 MOSFET N-ch 115mA 60V SOT23 (702) 1 smt\xC2\xA4 Q3"
+  longname: "N-ch 115mA 60V SOT23 (702) 1 smt\xC2\xA4"
+  positions: 
+  - Q3
+  spec: N-chan FET 25V, 50 mA SOT23 package
+  type: MOSFET
+1: 
+- !ruby/object:Component 
+  comment: Input DC blocking
+  extraInfo: 1 Cap 50V Elect 3.3uF Low ESR D5 2 hmt C14,C15
+  longname: 50V Elect 3.3uF Low ESR D5 2 hmt
+  positions: 
+  - C14
+  - C15
+  spec: Low ESR 3.3uF 10V D5 RM2
+  type: Cap
+- !ruby/object:Component 
+  comment: Charge pump cap
+  extraInfo: 1 Cap 25V Cer 1uF X7R 10% 1206 1 smt C5
+  longname: 25V Cer 1uF X7R 10% 1206 1 smt
+  positions: 
+  - C5
+  spec: X7R 16V
+  type: Cap
+- !ruby/object:Component 
+  comment: Close-up supply capacitors
+  extraInfo: 1 Cap 16V Elect 330uF U-low ESR D8 2 hmt C18,C19
+  longname: 16V Elect 330uF U-low ESR D8 2 hmt
+  positions: 
+  - C18
+  - C19
+  spec: U-low ESR 16V 220 uF, max 10 mm tall
+  type: Cap
+- !ruby/object:Component 
+  comment: 5V bulk cap
+  extraInfo: 1 Cap 25V Elect 10uF std Low Prof 1 hmt C2
+  longname: 25V Elect 10uF std Low Prof 1 hmt
+  positions: 
+  - C2
+  spec: 10uF min 10V
+  type: Cap
+- !ruby/object:Component 
+  comment: Input and input feedback
+  extraInfo: 1 Res 22.0Kohm 1/10W 0.5% 0805 4 smt R2,R4,R5,R6
+  longname: 22.0Kohm 1/10W 0.5% 0805 4 smt
+  positions: 
+  - R2
+  - R4
+  - R5
+  - R6
+  spec: Low noise 1%
+  type: Res
+- !ruby/object:Component 
+  comment: Output speaker cables ESR damping
+  extraInfo: 1 Cap 50V Cer 10000pF X7R 0805 2 smt C29,C30
+  longname: 50V Cer 10000pF X7R 0805 2 smt
+  positions: 
+  - C29
+  - C30
+  spec: X7R 0805 0.01 uF
+  type: Cap
+2: 
+- !ruby/object:Component 
+  comment: Decoupling
+  extraInfo: 2 Cap 50V Cer 0.1uF X7R 0805 8 smt C1,C3,C7,C9,C17,C16,C20,C26,C50
+  longname: 50V Cer 0.1uF X7R 0805 8 smt
+  positions: 
+  - C1
+  - C3
+  - C7
+  - C9
+  - C17
+  - C16
+  - C20
+  - C26
+  - C50
+  spec: X7R 0805 25V
+  type: Cap
+- !ruby/object:Component 
+  comment: Separates AGND <=> GND
+  extraInfo: 2 Ferrite chip 60 Ohm 3000mA 0805 1 smt L11
+  longname: chip 60 Ohm 3000mA 0805 1 smt
+  positions: 
+  - L11
+  spec: HF choke 60 to 300 ohm 100MHz 0805
+  type: Ferrite
+- !ruby/object:Component 
+  comment: Output filter
+  extraInfo: 2 Res 10R 1/4W 1% 1206 2 smt R9,R10
+  longname: 10R 1/4W 1% 1206 2 smt
+  positions: 
+  - R9
+  - R10
+  spec: 10 ohm 0.25W
+  type: Res
+- !ruby/object:Component 
+  comment: Output filter
+  extraInfo: 2 Cap 50V Cer 0.22uF X7R 0805 2 smt C12,C13
+  longname: 50V Cer 0.22uF X7R 0805 2 smt
+  positions: 
+  - C12
+  - C13
+  spec: 0.22uF 25V X7R 0805
+  type: Cap
+- !ruby/object:Component 
+  comment: Output filter
+  extraInfo: 2 Cap 25V Cer 0.47uF 10% X7R 0805 4 smt C22,C25,C27,C28
+  longname: 25V Cer 0.47uF 10% X7R 0805 4 smt
+  positions: 
+  - C22
+  - C25
+  - C27
+  - C28
+  spec: 0.47uF 25V X7R 0805
+  type: Cap
+- !ruby/object:Component 
+  comment: Pull-up for sleep pin
+  extraInfo: 2 Res 1.0Mohm 1/8W 5% 0805 1 smt R1
+  longname: 1.0Mohm 1/8W 5% 0805 1 smt
+  positions: 
+  - R1
+  spec: Between 470K and 1.2 M 0805
+  type: Res
+3: 
+- !ruby/object:Component 
+  comment: Alternate Input Feedback
+  extraInfo: 3 Res 47Kohm 1/10W 0.5% 0805 2 smt R2,R4,R5,R6
+  longname: 47Kohm 1/10W 0.5% 0805 2 smt
+  positions: 
+  - R2
+  - R4
+  - R5
+  - R6
+  spec: Low Noise 1% alternate value
+  type: Res
+- !ruby/object:Component 
+  comment: Power supp ESR damping
+  extraInfo: 3 Cap 50V Cer 1000pF X7R 0805 1 smt C21
+  longname: 50V Cer 1000pF X7R 0805 1 smt
+  positions: 
+  - C21
+  spec: X7R or NPO 0805
+  type: Cap
+- !ruby/object:Component 
+  comment: Input cable EMI reduction
+  extraInfo: 3 Cap 50V Cer 100pF NP0 0805 2 smt C23,C24
+  longname: 50V Cer 100pF NP0 0805 2 smt
+  positions: 
+  - C23
+  - C24
+  spec: NPO 100pF 0805
+  type: Cap
+- !ruby/object:Component 
+  comment: REF voltage
+  extraInfo: 3 Res 8.2Kohm 1/10W 0.5% 0805 1 smt R7
+  longname: 8.2Kohm 1/10W 0.5% 0805 1 smt
+  positions: 
+  - R7
+  spec: 8.2Kohm 1% 0805
+  type: Res
+4: 
+- !ruby/object:Component 
+  comment: Current limiting for LED
+  extraInfo: 4 Res 5.6Kohm 1/10W 0.5% 0805 1 smt R3
+  longname: 5.6Kohm 1/10W 0.5% 0805 1 smt
+  positions: 
+  - R3
+  spec: 2 mA from 12V 0805, see LED spec.
+  type: Res
+- !ruby/object:Component 
+  comment: Power supp EMI damping
+  extraInfo: 4 Ferrite 6A 50 ohm 1206 SMD 1 smt L10
+  longname: 6A 50 ohm 1206 SMD 1 smt
+  positions: 
+  - L10
+  spec: 6A Ferrite choke 50-100 Ohm at 100MHz
+  type: Ferrite
+- !ruby/object:Component 
+  comment: Input DC blocking capacitors alternative type
+  extraInfo: 4 Cap 10V Cer 2.2uF 10% X7R 0805 2 smt C14,C15
+  longname: 10V Cer 2.2uF 10% X7R 0805 2 smt
+  positions: 
+  - C14
+  - C15
+  spec: X7R 10V 0805
+  type: Cap
+- !ruby/object:Component 
+  comment: Output filter
+  extraInfo: 4 Dual inductor 10uH 5A SMD 2 smt L1,L2
+  longname: inductor 10uH 5A SMD 2 smt
+  positions: 
+  - L1
+  - L2
+  spec: 5A, Good linearity, non-standard footprint
+  type: Dual
