@@ -96,24 +96,7 @@ Shoes.app(:width => 480, :height => 50) do
   
 	loadDatapack("amp15-ps")
 
-  @boardTopImageFilename = "amp15top_858x537.png"
-  @boardWin = window :title => @boardTopImageFilename, :width => 858, :height => 537 do
-    # do window stuff eh?
-  end
-  @boardTop = BoardSide.new(@boardWin, @boardTopImageFilename, self, @selectedPosition)
-  
-  @boardBottomImageFilename = "amp15bottom_858x537.png"
-  @boardBottomWin = window :title => @boardBottomImageFilename, :width => 858, :height => 537 do
-    # do window stuff eh?
-  end
-  @boardBottom = BoardSide.new(@boardBottomWin, @boardBottomImageFilename, self, @selectedPosition)
-  
-	@powerSchematicImageFilename = "PowerSchematic.png"
-	@powerSchematicWin = window :title => @powerSchematicImageFilename, :width => 644, :height => 240 do
-		# do window stuff eh?
-	end
-	@powerSchematic = BoardSide.new(@powerSchematicWin, @powerSchematicImageFilename, self, @selectedPosition)
-
+ 
   @uglyBagModel = YAML::load_file("Amp15_BagsAndComponents.yaml")
   # debug "bags: #{@uglyBagModel.keys()}"
 
