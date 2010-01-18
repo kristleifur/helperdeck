@@ -15,7 +15,7 @@ end
 
 class Shoes::App
   def clearSelections()
-    [@boardTop, @boardBottom, @powerSchematic].each do | boardSide |
+    @boards.each do | boardSide |
       boardSide.selectedPositions.clear()
     end
     @bagControllers.values.each do | bag |
@@ -76,7 +76,23 @@ class Shoes::App
 
             boardWin = window :title => wintitle, :width => width, :height => height do
             end
-            @boards << BoardSide.new(boardWin, imagename, self, @selectedPosition)
+            tehBoard = BoardSide.new(boardWin, imagename, self, @selectedPosition)
+            debug "Load Board Posn's"
+            freshPositions = YAML.load_file(file)
+            tehBoard.positions = {}
+            if freshPositions
+              freshPositions.values.each do | i |
+                if (tehBoard.positions[i.name])
+                  debug "position #{i.name} is duplicated"
+                end
+                tehBoard.positions[i.name] = i
+              end
+            else
+              puts "WARNING: No position info found in '#{file}'"
+            end
+            @boards << tehBoard
+            @boardsToFilenames ||= {}
+            @boardsToFilenames[tehBoard] = file
           else
             debug "Image not found for '#{file}', ignoring"
           end
@@ -123,29 +139,40 @@ Shoes.app(:width => 480, :height => 50) do
   end
   
   button "SELECT" do
-    debug "Entering select mode - disabled!"
-    #     @boardTop.selectMode()
-    #     @boardBottom.selectMode()
-    # @powerSchematic.selectMode()
+    debug "Entering select mode"
+    @boards.each do | board |
+      board.selectMode()
+    end
+  end
+  
+  @boards.each do | board |
+    board.selectMode()
   end
   
   button "Save Board Posn's" do
-    debug "Save Board Posn's - disabled!"
-    #     componentYaml = @boardTop.positions.to_yaml()
-    #     # debug componentYaml
-    #     File.open("boardTop.dump.yaml", "w") do | f |
-    #       f.puts componentYaml
-    #     end
-    #     componentYaml = @boardBottom.positions.to_yaml()
-    #     # debug componentYaml
-    #     File.open("boardBottom.dump.yaml", "w") do | f |
-    #       f.puts componentYaml
-    #     end
-    #     debug "Saved"
-    # componentYaml = @powerSchematic.positions.to_yaml()
-    # File.open("PowerSchematic.dump.yaml", "w") do | f |
-    #   f.puts componentYaml
-    # end
+    debug "Save Board Posn's - [beta code!]"
+    @boards.each do |board|
+      componentYaml = board.positions.to_yaml()
+      yamlFilename = @boardsToFilenames[board]
+      File.open(yamlFilename, "w") do | f |
+        f.puts componentYaml
+      end
+    end
+        # componentYaml = @boardTop.positions.to_yaml()
+        #         # debug componentYaml
+        #         File.open("boardTop.dump.yaml", "w") do | f |
+        #           f.puts componentYaml
+        #         end
+        #         componentYaml = @boardBottom.positions.to_yaml()
+        #         # debug componentYaml
+        #         File.open("boardBottom.dump.yaml", "w") do | f |
+        #           f.puts componentYaml
+        #         end
+        #         debug "Saved"
+        #     componentYaml = @powerSchematic.positions.to_yaml()
+        #     File.open("PowerSchematic.dump.yaml", "w") do | f |
+        #       f.puts componentYaml
+        #     end
   end
   
   @loadButton = button "Load Board Posn's" do

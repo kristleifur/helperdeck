@@ -1,0 +1,9 @@
+--- 
+"l1": !ruby/object:Position 
+  components: []
+
+  height: 76
+  name: "l1"
+  width: 67
+  x: 56
+  y: 20
