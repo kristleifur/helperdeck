@@ -168,20 +168,30 @@ class BoardSide
       @theClick.x = x
       @theClick.y = y
       
+      allHaveNames = true
+      
       @selectedPositions = []
       @positions.values.each do | pos |
         if (pos.left <= x && pos.top <= y && pos.left + pos.width >= x && pos.top + pos.height >= y)
           # debug "Found something: #{pos.to_yaml()}"
           @selectedPositions << pos
+          debug "in-board selection code; pos: #{pos}"
+          if (!pos.name || pos.name == "")
+            debug "allHaveNames = false, shouldn't call selectByName in parent"
+            allHaveNames = false
+          end
         end
       end
       
-      allNames = []
-      selectedPositions.each do | selPos |
-        allNames << selPos.name()
+      if (allHaveNames)
+        puts "Calling selectByName in parent ... (?)"
+        allNames = []
+        selectedPositions.each do | selPos |
+          allNames << selPos.name()
+        end
+        @app.clearSelections()
+        @app.selectPosition(allNames) # hmm weird
       end
-      @app.clearSelections()
-      @app.selectPosition(allNames) # hmm weird
       
       # @liveCompBox.text = ""
       if (@selectedPositions.size == 1)
@@ -210,15 +220,21 @@ class BoardSide
       if button == 1 && @buttons[button]
         @selectedPositions = []
         selectedPosNames = []
+        allHaveNames = true
         @positions.values.each do | pos |
           if (pos.left <= x && pos.top <= y && pos.left + pos.width >= x && pos.top + pos.height >= y)
             # debug "Found something: #{pos.to_yaml()}"
             @selectedPositions << pos
             selectedPosNames << pos.name
+            if (!pos.name || pos.name = "")
+              allHaveNames = false
+            end
           end
         end
-        @app.clearSelections()
-        @app.selectPosition(selectedPosNames) # hmm weird
+        if (allHaveNames)
+          @app.clearSelections()
+          @app.selectPosition(selectedPosNames) # hmm weird
+        end
       end
       @buttons[button] = false
     end

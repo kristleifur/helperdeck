@@ -151,10 +151,10 @@ Shoes.app(:width => 480, :height => 50) do
   #   end
   
   button "DRAW" do
-    debug "Enter Draw - disabled!"
-    #     @boardTop.drawMode()
-    #     @boardBottom.drawMode()
-    # @powerSchematic.drawMode()
+    debug "Entering Draw mode"
+    @boards.each do | board |
+      board.drawMode()
+    end
   end
   
   button "SELECT" do

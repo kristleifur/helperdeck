@@ -1,9 +1,57 @@
 --- 
-"l1": !ruby/object:Position 
+"": !ruby/object:Position 
+  components: []
+
+  height: 17
+  name: ""
+  width: 30
+  x: 339
+  y: 86
+l11: !ruby/object:Position 
+  components: []
+
+  height: 28
+  name: l11
+  width: 17
+  x: 293
+  y: 100
+c2: !ruby/object:Position 
+  components: []
+
+  height: 34
+  name: c2
+  width: 36
+  x: 281
+  y: 174
+l1: !ruby/object:Position 
   components: []
 
   height: 76
-  name: "l1"
+  name: l1
   width: 67
   x: 56
   y: 20
+c50: !ruby/object:Position 
+  components: []
+
+  height: 31
+  name: c50
+  width: 19
+  x: 318
+  y: 98
+c16: !ruby/object:Position 
+  components: []
+
+  height: 28
+  name: c16
+  width: 16
+  x: 294
+  y: 134
+j4: !ruby/object:Position 
+  components: []
+
+  height: 75
+  name: j4
+  width: 23
+  x: 378
+  y: 75
