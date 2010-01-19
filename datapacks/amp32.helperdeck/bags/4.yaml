@@ -1,4 +1,35 @@
-#<YAML::Object:0x328e58>
-#<YAML::Object:0x328304>
-#<YAML::Object:0x327454>
-#<YAML::Object:0x325c1c>
+---
+- !ruby/object:Component 
+  comment: Current limiting for LED
+  extraInfo: 4 Res 5.6Kohm 1/10W 0.5% 0805 1 smt R3
+  longname: 5.6Kohm 1/10W 0.5% 0805 1 smt
+  positions: 
+  - R3
+  spec: 2 mA from 12V 0805, see LED spec.
+  type: Res
+- !ruby/object:Component 
+  comment: Power supp EMI damping
+  extraInfo: 4 Ferrite 6A 50 ohm 1206 SMD 1 smt L10
+  longname: 6A 50 ohm 1206 SMD 1 smt
+  positions: 
+  - L10
+  spec: 6A Ferrite choke 50-100 Ohm at 100MHz
+  type: Ferrite
+- !ruby/object:Component 
+  comment: Input DC blocking capacitors alternative type
+  extraInfo: 4 Cap 10V Cer 2.2uF 10% X7R 0805 2 smt C14,C15
+  longname: 10V Cer 2.2uF 10% X7R 0805 2 smt
+  positions: 
+  - C14
+  - C15
+  spec: X7R 10V 0805
+  type: Cap
+- !ruby/object:Component 
+  comment: Output filter
+  extraInfo: 4 Dual inductor 10uH 5A SMD 2 smt L1,L2
+  longname: inductor 10uH 5A SMD 2 smt
+  positions: 
+  - L1
+  - L2
+  spec: 5A, Good linearity, non-standard footprint
+  type: Dual

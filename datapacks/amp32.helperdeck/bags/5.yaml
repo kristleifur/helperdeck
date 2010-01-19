@@ -1,4 +1,40 @@
-#<YAML::Object:0x344c84>
-#<YAML::Object:0x343e10>
-#<YAML::Object:0x342948>
-#<YAML::Object:0x340df0>
+---
+- !ruby/object:Component 
+  comment: Main Tripath chip
+  extraInfo: "5 Tripath TA2021B 1 smt\xC2\xA4 U1"
+  longname: "TA2021B 1 smt\xC2\xA4"
+  positions: 
+  - U1
+  spec: "Spec:"
+  type: Tripath
+- !ruby/object:Component 
+  comment: MUTE indicator
+  extraInfo: "5 LED 3mm Hi-eff Red Diffused 1 hmt\xC2\xA4 Off\xE2\x80\x90board"
+  longname: "3mm Hi-eff Red Diffused 1 hmt\xC2\xA4"
+  positions: 
+  - "Off\xE2\x80\x90board"
+  spec: 2 to 3 mA radial LED red, diffused
+  type: LED
+- !ruby/object:Component 
+  comment: Output clamping
+  extraInfo: "5 Diode Schottky 1A 60V SMA 8 smt\xC2\xA4 D5,D6,D7,D8,D9,D10,D11,D12"
+  longname: "Schottky 1A 60V SMA 8 smt\xC2\xA4"
+  positions: 
+  - D5
+  - D6
+  - D7
+  - D8
+  - D9
+  - D10
+  - D11
+  - D12
+  spec: 30V, 1A Ultra-fast or Schottky
+  type: Diode
+- !ruby/object:Component 
+  comment: LED driver
+  extraInfo: "5 MOSFET N-ch 115mA 60V SOT23 (702) 1 smt\xC2\xA4 Q3"
+  longname: "N-ch 115mA 60V SOT23 (702) 1 smt\xC2\xA4"
+  positions: 
+  - Q3
+  spec: N-chan FET 25V, 50 mA SOT23 package
+  type: MOSFET

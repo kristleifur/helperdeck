@@ -1,6 +1,55 @@
-#<YAML::Object:0x33eaa0>
-#<YAML::Object:0x33d808>
-#<YAML::Object:0x33c4bc>
-#<YAML::Object:0x33a89c>
-#<YAML::Object:0x33917c>
-#<YAML::Object:0x337e6c>
+---
+- !ruby/object:Component 
+  comment: Input DC blocking
+  extraInfo: 1 Cap 50V Elect 3.3uF Low ESR D5 2 hmt C14,C15
+  longname: 50V Elect 3.3uF Low ESR D5 2 hmt
+  positions: 
+  - C14
+  - C15
+  spec: Low ESR 3.3uF 10V D5 RM2
+  type: Cap
+- !ruby/object:Component 
+  comment: Charge pump cap
+  extraInfo: 1 Cap 25V Cer 1uF X7R 10% 1206 1 smt C5
+  longname: 25V Cer 1uF X7R 10% 1206 1 smt
+  positions: 
+  - C5
+  spec: X7R 16V
+  type: Cap
+- !ruby/object:Component 
+  comment: Close-up supply capacitors
+  extraInfo: 1 Cap 16V Elect 330uF U-low ESR D8 2 hmt C18,C19
+  longname: 16V Elect 330uF U-low ESR D8 2 hmt
+  positions: 
+  - C18
+  - C19
+  spec: U-low ESR 16V 220 uF, max 10 mm tall
+  type: Cap
+- !ruby/object:Component 
+  comment: 5V bulk cap
+  extraInfo: 1 Cap 25V Elect 10uF std Low Prof 1 hmt C2
+  longname: 25V Elect 10uF std Low Prof 1 hmt
+  positions: 
+  - C2
+  spec: 10uF min 10V
+  type: Cap
+- !ruby/object:Component 
+  comment: Input and input feedback
+  extraInfo: 1 Res 22.0Kohm 1/10W 0.5% 0805 4 smt R2,R4,R5,R6
+  longname: 22.0Kohm 1/10W 0.5% 0805 4 smt
+  positions: 
+  - R2
+  - R4
+  - R5
+  - R6
+  spec: Low noise 1%
+  type: Res
+- !ruby/object:Component 
+  comment: Output speaker cables ESR damping
+  extraInfo: 1 Cap 50V Cer 10000pF X7R 0805 2 smt C29,C30
+  longname: 50V Cer 10000pF X7R 0805 2 smt
+  positions: 
+  - C29
+  - C30
+  spec: X7R 0805 0.01 uF
+  type: Cap

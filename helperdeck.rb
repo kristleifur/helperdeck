@@ -28,7 +28,7 @@ class Shoes::App
 		positionNames.each do | positionName | 
       # debug "Selecting position '#{positionName}', a #{positionName.class()}"
       # debug positionName
-		  [@boardTop, @boardBottom, @powerSchematic].each do | boardSide |
+		  @boards.each do | boardSide |
   	    boardSide.selectByName(positionName.downcase().split("-")[0].split("x")[0])
 	    end
       # debug @bagControllers
@@ -48,6 +48,25 @@ class Shoes::App
 	        debug "Bags dir found"
 	        bagDirContents = Dir["#{file}/*"]
           debug bagDirContents
+          @bagControllers ||= {}
+          @bagWins ||= {}
+          bagDirContents.each do | bagFile |
+            bagName = bagFile.split("/")[-1].gsub(".yaml", "")
+            debug "Bag name: '#{bagName}', loading ..."
+            bagContents = YAML::load_file(bagFile)
+            debug bagContents
+            debug "... loaded bag."
+            
+            winHeight = 19 + 21 * (bagContents.size + 1)
+            bagWin = window :title => "Bag #{bagName}, #{bagContents.size} pieces", :width => 340, :height => winHeight do
+              #
+            end
+            @bagWins[bagName] = bagWin
+            tehBag = Bag.new(bagWin, self, "#{bagName}")
+            tehBag.components = bagContents
+            @bagControllers[bagName] = tehBag
+            tehBag.update()
+          end
         end
         if file =~ /build_stages$/
           debug "Build-stages dir found"

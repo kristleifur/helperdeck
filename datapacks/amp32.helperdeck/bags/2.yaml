@@ -1,6 +1,62 @@
-#<YAML::Object:0x335130>
-#<YAML::Object:0x3337a4>
-#<YAML::Object:0x331a6c>
-#<YAML::Object:0x330b58>
-#<YAML::Object:0x32f848>
-#<YAML::Object:0x32e36c>
+---
+- !ruby/object:Component 
+  comment: Decoupling
+  extraInfo: 2 Cap 50V Cer 0.1uF X7R 0805 8 smt C1,C3,C7,C9,C17,C16,C20,C26,C50
+  longname: 50V Cer 0.1uF X7R 0805 8 smt
+  positions: 
+  - C1
+  - C3
+  - C7
+  - C9
+  - C17
+  - C16
+  - C20
+  - C26
+  - C50
+  spec: X7R 0805 25V
+  type: Cap
+- !ruby/object:Component 
+  comment: Separates AGND <=> GND
+  extraInfo: 2 Ferrite chip 60 Ohm 3000mA 0805 1 smt L11
+  longname: chip 60 Ohm 3000mA 0805 1 smt
+  positions: 
+  - L11
+  spec: HF choke 60 to 300 ohm 100MHz 0805
+  type: Ferrite
+- !ruby/object:Component 
+  comment: Output filter
+  extraInfo: 2 Res 10R 1/4W 1% 1206 2 smt R9,R10
+  longname: 10R 1/4W 1% 1206 2 smt
+  positions: 
+  - R9
+  - R10
+  spec: 10 ohm 0.25W
+  type: Res
+- !ruby/object:Component 
+  comment: Output filter
+  extraInfo: 2 Cap 50V Cer 0.22uF X7R 0805 2 smt C12,C13
+  longname: 50V Cer 0.22uF X7R 0805 2 smt
+  positions: 
+  - C12
+  - C13
+  spec: 0.22uF 25V X7R 0805
+  type: Cap
+- !ruby/object:Component 
+  comment: Output filter
+  extraInfo: 2 Cap 25V Cer 0.47uF 10% X7R 0805 4 smt C22,C25,C27,C28
+  longname: 25V Cer 0.47uF 10% X7R 0805 4 smt
+  positions: 
+  - C22
+  - C25
+  - C27
+  - C28
+  spec: 0.47uF 25V X7R 0805
+  type: Cap
+- !ruby/object:Component 
+  comment: Pull-up for sleep pin
+  extraInfo: 2 Res 1.0Mohm 1/8W 5% 0805 1 smt R1
+  longname: 1.0Mohm 1/8W 5% 0805 1 smt
+  positions: 
+  - R1
+  spec: Between 470K and 1.2 M 0805
+  type: Res
