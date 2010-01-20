@@ -1,12 +1,20 @@
 --- 
-"": !ruby/object:Position 
+c19: !ruby/object:Position 
   components: []
 
-  height: 17
-  name: ""
-  width: 30
-  x: 339
-  y: 86
+  height: 41
+  name: c19
+  width: 55
+  x: 148
+  y: 123
+c141: !ruby/object:Position 
+  components: []
+
+  height: 16
+  name: c141
+  width: 27
+  x: 340
+  y: 123
 l11: !ruby/object:Position 
   components: []
 
@@ -15,6 +23,30 @@ l11: !ruby/object:Position
   width: 17
   x: 293
   y: 100
+r3: !ruby/object:Position 
+  components: []
+
+  height: 27
+  name: r3
+  width: 18
+  x: 269
+  y: 69
+q3: !ruby/object:Position 
+  components: []
+
+  height: 23
+  name: q3
+  width: 14
+  x: 247
+  y: 71
+d3: !ruby/object:Position 
+  components: []
+
+  height: 18
+  name: d3
+  width: 49
+  x: 189
+  y: 20
 c2: !ruby/object:Position 
   components: []
 
@@ -23,6 +55,14 @@ c2: !ruby/object:Position
   width: 36
   x: 281
   y: 174
+d4: !ruby/object:Position 
+  components: []
+
+  height: 19
+  name: d4
+  width: 50
+  x: 188
+  y: 188
 l1: !ruby/object:Position 
   components: []
 
@@ -31,6 +71,46 @@ l1: !ruby/object:Position
   width: 67
   x: 56
   y: 20
+c3: !ruby/object:Position 
+  components: []
+
+  height: 18
+  name: c3
+  width: 32
+  x: 209
+  y: 137
+c14: !ruby/object:Position 
+  components: []
+
+  height: 29
+  name: c14
+  width: 28
+  x: 343
+  y: 147
+l2: !ruby/object:Position 
+  components: []
+
+  height: 77
+  name: l2
+  width: 66
+  x: 57
+  y: 129
+d6: !ruby/object:Position 
+  components: []
+
+  height: 20
+  name: d6
+  width: 47
+  x: 132
+  y: 186
+c15: !ruby/object:Position 
+  components: []
+
+  height: 31
+  name: c15
+  width: 37
+  x: 337
+  y: 48
 c50: !ruby/object:Position 
   components: []
 
@@ -47,6 +127,30 @@ c16: !ruby/object:Position
   width: 16
   x: 294
   y: 134
+c6: !ruby/object:Position 
+  components: []
+
+  height: 14
+  name: c6
+  width: 29
+  x: 210
+  y: 118
+d8: !ruby/object:Position 
+  components: []
+
+  height: 18
+  name: d8
+  width: 47
+  x: 135
+  y: 19
+c7: !ruby/object:Position 
+  components: []
+
+  height: 17
+  name: c7
+  width: 31
+  x: 208
+  y: 96
 j4: !ruby/object:Position 
   components: []
 
@@ -55,3 +159,19 @@ j4: !ruby/object:Position
   width: 23
   x: 378
   y: 75
+c18: !ruby/object:Position 
+  components: []
+
+  height: 44
+  name: c18
+  width: 56
+  x: 148
+  y: 58
+c151: !ruby/object:Position 
+  components: []
+
+  height: 17
+  name: c151
+  width: 30
+  x: 339
+  y: 86

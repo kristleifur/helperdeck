@@ -17,17 +17,17 @@
   type: LED
 - !ruby/object:Component 
   comment: Output clamping
-  extraInfo: "5 Diode Schottky 1A 60V SMA 8 smt\xC2\xA4 D5,D6,D7,D8,D9,D10,D11,D12"
+  extraInfo: "5 Diode Schottky 1A 60V SMA 8 smt\xC2\xA4 D1,D2,D3,D4,D5,D6,D7,D8"
   longname: "Schottky 1A 60V SMA 8 smt\xC2\xA4"
   positions: 
+  - D1
+  - D2
+  - D3
+  - D4
   - D5
   - D6
   - D7
   - D8
-  - D9
-  - D10
-  - D11
-  - D12
   spec: 30V, 1A Ultra-fast or Schottky
   type: Diode
 - !ruby/object:Component 

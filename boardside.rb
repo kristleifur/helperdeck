@@ -43,10 +43,12 @@ class BoardSide
       if (@selectedPositions.size() == 1)
         if key == "\n"
           @freshName = true
+          debug "Key is newline, setting #@freshName to true"
           # debug "Clearing live string"
           # @liveString.delete!(@liveString)
         else
           if (freshName)
+            debug "@freshName is true ... deleting name"
             @selectedPositions[0].name.delete!(@selectedPositions[0].name)
             @selectedPositions[0].name << key.to_s() # @liveString.dup()
             @selectedPositionWindowHandler.update()
@@ -226,7 +228,7 @@ class BoardSide
             # debug "Found something: #{pos.to_yaml()}"
             @selectedPositions << pos
             selectedPosNames << pos.name
-            if (!pos.name || pos.name = "")
+            if (!pos.name || pos.name == "")
               allHaveNames = false
             end
           end
@@ -272,7 +274,7 @@ class BoardSide
       # debug "Found it"
       # debug "positionName found on board #{@pcbImage}"
       tehPos = @positions[positionName]
-      selectedPositions << @positions[positionName]
+      @selectedPositions << @positions[positionName]
       @explodingBoxes << ExplodingBox.new(tehPos.x, tehPos.y, tehPos.width, tehPos.height)
     end
   end
