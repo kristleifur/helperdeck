@@ -167,6 +167,14 @@ c25: !ruby/object:Position
   width: 15
   x: 101
   y: 161
+r: !ruby/object:Position 
+  components: []
+
+  height: 16
+  name: r9
+  width: 38
+  x: 59
+  y: 104
 c26: !ruby/object:Position 
   components: []
 

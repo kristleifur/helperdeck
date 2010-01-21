@@ -70,8 +70,8 @@ class Shoes::App
         end
         if file =~ /build_stages$/
           debug "Build-stages dir found"
-          stageDirContents = Dir["#{file}/*"]
-          debug stageDirContents
+          @stageDirContents = Dir["#{file}/*"].sort()
+          debug @stageDirContents
         end
       else
         debug "#{file} is a file"
@@ -118,6 +118,76 @@ class Shoes::App
         else
         end
 	    end
+    end
+    if @stageDirContents
+      @stages = []
+      @stageWindows = []
+      @stageComponents = {}
+
+      @numberOfStages = @stageDirContents.size
+    
+      tmpStageComponents = {}
+    
+      @numberOfStages.times do | i |
+        tmpWin = window :title => "Stage #{i + 1}", :width => 250, :height => 60 do
+          # ;
+        end
+        @stageWindows << tmpWin
+        @stages << BuildStage.new(tmpWin, self)
+        # debug @stages[0]
+        # @stageComponents[@stages[i].stagename] = @stages[i].positions
+      
+        @stages[i].stagename = @stageDirContents[i].split("/")[-1].gsub(".txt","")
+        tmpStageComponents[i] = File.read(@stageDirContents[i]).strip().split(" ")
+        debug tmpStageComponents[i]
+      end
+
+      debug "Developer note: remember to sync the stageComponents lookup to the board positions post-load"
+      # debug tmpStageComponents
+      #   debug tmpStageComponents[0]
+      #   debug tmpStageComponents[0].class()
+      tmpStageComponents.each do | stageNr, stage |
+        debug "Populating stage '#{stageNr}'"
+        stage.each do | i |
+          i.downcase!()
+          debug "Looking for position '#{i}'"
+          foundOnBoards = false
+          @boards.each do | board |
+            if (board.positions[i])
+              foundOnBoards = true
+            end
+          end
+          if (!foundOnBoards)
+            debug "Stage init - warning - position #{i} not found on the board"
+          else
+            pos = nil
+            @boards.each do | board |
+              # debug board.positions.to_yaml()
+              if board.positions[i]
+                pos ||= board.positions[i]
+                debug "Got pos from board? - pos is '#{pos.to_yaml()}'"
+                debug "Onboard we have '#{board.positions[i].to_yaml}' ... ?"
+              end
+            end
+            # pos ||= @boardBottom.positions[i]
+            # debug "Stages 0:"
+            # debug @stages[0]
+            # debug "Stages 0 positions:"
+            # debug @stages[0].positions
+            # debug "Pos:"
+            # debug pos
+            debug "Putting pos '#{pos}' into @stages[#{stageNr}]"
+            if (pos)
+              @stages[stageNr].positions << pos
+            end
+          end
+        end
+        # debug "Updating stage nr. #{stageNr}, name '#{@stages[stageNr].stagename}'"
+        @stages[stageNr].update()
+      end
+      # @stages[0].update
+    else
+      debug "Stage dir contents are none ... hmm"
     end
   end
 end
