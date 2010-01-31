@@ -10,3 +10,7 @@ imageBackup
 potential libs/
 cruft
 doc/cruft
+datapacks/*/rawmaterial
+datapacks/*/rawmaterial/*
+rawmaterial/
+rawmaterial/*
