@@ -1,0 +1,39 @@
+--- 
+- !ruby/object:Component 
+  longname: Relay Pwr PC MNT DPDT 8A 24VDC 1
+  extraInfo: 6 hmt Relay Pwr PC MNT DPDT 8A 24VDC 1 REL1
+  type: hmt
+  spec: 2x8A, 24V coil
+  comment: Speaker shut-off relay
+  positions: 
+  - REL1
+- !ruby/object:Component 
+  longname: Res Ax. Met. Film 0.4W 3.4mm 270R 1
+  extraInfo: "6 hmt Res Ax. Met. Film 0.4W 3.4mm 270R 1 R100 "
+  type: hmt
+  spec: ""
+  comment: Value depends on rail voltage
+  positions: 
+  - R100
+- !ruby/object:Component 
+  longname: Toroid T80-2 4
+  extraInfo: "6 - Toroid T80-2 4 L1,L2,L3,L4 "
+  type: "-"
+  spec: Iron powder toroid, min 6A saturation @15uH
+  comment: Output filter
+  positions: 
+  - L1
+  - L2
+  - L3
+  - L4
+- !ruby/object:Component 
+  longname: Copper wire 0.6mm x 1.25m x 4 1
+  extraInfo: "6 - Copper wire 0.6mm x 1.25m x 4 1 L1,L2,L3,L4 "
+  type: "-"
+  spec: 0.6 mm diam, soft copper, insulated, 1.2m per toroid
+  comment: For winding toroids
+  positions: 
+  - L1
+  - L2
+  - L3
+  - L4

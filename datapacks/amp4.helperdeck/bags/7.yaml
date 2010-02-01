@@ -1,0 +1,69 @@
+--- 
+- !ruby/object:Component 
+  longname: Tripath TP2050 1
+  extraInfo: "7 smt\xC2\xA4 Tripath TP2050 1 U2 "
+  type: "smt\xC2\xA4"
+  spec: Tripath TP2050 or STA50X
+  comment: Output driver chip
+  positions: 
+  - U2
+- !ruby/object:Component 
+  longname: Rect Bridge 200V 8A GBU802 1
+  extraInfo: "7 hmt\xC2\xA4 Rect Bridge 200V 8A GBU802 1 D99 "
+  type: "hmt\xC2\xA4"
+  spec: 8A continous / 100V GBU - KBU package
+  comment: Main rectifier
+  positions: 
+  - D99
+- !ruby/object:Component 
+  longname: MCP810T Superv. 4.85V A-high SOT23 1
+  extraInfo: "7 smt\xC2\xA4 MCP810T Superv. 4.85V A-high SOT23 1 U5 "
+  type: "smt\xC2\xA4"
+  spec: ""
+  comment: Voltage supervisor 4.75V Active High SOT23
+  positions: 
+  - U5
+- !ruby/object:Component 
+  longname: LED 3mm Hi-eff Red Diffused 3
+  extraInfo: "7 hmt\xC2\xA4 LED 3mm Hi-eff Red Diffused 3 External "
+  type: "hmt\xC2\xA4"
+  spec: ""
+  comment: Thermal warning, input overload, fault
+  positions: 
+  - External
+- !ruby/object:Component 
+  longname: MOSFET N-ch 115mA 60V SOT23 (702) 3
+  extraInfo: "7 smt\xC2\xA4 MOSFET N-ch 115mA 60V SOT23 (702) 3 U10,U11,U12 "
+  type: "smt\xC2\xA4"
+  spec: N chan FET SOT-23 min 50 mA / 50V
+  comment: Relay drivers
+  positions: 
+  - U10
+  - U11
+  - U12
+- !ruby/object:Component 
+  longname: MOSFET P-ch 50V 130mA SOT-23 (SP) 3
+  extraInfo: "7 smt\xC2\xA4 MOSFET P-ch 50V 130mA SOT-23 (SP) 3 Q4,Q5,Q6 "
+  type: "smt\xC2\xA4"
+  spec: P-chan 25V / 50mA min
+  comment: Status LED Drivers
+  positions: 
+  - Q4
+  - Q5
+  - Q6
+- !ruby/object:Component 
+  longname: Voltage Reg Adj 1.5A TO-220 1
+  extraInfo: "7 hmt\xC2\xA4 Voltage Reg Adj 1.5A TO-220 1 Q10 "
+  type: "hmt\xC2\xA4"
+  spec: ""
+  comment: Pre-regulator 9V. Metal surface is conducting. Do NOT ground!
+  positions: 
+  - Q10
+- !ruby/object:Component 
+  longname: Voltage Reg Pos Adj 100mA TO-92 1
+  extraInfo: "7 hmt\xC2\xA4 Voltage Reg Pos Adj 100mA TO-92 1 Q2 "
+  type: "hmt\xC2\xA4"
+  spec: LM317L TO-92
+  comment: 5V regulator
+  positions: 
+  - Q2

@@ -1,0 +1,65 @@
+--- 
+- !ruby/object:Component 
+  longname: Cap 50V Elect 3.3uF Low ESR D5 2
+  extraInfo: "1 hmt Cap 50V Elect 3.3uF Low ESR D5 2 C100,C200 "
+  type: hmt
+  spec: 3.3 uF min 10V Panasonic FC or equivalent
+  comment: Input capacitors
+  positions: 
+  - C100
+  - C200
+- !ruby/object:Component 
+  longname: Cap 35V Elect 330uF U-low ESR D10 2
+  extraInfo: "1 hmt Cap 35V Elect 330uF U-low ESR D10 2 C50,C51 "
+  type: hmt
+  spec: Min 35V 150 uF D10 RM5
+  comment: 5V system input decoupling / LP filter
+  positions: 
+  - C50
+  - C51
+- !ruby/object:Component 
+  longname: Cap 50V Film 0.22uF Polyester RM5 4
+  extraInfo: "1 hmt Cap 50V Film 0.22uF Polyester RM5 4 C11,C23,C25,C36 "
+  type: hmt
+  spec: 50V 0.22uF Poly-film RM5
+  comment: Output filter
+  positions: 
+  - C11
+  - C23
+  - C25
+  - C36
+- !ruby/object:Component 
+  longname: Cap 100V Film 0.1uF Polyester RM5 2
+  extraInfo: "1 hmt Cap 100V Film 0.1uF Polyester RM5 2 C17,C32 "
+  type: hmt
+  spec: 100V 0.1uF Poly-film RM5
+  comment: Output filter side-side
+  positions: 
+  - C17
+  - C32
+- !ruby/object:Component 
+  longname: Cap 35V Elect 1500uF U-Low ESR D12 2
+  extraInfo: "1 hmt Cap 35V Elect 1500uF U-Low ESR D12 2 C102,C103 "
+  type: hmt
+  spec: Ultra low ESR min 1000uF 35V D12 RM5
+  comment: Close-up PS bulk caps
+  positions: 
+  - C102
+  - C103
+- !ruby/object:Component 
+  longname: Cap 10V Elect 1000uF Low ESR 1
+  extraInfo: "1 hmt Cap 10V Elect 1000uF Low ESR 1 C1 "
+  type: hmt
+  spec: 1000uF 10V RM 3.5 D8
+  comment: 5V bulk cap
+  positions: 
+  - C1
+- !ruby/object:Component 
+  longname: Cap 100V Film 0.22uF Polyester RM7.5 2
+  extraInfo: "1 hmt Cap 100V Film 0.22uF Polyester RM7.5 2 C15,C28 "
+  type: hmt
+  spec: 0.22uF 100V RM7.5 poly-film
+  comment: Output filter
+  positions: 
+  - C15
+  - C28

@@ -1,0 +1,65 @@
+--- 
+- !ruby/object:Component 
+  longname: Cap 100V Cer 330pF NP0 0805 2
+  extraInfo: "4 smt Cap 100V Cer 330pF NP0 0805 2 C13,C26 "
+  type: smt
+  spec: 330pF NPO 100V 0805
+  comment: Output HF snubber
+  positions: 
+  - C13
+  - C26
+- !ruby/object:Component 
+  longname: Res 8.25Kohm 1/10W 0.5% 0805 1
+  extraInfo: 4 smt Res 8.25Kohm 1/10W 0.5% 0805 1 R5
+  type: smt
+  spec: 8.2K or 8.25K 1%
+  comment: Internal Tripath chip Reference voltage
+  positions: 
+  - R5
+- !ruby/object:Component 
+  longname: Res 14.0Kohm 1/10W 0.5% 0805 4
+  extraInfo: "4 smt Res 14.0Kohm 1/10W 0.5% 0805 4 R103,R107,R112,R114 "
+  type: smt
+  spec: 14K 1% low noise. Value is rail voltage dependent
+  comment: Modulator feedback
+  positions: 
+  - R103
+  - R107
+  - R112
+  - R114
+- !ruby/object:Component 
+  longname: Res 1.0Kohm 1/10W 0.5% 0805 4
+  extraInfo: "4 smt Res 1.0Kohm 1/10W 0.5% 0805 4 R14,R22,R30,R7 "
+  type: smt
+  spec: 1K 1% 0805 thin film / low noise
+  comment: Feedback network
+  positions: 
+  - R14
+  - R22
+  - R30
+  - R7
+- !ruby/object:Component 
+  longname: Res 11.3Kohm 1/8W 1% 0805 1
+  extraInfo: "4 smt Res 11.3Kohm 1/8W 1% 0805 1 R53 "
+  type: smt
+  spec: 11K 10% 0805
+  comment: Disabling of negative rail voltage sense
+  positions: 
+  - R53
+- !ruby/object:Component 
+  longname: Res 200Kohm 1/10W 0.5% 0805 2
+  extraInfo: "4 smt Res 200Kohm 1/10W 0.5% 0805 2 R52,R54 "
+  type: smt
+  spec: 200K 1% 0805
+  comment: Positive rail voltage sense
+  positions: 
+  - R52
+  - R54
+- !ruby/object:Component 
+  longname: Res 249R 1/10W 0.5% 0805 1
+  extraInfo: "4 smt Res 249R 1/10W 0.5% 0805 1 R110 "
+  type: smt
+  spec: 249 Ohm 1%
+  comment: 5V setpoint
+  positions: 
+  - R110

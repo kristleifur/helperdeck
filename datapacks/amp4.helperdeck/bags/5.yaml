@@ -1,0 +1,73 @@
+--- 
+- !ruby/object:Component 
+  longname: Cap 50V Cer 0.1uF X7R 0805 20
+  extraInfo: "5 smt Cap 50V Cer 0.1uF X7R 0805 20 C10,C110,C112,C12,C14,C18,C2,C21,C22,C24,C3,C30,C31,C35,C4,C59,C60,C61,C62,C7 "
+  type: smt
+  spec: 0.1 uF X7R 0805 50V
+  comment: Various decoupling
+  positions: 
+  - C10
+  - C110
+  - C112
+  - C12
+  - C14
+  - C18
+  - C2
+  - C21
+  - C22
+  - C24
+  - C3
+  - C30
+  - C31
+  - C35
+  - C4
+  - C59
+  - C60
+  - C61
+  - C62
+  - C7
+- !ruby/object:Component 
+  longname: Cap 50V Film 1.0uF Polyester RM5 2
+  extraInfo: "5 hmt Cap 50V Film 1.0uF Polyester RM5 2 C100,C200 "
+  type: hmt
+  spec: ""
+  comment: Alternate input capacitors
+  positions: 
+  - C100
+  - C200
+- !ruby/object:Component 
+  longname: Res 10.0Kohm 1/10W 0.5% 0805 8
+  extraInfo: "5 smt Res 10.0Kohm 1/10W 0.5% 0805 8 R37,R40,R45 "
+  type: smt
+  spec: 1% 0805 10K
+  comment: Pull-up for status pins, Alternate feedback
+  positions: 
+  - R37
+  - R40
+  - R45
+- !ruby/object:Component 
+  longname: Res 750R 1/10W 0.5% 0805 2
+  extraInfo: "5 smt Res 750R 1/10W 0.5% 0805 2 R56,R111 "
+  type: smt
+  spec: 750 ohm 1% low noise
+  comment: Voltage setpoint
+  positions: 
+  - R56
+  - R111
+- !ruby/object:Component 
+  longname: Res Ax. Met. Film 0.4W 3.4mm 100R 1
+  extraInfo: "5 hmt Res Ax. Met. Film 0.4W 3.4mm 100R 1 R100 "
+  type: hmt
+  spec: ""
+  comment: Value depends on rail voltage
+  positions: 
+  - R100
+- !ruby/object:Component 
+  longname: Res Ax. Met. Film 1W 6.5mm 15ohm 2
+  extraInfo: "5 hmt Res Ax. Met. Film 1W 6.5mm 15ohm 2 R42,R50 "
+  type: hmt
+  spec: 15 Ohm 1W RM10, metal film
+  comment: Output filter
+  positions: 
+  - R42
+  - R50

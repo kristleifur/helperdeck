@@ -1,0 +1,58 @@
+--- 
+- !ruby/object:Component 
+  longname: Res 20.0Kohm 1/10W 0.5% 0805 5
+  extraInfo: "3 smt Res 20.0Kohm 1/10W 0.5% 0805 5 R21,R23,R29,R31 "
+  type: smt
+  spec: 20K or 22K Low noise 1%
+  comment: Input resistors / Input stage feedback
+  positions: 
+  - R21
+  - R23
+  - R29
+  - R31
+- !ruby/object:Component 
+  longname: Trim pot Cerm 5Kohm 25TRN Top 2
+  extraInfo: "3 hmt Trim pot Cerm 5Kohm 25TRN Top 2 POT1,POT2 "
+  type: hmt
+  spec: 5K multiturn
+  comment: Trim output offset
+  positions: 
+  - POT1
+  - POT2
+- !ruby/object:Component 
+  longname: Res 10R 1/4W 1% 1206 1
+  extraInfo: "3 smt Res 10R 1/4W 1% 1206 1 R6 "
+  type: smt
+  spec: 10 ohm 0.25W 1206
+  comment: Current limit / LP filter for 5V section
+  positions: 
+  - R6
+- !ruby/object:Component 
+  longname: Res 510Kohm 1/10W 0.5% 0805 4
+  extraInfo: "3 smt Res 510Kohm 1/10W 0.5% 0805 4 R18,R2,R26,R4 "
+  type: smt
+  spec: 470K to 690K low noise
+  comment: Output offset trim limiting
+  positions: 
+  - R18
+  - R2
+  - R26
+  - R4
+- !ruby/object:Component 
+  longname: Cap 50V Cer 390pF NP0/COG 0805 2
+  extraInfo: "3 smt Cap 50V Cer 390pF NP0/COG 0805 2 C40,C41 "
+  type: smt
+  spec: 390pF NPO / COG 10%
+  comment: Feedback delay
+  positions: 
+  - C40
+  - C41
+- !ruby/object:Component 
+  longname: Res 20R 1/4W 5% 1206 SMD 2
+  extraInfo: "3 smt Res 20R 1/4W 5% 1206 SMD 2 R43,R51 "
+  type: smt
+  spec: 20 ohm 0.25W 1206
+  comment: Output HF snubber
+  positions: 
+  - R43
+  - R51

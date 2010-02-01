@@ -1,0 +1,18 @@
+--- 
+- !ruby/object:Component 
+  longname: Cap 35V Elect Snap-In 10000uF D22 2
+  extraInfo: "0 hmt Cap 35V Elect Snap-In 10000uF D22 2 C1000,C1001 "
+  type: hmt
+  spec: 10000 uF high ripple D22, RM10
+  comment: Main power bulk caps
+  positions: 
+  - C1000
+  - C1001
+- !ruby/object:Component 
+  longname: AMP4 PCB 1
+  extraInfo: "0 - AMP4 PCB 1 PCB "
+  type: "-"
+  spec: Double layer, Double weight
+  comment: PCB
+  positions: 
+  - PCB
