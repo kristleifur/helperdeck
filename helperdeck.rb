@@ -39,7 +39,11 @@ class Shoes::App
 	end
 	
 	def loadDatapack(datapackName)
-	  debug "LOL"
+	  debug "Loading '#{datapackName}'"
+	  @bagControllers ||= {}
+    @bagWins ||= {}
+    @boards ||= []
+    @boardsToFilenames ||= {}
 	  datapackFiles = Dir["datapacks/#{datapackName}.helperdeck/*"]
 	  datapackFiles.each do | file |
 	    if File.directory?(file)
@@ -48,8 +52,8 @@ class Shoes::App
 	        debug "Bags dir found"
 	        bagDirContents = Dir["#{file}/*"]
           debug bagDirContents
-          @bagControllers ||= {}
-          @bagWins ||= {}
+          # @bagControllers ||= {}
+          #           @bagWins ||= {}
           bagDirContents.each do | bagFile |
             bagName = bagFile.split("/")[-1].gsub(".yaml", "")
             debug "Bag name: '#{bagName}', loading ..."
@@ -82,7 +86,7 @@ class Shoes::App
           imagename = file.gsub(".yaml", ".png")
           if (datapackFiles.include?(imagename))
             debug "found matching image"
-            @boards ||= []
+            # @boards ||= []
             wintitle = ""
             file.split("/")[(-2)..(-1)].each do | bit |
               wintitle << "#{bit}/"
@@ -110,7 +114,7 @@ class Shoes::App
               puts "WARNING: No position info found in '#{file}'"
             end
             @boards << tehBoard
-            @boardsToFilenames ||= {}
+            # @boardsToFilenames ||= {}
             @boardsToFilenames[tehBoard] = file
           else
             debug "Image not found for '#{file}', ignoring"
@@ -199,8 +203,8 @@ Shoes.app(:width => 480, :height => 50) do
   end
   @selectedPosition = SelectedPosition.new(@liveComponentWin, self)
   
-	loadDatapack("amp32")
-
+	# loadDatapack("amp32")
+  loadDatapack("amp4")
  
   # @uglyBagModel = YAML::load_file("Amp15_BagsAndComponents.yaml")
   #   # debug "bags: #{@uglyBagModel.keys()}"
@@ -265,7 +269,8 @@ Shoes.app(:width => 480, :height => 50) do
   end
   
   @loadButton = button "Load Board Posn's" do
-    # debug "Load Board Posn's"
+    debug "Load button triggered - no functionality!"
+    # debug "Load Board Posn's
     #     freshPositions = YAML.load_file("boardTop.dump.yaml")
     #     @boardTop.positions = {}
     #     freshPositions.values.each do | i |
