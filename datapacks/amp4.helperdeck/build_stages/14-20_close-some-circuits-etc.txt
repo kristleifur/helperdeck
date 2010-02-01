@@ -1,0 +1,1 @@
+j5 j10 pot1 pot2 c100 c200 r100 u10 u11 u12 q4 q5 q6
