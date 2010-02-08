@@ -10,7 +10,7 @@ require 'Stage'
 
 def selectComponent(componentName)
   debug "Warning - helperdeck.selectComponent() called - inactive method"
-  debug componentName
+  # debug componentName
 end
 
 class Shoes::App
@@ -47,19 +47,19 @@ class Shoes::App
 	  datapackFiles = Dir["datapacks/#{datapackName}.helperdeck/*"]
 	  datapackFiles.each do | file |
 	    if File.directory?(file)
-	      debug "#{file} is a directory"
+        # debug "#{file} is a directory"
 	      if file =~ /bags$/
-	        debug "Bags dir found"
+          # debug "Bags dir found"
 	        bagDirContents = Dir["#{file}/*"]
-          debug bagDirContents
+          # debug bagDirContents
           # @bagControllers ||= {}
           #           @bagWins ||= {}
           bagDirContents.each do | bagFile |
             bagName = bagFile.split("/")[-1].gsub(".yaml", "")
-            debug "Bag name: '#{bagName}', loading ..."
+            # debug "Bag name: '#{bagName}', loading ..."
             bagContents = YAML::load_file(bagFile)
-            debug bagContents
-            debug "... loaded bag."
+            # debug bagContents
+            # debug "... loaded bag."
             
             winHeight = 19 + 21 * (bagContents.size + 1)
             bagWin = window :title => "Bag #{bagName}, #{bagContents.size} pieces", :width => 340, :height => winHeight do
@@ -73,19 +73,19 @@ class Shoes::App
           end
         end
         if file =~ /build_stages$/
-          debug "Build-stages dir found"
+          # debug "Build-stages dir found"
           @stageDirContents = Dir["#{file}/*"].sort()
-          debug @stageDirContents
+          # debug @stageDirContents
         end
       else
-        debug "#{file} is a file"
-        debug file.inspect()
-        debug file.class()
+        # debug "#{file} is a file"
+        # debug file.inspect()
+        # debug file.class()
         if file.include?(".yaml")
-          debug "#{file} is YAML"
+          # debug "#{file} is YAML"
           imagename = file.gsub(".yaml", ".png")
           if (datapackFiles.include?(imagename))
-            debug "found matching image"
+            # debug "found matching image"
             # @boards ||= []
             wintitle = ""
             file.split("/")[(-2)..(-1)].each do | bit |
@@ -95,23 +95,23 @@ class Shoes::App
             imgsize = imagesize(imagename)
             width = imgsize[0]
             height = imgsize[1]
-            debug "Image width: #{imgsize[0]}, height: #{imgsize[1]}"
+            # debug "Image width: #{imgsize[0]}, height: #{imgsize[1]}"
 
             boardWin = window :title => wintitle, :width => width, :height => height do
             end
             tehBoard = BoardSide.new(boardWin, imagename, self, @selectedPosition)
-            debug "Load Board Posn's"
+            # debug "Load Board Posn's"
             freshPositions = YAML.load_file(file)
             tehBoard.positions = {}
             if freshPositions
               freshPositions.values.each do | i |
                 if (tehBoard.positions[i.name])
-                  debug "position #{i.name} is duplicated"
+                  debug "Warning: position #{i.name} is duplicated"
                 end
                 tehBoard.positions[i.name] = i
               end
             else
-              puts "WARNING: No position info found in '#{file}'"
+              # puts "WARNING: No position info found in '#{file}'"
             end
             @boards << tehBoard
             # @boardsToFilenames ||= {}
@@ -143,18 +143,18 @@ class Shoes::App
       
         @stages[i].stagename = @stageDirContents[i].split("/")[-1].gsub(".txt","")
         tmpStageComponents[i] = File.read(@stageDirContents[i]).strip().split(" ")
-        debug tmpStageComponents[i]
+        # debug tmpStageComponents[i]
       end
 
-      debug "Developer note: remember to sync the stageComponents lookup to the board positions post-load"
+      # debug "Developer note: remember to sync the stageComponents lookup to the board positions post-load"
       # debug tmpStageComponents
       #   debug tmpStageComponents[0]
       #   debug tmpStageComponents[0].class()
       tmpStageComponents.each do | stageNr, stage |
-        debug "Populating stage '#{stageNr}'"
+        # debug "Populating stage '#{stageNr}'"
         stage.each do | i |
           i.downcase!()
-          debug "Looking for position '#{i}'"
+          # debug "Looking for position '#{i}'"
           foundOnBoards = false
           @boards.each do | board |
             if (board.positions[i])
@@ -169,8 +169,8 @@ class Shoes::App
               # debug board.positions.to_yaml()
               if board.positions[i]
                 pos ||= board.positions[i]
-                debug "Got pos from board? - pos is '#{pos.to_yaml()}'"
-                debug "Onboard we have '#{board.positions[i].to_yaml}' ... ?"
+                # debug "Got pos from board? - pos is '#{pos.to_yaml()}'"
+                # debug "Onboard we have '#{board.positions[i].to_yaml}' ... ?"
               end
             end
             # pos ||= @boardBottom.positions[i]
@@ -180,7 +180,7 @@ class Shoes::App
             # debug @stages[0].positions
             # debug "Pos:"
             # debug pos
-            debug "Putting pos '#{pos}' into @stages[#{stageNr}]"
+            # debug "Putting pos '#{pos}' into @stages[#{stageNr}]"
             if (pos)
               @stages[stageNr].positions << pos
             end

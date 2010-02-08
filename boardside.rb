@@ -43,12 +43,12 @@ class BoardSide
       if (@selectedPositions.size() == 1)
         if key == "\n"
           @freshName = true
-          debug "Key is newline, setting #@freshName to true"
+          # debug "Key is newline, setting #@freshName to true"
           # debug "Clearing live string"
           # @liveString.delete!(@liveString)
         else
           if (freshName)
-            debug "@freshName is true ... deleting name"
+            # debug "@freshName is true ... deleting name"
             @selectedPositions[0].name.delete!(@selectedPositions[0].name)
             @selectedPositions[0].name << key.to_s() # @liveString.dup()
             @selectedPositionWindowHandler.update()
@@ -177,16 +177,16 @@ class BoardSide
         if (pos.left <= x && pos.top <= y && pos.left + pos.width >= x && pos.top + pos.height >= y)
           # debug "Found something: #{pos.to_yaml()}"
           @selectedPositions << pos
-          debug "in-board selection code; pos: #{pos}"
+          # debug "in-board selection code; pos: #{pos}"
           if (!pos.name || pos.name == "")
-            debug "allHaveNames = false, shouldn't call selectByName in parent"
+            # debug "allHaveNames = false, shouldn't call selectByName in parent"
             allHaveNames = false
           end
         end
       end
       
       if (allHaveNames)
-        puts "Calling selectByName in parent ... (?)"
+        # puts "Calling selectByName in parent ... (?)"
         allNames = []
         selectedPositions.each do | selPos |
           allNames << selPos.name()
