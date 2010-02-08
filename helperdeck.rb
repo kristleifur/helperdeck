@@ -205,6 +205,7 @@ Shoes.app(:width => 480, :height => 50) do
   
 	# loadDatapack("amp32")
   loadDatapack("amp4")
+  # loadDatapack("amp15-ps")
  
   # @uglyBagModel = YAML::load_file("Amp15_BagsAndComponents.yaml")
   #   # debug "bags: #{@uglyBagModel.keys()}"
