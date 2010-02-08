@@ -1,6 +1,6 @@
-require 'Position'
-require 'SelectedPosition'
-require 'ExplodingBox'
+require 'position'
+require 'selectedposition'
+require 'explodingbox'
 require 'yaml'
 
 class Click
