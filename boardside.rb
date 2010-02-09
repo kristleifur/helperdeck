@@ -1,6 +1,6 @@
-require 'Position'
-require 'SelectedPosition'
-require 'ExplodingBox'
+require 'position'
+require 'selectedposition'
+require 'explodingbox'
 require 'yaml'
 
 class Click
@@ -186,7 +186,7 @@ class BoardSide
       end
       
       if (allHaveNames)
-        puts "Calling selectByName in parent ... (?)"
+        # puts "Calling selectByName in parent ... (?)"
         allNames = []
         selectedPositions.each do | selPos |
           allNames << selPos.name()

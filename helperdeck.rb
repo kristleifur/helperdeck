@@ -2,11 +2,11 @@
 
 require 'yaml'
 
-require 'Bag'
-require 'BoardSide'
-require 'Position'
-require 'SelectedPosition'
-require 'Stage'
+require 'bag'
+require 'boardside'
+require 'position'
+require 'selectedposition'
+require 'stage'
 
 def selectComponent(componentName)
   debug "Warning - helperdeck.selectComponent() called - inactive method"
