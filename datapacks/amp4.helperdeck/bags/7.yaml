@@ -1,5 +1,13 @@
 --- 
 - !ruby/object:Component 
+  longname: Tripath TC2000 1
+  extraInfo: "7 smt\xC2\xA4 Tripath TC2000 1 U1"
+  type: "smt\xC2\xA4"
+  spec: Tripath TC2000
+  comment: Controller chip
+  positions: 
+  - U1
+- !ruby/object:Component 
   longname: Tripath TP2050 1
   extraInfo: "7 smt\xC2\xA4 Tripath TP2050 1 U2 "
   type: "smt\xC2\xA4"
