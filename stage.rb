@@ -10,7 +10,7 @@ class BuildStage
     @positions = []
 
     # debug mainApp.inspect()
-    @nameFlow = @stageWin.flow() do | flow |
+    @nameFlow = @stageWin.flow() do # | flowz0r |
       # @stageWin.para "Stage:"
       # @stageWin.edit_line ""
     end
@@ -41,7 +41,7 @@ class BuildStage
   #   end
   def update()
     @nameFlow.clear()
-    @nameFlow = @stageWin.flow() do | flow |
+    @nameFlow = @stageWin.flow() do # | flowz0r |
       @stageWin.para @stageWin.link "#{@stagename}", :weight => 900
       @stageWin.click do
         # debug "Clicked the 'Positions' stack"

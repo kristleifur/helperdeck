@@ -3,7 +3,7 @@
 require 'yaml'
 
 require 'bag'
-require 'boardSide'
+require 'boardside'
 require 'position'
 require 'selectedposition'
 require 'stage'
