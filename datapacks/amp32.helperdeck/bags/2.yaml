@@ -2,7 +2,7 @@
 - !ruby/object:Component 
   comment: Decoupling
   extraInfo: 2 Cap 50V Cer 0.1uF X7R 0805 8 smt C1,C3,C7,C9,C17,C16,C20,C26,C50
-  longname: 50V Cer 0.1uF X7R 0805 8 smt
+  longname: 0.1uF X7R 0805
   positions: 
   - C1
   - C3
@@ -17,16 +17,16 @@
   type: Cap
 - !ruby/object:Component 
   comment: Separates AGND <=> GND
-  extraInfo: 2 Ferrite chip 60 Ohm 3000mA 0805 1 smt L11
-  longname: chip 60 Ohm 3000mA 0805 1 smt
+  extraInfo: Ferrite chip
+  longname: Ferrite chip 0805
   positions: 
   - L11
-  spec: HF choke 60 to 300 ohm 100MHz 0805
-  type: Ferrite
+  spec: ""
+  type: smt
 - !ruby/object:Component 
   comment: Output filter
-  extraInfo: 2 Res 10R 1/4W 1% 1206 2 smt R9,R10
-  longname: 10R 1/4W 1% 1206 2 smt
+  extraInfo: Res 10R 1/4W 1% 1206
+  longname: 10R 1206
   positions: 
   - R9
   - R10
@@ -34,8 +34,8 @@
   type: Res
 - !ruby/object:Component 
   comment: Output filter
-  extraInfo: 2 Cap 50V Cer 0.22uF X7R 0805 2 smt C12,C13
-  longname: 50V Cer 0.22uF X7R 0805 2 smt
+  extraInfo: 2 Cap 50V Cer 0.22uF X7R 0805
+  longname: Cer 0.22uF 0805
   positions: 
   - C12
   - C13
@@ -43,8 +43,8 @@
   type: Cap
 - !ruby/object:Component 
   comment: Output filter
-  extraInfo: 2 Cap 25V Cer 0.47uF 10% X7R 0805 4 smt C22,C25,C27,C28
-  longname: 25V Cer 0.47uF 10% X7R 0805 4 smt
+  extraInfo: 2 Cap 25V Cer 0.47uF 10% X7R 0805
+  longname: 0.47uF X7R
   positions: 
   - C22
   - C25
@@ -54,9 +54,9 @@
   type: Cap
 - !ruby/object:Component 
   comment: Pull-up for sleep pin
-  extraInfo: 2 Res 1.0Mohm 1/8W 5% 0805 1 smt R1
-  longname: 1.0Mohm 1/8W 5% 0805 1 smt
+  extraInfo: 2 Res 1.0Mohm 1/8W 5% 0805
+  longname: 1.0Mohm 0805
   positions: 
   - R1
-  spec: Between 470K and 1.2 M 0805
+  spec: 
   type: Res

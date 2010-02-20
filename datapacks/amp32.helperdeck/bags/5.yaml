@@ -1,24 +1,24 @@
 ---
 - !ruby/object:Component 
   comment: Main Tripath chip
-  extraInfo: "5 Tripath TA2021B 1 smt\xC2\xA4 U1"
-  longname: "TA2021B 1 smt\xC2\xA4"
+  extraInfo: "5 Tripath TA2021B"
+  longname: "TA2021B"
   positions: 
   - U1
-  spec: "Spec:"
-  type: Tripath
+  spec: ""
+  type: smt
 - !ruby/object:Component 
   comment: MUTE indicator
-  extraInfo: "5 LED 3mm Hi-eff Red Diffused 1 hmt\xC2\xA4 Off\xE2\x80\x90board"
-  longname: "3mm Hi-eff Red Diffused 1 hmt\xC2\xA4"
+  extraInfo: "5 LED 3mm Hi-eff Red Diffused"
+  longname: "3mm red LED"
   positions: 
-  - "Off\xE2\x80\x90board"
+  - "Off-board"
   spec: 2 to 3 mA radial LED red, diffused
-  type: LED
+  type: hmt
 - !ruby/object:Component 
   comment: Output clamping
-  extraInfo: "5 Diode Schottky 1A 60V SMA 8 smt\xC2\xA4 D1,D2,D3,D4,D5,D6,D7,D8"
-  longname: "Schottky 1A 60V SMA 8 smt\xC2\xA4"
+  extraInfo: "Diode Schottky 1A 60V SMA"
+  longname: "Schottky smt"
   positions: 
   - D1
   - D2
@@ -28,13 +28,13 @@
   - D6
   - D7
   - D8
-  spec: 30V, 1A Ultra-fast or Schottky
-  type: Diode
+  spec: 30V+
+  type: smt
 - !ruby/object:Component 
   comment: LED driver
-  extraInfo: "5 MOSFET N-ch 115mA 60V SOT23 (702) 1 smt\xC2\xA4 Q3"
-  longname: "N-ch 115mA 60V SOT23 (702) 1 smt\xC2\xA4"
+  extraInfo: "5 MOSFET N-ch 115mA 60V SOT23 (702)"
+  longname: "N-ch 115mA 60V SOT23 (702)"
   positions: 
   - Q3
   spec: N-chan FET 25V, 50 mA SOT23 package
-  type: MOSFET
+  type: smt

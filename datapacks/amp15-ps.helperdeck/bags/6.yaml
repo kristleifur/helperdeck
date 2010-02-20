@@ -1,7 +1,7 @@
 --- 
 - !ruby/object:Component 
   comment: 5V bulk
-  extraInfo: "6 hmt Cap 10V Elect 1000uF Low ESR 1 C38 "
+  extraInfo: "6 hmt Cap 10V Elect 1000uF 1 C38 "
   longname: "Cap 10V 1000\xC2\xB5F 1"
   positions: 
   - C38
@@ -17,20 +17,18 @@
   type: hmt
 - !ruby/object:Component 
   comment: Boot caps, 5V adj damping
-  extraInfo: "6 hmt Cap 25V Elect 47uF U-low ESR D5 3 C11,C12,C37 "
+  extraInfo: "6 hmt Cap 25V Elect 47uF  D5 3 C11,C12,C37 "
   longname: "Cap 25V 47\xC2\xB5F D5 3"
   positions: 
   - C11
   - C12
   - C37
-  spec: !binary |
-    NDfOvEY=
-
+  spec: ""
   type: hmt
 - !ruby/object:Component 
   comment: Input DC blocking
-  extraInfo: "6 hmt Cap 63V Film 2.2uF Polyester RM10 2 C100,C200 "
-  longname: "Cap 63V 2.2\xC2\xB5F Polyester RM10 2"
+  extraInfo: "6 hmt Cap 63V Film 2.2uF polyfilm RM10 2 C100,C200 "
+  longname: "Cap 63V 2.2\xC2\xB5F polyfilm RM10 2"
   positions: 
   - C100
   - C200
@@ -38,7 +36,7 @@
   type: hmt
 - !ruby/object:Component 
   comment: Decoupling of VN10
-  extraInfo: "6 hmt Cap 25V Elect 220uF U-low ESR D8 3 C10,C35,C36 "
+  extraInfo: "6 hmt Cap 25V Elect 220uF  D8 3 C10,C35,C36 "
   longname: "Cap 25V 220\xC2\xB5F D8 3"
   positions: 
   - C10
@@ -48,7 +46,7 @@
   type: hmt
 - !ruby/object:Component 
   comment: Main Rail Decoupling
-  extraInfo: "6 hmt Cap 63V Elect 680uF U-Low ESR D12 4 C5,C6,C7,C8 "
+  extraInfo: "6 hmt Cap 63V Elect 680uF  D12 4 C5,C6,C7,C8 "
   longname: "Cap 63V 680\xC2\xB5F D12 4"
   positions: 
   - C5
@@ -59,12 +57,10 @@
   type: hmt
 - !ruby/object:Component 
   comment: Decoupling
-  extraInfo: "6 hmt Cap 63V Elect 220uF U-Low ESR D10 2 C33,C34 "
+  extraInfo: "6 hmt Cap 63V Elect 220uF  D10 2 C33,C34 "
   longname: "Cap 63V 220\xC2\xB5F D10 2"
   positions: 
   - C33
   - C34
-  spec: !binary |
-    MjIwzrxG
-
+  spec: ""
   type: hmt

@@ -2,7 +2,7 @@
 - !ruby/object:Component 
   comment: Alternate Input Feedback
   extraInfo: 3 Res 47Kohm 1/10W 0.5% 0805 2 smt R2,R4,R5,R6
-  longname: 47Kohm 1/10W 0.5% 0805 2 smt
+  longname: 47Kohm 0805
   positions: 
   - R2
   - R4
@@ -12,16 +12,16 @@
   type: Res
 - !ruby/object:Component 
   comment: Power supp ESR damping
-  extraInfo: 3 Cap 50V Cer 1000pF X7R 0805 1 smt C21
-  longname: 50V Cer 1000pF X7R 0805 1 smt
+  extraInfo: 3 Cap 50V Cer 1000pF X7R 0805
+  longname: 1000pF 0805
   positions: 
   - C21
   spec: X7R or NPO 0805
   type: Cap
 - !ruby/object:Component 
   comment: Input cable EMI reduction
-  extraInfo: 3 Cap 50V Cer 100pF NP0 0805 2 smt C23,C24
-  longname: 50V Cer 100pF NP0 0805 2 smt
+  extraInfo: 3 Cap 50V Cer 100pF NP0 0805
+  longname: 100pF NP0 0805
   positions: 
   - C23
   - C24
@@ -29,8 +29,8 @@
   type: Cap
 - !ruby/object:Component 
   comment: REF voltage
-  extraInfo: 3 Res 8.2Kohm 1/10W 0.5% 0805 1 smt R7
-  longname: 8.2Kohm 1/10W 0.5% 0805 1 smt
+  extraInfo: 3 Res 8.2Kohm 1/10W 0.5% 0805
+  longname: 8.2Kohm 0805
   positions: 
   - R7
   spec: 8.2Kohm 1% 0805

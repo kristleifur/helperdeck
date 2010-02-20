@@ -1,7 +1,7 @@
 --- 
 - !ruby/object:Component 
-  longname: Res 2.2Kohm 1/10W 0.5% 0805 9
-  extraInfo: "2 smt Res 2.2Kohm 1/10W 0.5% 0805 9 R12,R19,R27,R3,R59,R81,R82,R83,R84 "
+  longname: 2.2Kohm 0805
+  extraInfo: "2 smt Res 2.2Kohm 1/10W 0.5% 0805"
   type: smt
   spec: 2.2K 0805 1% Low noise
   comment: Feedback network, LED driver, 5V dummy load
@@ -16,34 +16,34 @@
   - R83
   - R84
 - !ruby/object:Component 
-  longname: Ferrite chip 60 Ohm 3000mA 0805 1
-  extraInfo: 2 smt Ferrite chip 60 Ohm 3000mA 0805 1 L5
+  longname: Ferrite chip 0805
+  extraInfo: Ferrite chip 60 Ohm 3000mA 0805
   type: smt
   spec: 50 to 100 ohm at 100MHz, 0805
   comment: Separates AGND from power GND
   positions: 
   - L5
 - !ruby/object:Component 
-  longname: Res 120R 1/10W 0.5% 0805 1
-  extraInfo: "2 smt Res 120R 1/10W 0.5% 0805 1 R57 "
+  longname: 120R 0805
+  extraInfo: "Res 120R 1/10W 0.5% 0805"
   type: smt
   spec: 120 Ohm 0805 1%
   comment: 9V Voltage setpoint
   positions: 
   - R57
 - !ruby/object:Component 
-  longname: Res 49.9Kohm 1/10W 0.5% 0805 5
-  extraInfo: "2 smt Res 49.9Kohm 1/10W 0.5% 0805 5 ??? "
+  longname: 49.9Kohm 0805 - alternate modulator feedback
+  extraInfo: "Res 49.9Kohm 1/10W 0.5% 0805"
   type: smt
   spec: 1% low noise
   comment: 47K or 50K Alternate values for modulator feedback
   positions: 
   - ???
 - !ruby/object:Component 
-  longname: Cap 50V Elect 22uF U-Low ESR D5 RM2 1
-  extraInfo: "2 hmt Cap 50V Elect 22uF U-Low ESR D5 RM2 1 C91 "
+  longname: Cap 50V Elect 22uF  D5 RM2 1
+  extraInfo: "2 hmt Cap 50V Elect 22uF  D5 RM2 1 C91 "
   type: hmt
-  spec: Min 10uF 10V Low ESR
+  spec: Min 10uF 10V 
   comment: Stabilizing of V5 regulator ADJ pin
   positions: 
   - C91

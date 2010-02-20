@@ -7,6 +7,7 @@ require 'boardside'
 require 'position'
 require 'selectedposition'
 require 'stage'
+require 'bagswindow'
 
 def selectComponent(componentName)
   debug "Warning - helperdeck.selectComponent() called - inactive method"
@@ -44,6 +45,7 @@ class Shoes::App
     @bagWins ||= {}
     @boards ||= []
     @boardsToFilenames ||= {}
+    @bag_contents ||= {}
 	  datapackFiles = Dir["datapacks/#{datapackName}.helperdeck/*"]
 	  datapackFiles.each do | file |
 	    if File.directory?(file)
@@ -68,6 +70,8 @@ class Shoes::App
             @bagWins[bagName] = bagWin
             tehBag = Bag.new(bagWin, self, "#{bagName}")
             tehBag.components = bagContents
+            @bag_contents[bagName] = tehBag.components.dup()
+            
             @bagControllers[bagName] = tehBag
             tehBag.update()
           end
@@ -120,6 +124,7 @@ class Shoes::App
             debug "Image not found for '#{file}', ignoring"
           end
         else
+          #poff
         end
 	    end
     end
@@ -193,6 +198,9 @@ class Shoes::App
     else
       debug "Stage dir contents are none ... hmm"
     end
+    # tmpWin = window :title => "Stage #{i + 1}", :width => 250, :height => 60 do
+    @bags_window_window = window do end
+    @bags_window = BagsWindow.new(@bags_window_window, @bag_contents)
   end
 end
 
