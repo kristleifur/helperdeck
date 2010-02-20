@@ -6,7 +6,7 @@
   spec: Tripath TC2000
   comment: Controller chip
   positions: 
-  - U1
+  - U10
 - !ruby/object:Component 
   longname: Tripath TP2050 1
   extraInfo: "7 smt\xC2\xA4 Tripath TP2050 1 U2 "

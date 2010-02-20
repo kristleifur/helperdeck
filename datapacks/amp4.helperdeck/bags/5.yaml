@@ -27,8 +27,8 @@
   - C62
   - C7
 - !ruby/object:Component 
-  longname: Cap 50V Film 1.0uF Polyester RM5 2
-  extraInfo: "5 hmt Cap 50V Film 1.0uF Polyester RM5 2 C100,C200 "
+  longname: Cap 50V Film 1.0uF polyfilm RM5 2
+  extraInfo: "5 hmt Cap 50V Film 1.0uF polyfilm RM5 2 C100,C200 "
   type: hmt
   spec: ""
   comment: Alternate input capacitors
