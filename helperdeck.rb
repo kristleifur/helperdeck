@@ -22,6 +22,10 @@ class Shoes::App
     @bagControllers.values.each do | bag |
       bag.clearSelection()
     end
+    @bagnowin_model.values.each do | bag |
+      bag.clearSelection()
+    end
+    @bags_window.update()
 	end
   
   def selectPosition(positionNames)
@@ -36,6 +40,10 @@ class Shoes::App
 	    @bagControllers.values.each do | bag |
 	      bag.selectPosition(positionName.downcase().split("-")[0].split("x")[0])
 	    end
+	    @bagnowin_model.values.each do | bag |
+	      bag.selectPosition(positionName.downcase().split("-")[0].split("x")[0])
+      end
+	    @bags_window.update()  
 		end
 	end
 	

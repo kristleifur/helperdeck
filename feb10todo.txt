@@ -1,0 +1,3 @@
+Amp4: r55? r58? c59?
+
+All: Clean up ... take out detailed specs like "low ESR" and specific chip types - leave just enough to recognise stuff
