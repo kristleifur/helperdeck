@@ -19,9 +19,9 @@ class Shoes::App
     @boards.each do | boardSide |
       boardSide.selectedPositions.clear()
     end
-    @bagControllers.values.each do | bag |
-      bag.clearSelection()
-    end
+    # @bagControllers.values.each do | bag |
+    #   bag.clearSelection()
+    # end
     @bagnowin_model.values.each do | bag |
       bag.clearSelection()
     end
@@ -37,19 +37,21 @@ class Shoes::App
   	    boardSide.selectByName(positionName.downcase().split("-")[0].split("x")[0])
 	    end
       # debug @bagControllers
-	    @bagControllers.values.each do | bag |
-	      bag.selectPosition(positionName.downcase().split("-")[0].split("x")[0])
-	    end
+      # @bagControllers.values.each do | bag |
+      #   bag.selectPosition(positionName.downcase().split("-")[0].split("x")[0])
+      # end
 	    @bagnowin_model.values.each do | bag |
 	      bag.selectPosition(positionName.downcase().split("-")[0].split("x")[0])
       end
+      debug "Helperdeck - select position - calling bags_window.update()"
 	    @bags_window.update()  
 		end
 	end
 	
 	def loadDatapack(datapackName)
 	  debug "Loading '#{datapackName}'"
-	  @bagControllers ||= {}
+	  # @bagControllers ||= {}
+	  @bagnowin_model = {}
     @bagWins ||= {}
     @boards ||= []
     @boardsToFilenames ||= {}
@@ -71,17 +73,20 @@ class Shoes::App
             # debug bagContents
             # debug "... loaded bag."
             
-            winHeight = 19 + 21 * (bagContents.size + 1)
-            bagWin = window :title => "Bag #{bagName}, #{bagContents.size} pieces", :width => 340, :height => winHeight do
-              #
-            end
-            @bagWins[bagName] = bagWin
-            tehBag = Bag.new(bagWin, self, "#{bagName}")
-            tehBag.components = bagContents
-            @bag_contents[bagName] = tehBag.components.dup()
-            
-            @bagControllers[bagName] = tehBag
-            tehBag.update()
+            # winHeight = 19 + 21 * (bagContents.size + 1)
+            # bagWin = window :title => "Bag #{bagName}, #{bagContents.size} pieces", :width => 340, :height => winHeight do
+            #   #
+            # end
+            # @bagWins[bagName] = bagWin
+            # bagWin.close()
+            # tehBag = Bag.new(bagWin, self, "#{bagName}")
+            # tehBag.components = bagContents
+            teh_bagnowin = BagNoWin.new("#{bagName}")
+            teh_bagnowin.components = bagContents
+            @bag_contents[bagName] = teh_bagnowin.components.dup()
+            @bagnowin_model[bagName] = teh_bagnowin
+            # @bagControllers[bagName] = tehBag
+            #tehBag.update()
           end
         end
         if file =~ /build_stages$/
@@ -208,12 +213,9 @@ class Shoes::App
     end
     # tmpWin = window :title => "Stage #{i + 1}", :width => 250, :height => 60 do
     @bags_window_window = window do end
-    @bagnowin_model = {}
-    @bag_contents.each do | bagname, bag_contents |
-      @bagnowin_model[bagname] = BagNoWin.new(bagname)
-      @bagnowin_model[bagname].components = bag_contents
-    end
+    # @bagnowin_model = {}
     @bags_window = BagsWindow.new(@bags_window_window, self, @bag_contents, @bagnowin_model)
+    @bags_window.update()
   end
 end
 
