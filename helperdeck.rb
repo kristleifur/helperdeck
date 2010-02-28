@@ -200,7 +200,12 @@ class Shoes::App
     end
     # tmpWin = window :title => "Stage #{i + 1}", :width => 250, :height => 60 do
     @bags_window_window = window do end
-    @bags_window = BagsWindow.new(@bags_window_window, @bag_contents)
+    @bagnowin_model = {}
+    @bag_contents.each do | bagname, bag_contents |
+      @bagnowin_model[bagname] = BagNoWin.new(bagname)
+      @bagnowin_model[bagname].components = bag_contents
+    end
+    @bags_window = BagsWindow.new(@bags_window_window, self, @bag_contents, @bagnowin_model)
   end
 end
 
