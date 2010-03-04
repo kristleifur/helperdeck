@@ -1,708 +1,809 @@
 --- 
-- !ruby/object:Position 
+c28: !ruby/object:Position 
   components: []
+
   height: 42
   name: c28
   width: 15
   x: 742
   y: 334
-- !ruby/object:Position 
+r12: !ruby/object:Position 
   components: []
+
   height: 24
   name: r12
   width: 9
   x: 196
   y: 352
-- !ruby/object:Position 
+r33: !ruby/object:Position 
   components: []
+
   height: 8
   name: r33
   width: 19
   x: 285
   y: 94
-- !ruby/object:Position 
+d4: !ruby/object:Position 
   components: []
+
   height: 10
   name: d4
   width: 43
   x: 789
   y: 423
-- !ruby/object:Position 
+c29: !ruby/object:Position 
   components: []
+
   height: 39
   name: c29
   width: 16
   x: 742
   y: 163
-- !ruby/object:Position 
+r13: !ruby/object:Position 
   components: []
+
   height: 35
   name: r13
   width: 9
   x: 746
   y: 296
-- !ruby/object:Position 
+r34: !ruby/object:Position 
   components: []
+
   height: 11
   name: r34
   width: 21
   x: 284
   y: 102
-- !ruby/object:Position 
+d5: !ruby/object:Position 
   components: []
+
   height: 13
   name: d5
   width: 40
   x: 791
   y: 102
-- !ruby/object:Position 
+c30: !ruby/object:Position 
   components: []
+
   height: 25
   name: c30
   width: 14
   x: 219
   y: 196
-- !ruby/object:Position 
+r14: !ruby/object:Position 
   components: []
+
   height: 22
   name: r14
   width: 9
   x: 226
   y: 446
-- !ruby/object:Position 
+r35: !ruby/object:Position 
   components: []
+
   height: 6
   name: r35
   width: 24
   x: 279
   y: 433
-- !ruby/object:Position 
+r825: !ruby/object:Position 
   components: []
+
   height: 17
   name: r825
   width: 8
   x: 210
   y: 355
-- !ruby/object:Position 
+c10: !ruby/object:Position 
   components: []
+
   height: 48
   name: c10
   width: 41
   x: 451
   y: 246
-- !ruby/object:Position 
+ic2: !ruby/object:Position 
   components: []
+
   height: 20
   name: ic2
   width: 25
   x: 504
   y: 257
-- !ruby/object:Position 
+c31: !ruby/object:Position 
   components: []
+
   height: 26
   name: c31
   width: 15
   x: 263
   y: 195
-- !ruby/object:Position 
+r36: !ruby/object:Position 
   components: []
+
   height: 8
   name: r36
   width: 21
   x: 282
   y: 419
-- !ruby/object:Position 
+c11: !ruby/object:Position 
   components: []
+
   height: 22
   name: c11
   width: 26
   x: 291
   y: 389
-- !ruby/object:Position 
+ic3: !ruby/object:Position 
   components: []
+
   height: 18
   name: ic3
   width: 19
   x: 115
   y: 448
-- !ruby/object:Position 
+c32: !ruby/object:Position 
   components: []
+
   height: 34
   name: c32
   width: 41
   x: 156
   y: 44
-- !ruby/object:Position 
+r15: !ruby/object:Position 
   components: []
+
   height: 35
   name: r15
   width: 10
   x: 116
   y: 176
-- !ruby/object:Position 
+d8: !ruby/object:Position 
   components: []
+
   height: 13
   name: d8
   width: 21
   x: 563
   y: 487
-- !ruby/object:Position 
+c12: !ruby/object:Position 
   components: []
+
   height: 23
   name: c12
   width: 24
   x: 292
   y: 126
-- !ruby/object:Position 
+c33: !ruby/object:Position 
   components: []
+
   height: 52
   name: c33
   width: 50
   x: 731
   y: 400
-- !ruby/object:Position 
+r16: !ruby/object:Position 
   components: []
+
   height: 7
   name: r16
   width: 24
   x: 186
   y: 409
-- !ruby/object:Position 
+r37: !ruby/object:Position 
   components: []
+
   height: 34
   name: r37
   width: 53
   x: 208
   y: 82
-- !ruby/object:Position 
+d9: !ruby/object:Position 
   components: []
+
   height: 14
   name: d9
   width: 49
   x: 550
   y: 37
-- !ruby/object:Position 
+unmute: !ruby/object:Position 
   components: []
+
   height: 30
   name: unmute
   width: 14
   x: 114
   y: 142
-- !ruby/object:Position 
+c34: !ruby/object:Position 
   components: []
+
   height: 53
   name: c34
   width: 55
   x: 728
   y: 84
-- !ruby/object:Position 
+c100: !ruby/object:Position 
   components: []
+
   height: 72
   name: c100
   width: 15
   x: 50
   y: 277
-- !ruby/object:Position 
+r17: !ruby/object:Position 
   components: []
+
   height: 8
   name: r17
   width: 29
   x: 185
   y: 420
-- !ruby/object:Position 
+r38: !ruby/object:Position 
   components: []
+
   height: 33
   name: r38
   width: 53
   x: 150
   y: 84
-- !ruby/object:Position 
+c35: !ruby/object:Position 
   components: []
-  height: 11
-  name: c101
-  width: 27
-  x: 108
-  y: 331
-- !ruby/object:Position 
-  components: []
+
   height: 48
   name: c35
   width: 44
   x: 490
   y: 59
-- !ruby/object:Position 
+c101: !ruby/object:Position 
   components: []
+
+  height: 11
+  name: c101
+  width: 27
+  x: 108
+  y: 331
+c200: !ruby/object:Position 
+  components: []
+
   height: 67
   name: c200
   width: 14
   x: 50
   y: 188
-- !ruby/object:Position 
+r40: !ruby/object:Position 
   components: []
+
   height: 32
   name: r40
   width: 8
   x: 172
   y: 128
-- !ruby/object:Position 
+r18: !ruby/object:Position 
   components: []
+
   height: 7
   name: r18
   width: 22
   x: 266
   y: 375
-- !ruby/object:Position 
+r39: !ruby/object:Position 
   components: []
+
   height: 26
   name: r39
   width: 9
   x: 230
   y: 129
-- !ruby/object:Position 
+jp2: !ruby/object:Position 
   components: []
+
   height: 45
   name: jp2
   width: 29
   x: 112
   y: 81
-- !ruby/object:Position 
+c36: !ruby/object:Position 
   components: []
+
   height: 41
   name: c36
   width: 42
   x: 491
   y: 432
-- !ruby/object:Position 
+c201: !ruby/object:Position 
   components: []
+
   height: 12
   name: c201
   width: 29
   x: 146
   y: 195
-- !ruby/object:Position 
+r20: !ruby/object:Position 
   components: []
+
   height: 15
   name: r20
   width: 8
   x: 746
   y: 219
-- !ruby/object:Position 
+r41: !ruby/object:Position 
   components: []
+
   height: 15
   name: r41
   width: 41
   x: 697
   y: 486
-- !ruby/object:Position 
+r19: !ruby/object:Position 
   components: []
+
   height: 7
   name: r19
   width: 19
   x: 267
   y: 364
-- !ruby/object:Position 
+c37: !ruby/object:Position 
   components: []
+
   height: 24
   name: c37
   width: 20
   x: 144
   y: 444
-- !ruby/object:Position 
+r21: !ruby/object:Position 
   components: []
+
   height: 34
   name: r21
   width: 12
   x: 469
   y: 458
-- !ruby/object:Position 
+r42: !ruby/object:Position 
   components: []
+
   height: 7
   name: r42
   width: 31
   x: 790
   y: 412
-- !ruby/object:Position 
+c17: !ruby/object:Position 
   components: []
+
   height: 27
   name: c17
   width: 15
   x: 222
   y: 317
-- !ruby/object:Position 
+c40: !ruby/object:Position 
   components: []
+
   height: 32
   name: c40
   width: 69
   x: 368
   y: 334
-- !ruby/object:Position 
+c38: !ruby/object:Position 
   components: []
+
   height: 32
   name: c38
   width: 27
   x: 141
   y: 368
-- !ruby/object:Position 
+r22: !ruby/object:Position 
   components: []
+
   height: 39
   name: r22
   width: 14
   x: 470
   y: 42
-- !ruby/object:Position 
+jp5: !ruby/object:Position 
   components: []
+
   height: 43
   name: jp5
   width: 15
   x: 113
   y: 367
-- !ruby/object:Position 
+r100: !ruby/object:Position 
   components: []
+
   height: 8
   name: r100
   width: 21
   x: 111
   y: 346
-- !ruby/object:Position 
+c18: !ruby/object:Position 
   components: []
+
   height: 25
   name: c18
   width: 12
   x: 191
   y: 318
-- !ruby/object:Position 
+c39: !ruby/object:Position 
   components: []
+
   height: 31
   name: c39
   width: 69
   x: 368
   y: 172
-- !ruby/object:Position 
+r23: !ruby/object:Position 
   components: []
+
   height: 14
   name: r23
   width: 57
   x: 690
   y: 272
-- !ruby/object:Position 
+r44: !ruby/object:Position 
   components: []
+
   height: 13
   name: r44
   width: 63
   x: 685
   y: 37
-- !ruby/object:Position 
+jp6: !ruby/object:Position 
   components: []
+
   height: 16
   name: jp6
   width: 47
   x: 259
   y: 470
-- !ruby/object:Position 
+r24: !ruby/object:Position 
   components: []
+
   height: 12
   name: r24
   width: 60
   x: 687
   y: 249
-- !ruby/object:Position 
+r45: !ruby/object:Position 
   components: []
+
   height: 13
   name: r45
   width: 36
   x: 786
   y: 117
-- !ruby/object:Position 
+c5: !ruby/object:Position 
   components: []
+
   height: 48
   name: c5
   width: 44
   x: 451
   y: 326
-- !ruby/object:Position 
+hmute: !ruby/object:Position 
   components: []
+
   height: 13
   name: hmute
   width: 28
   x: 193
   y: 479
-- !ruby/object:Position 
+r101: !ruby/object:Position 
   components: []
+
   height: 9
   name: r101
   width: 22
   x: 108
   y: 319
-- !ruby/object:Position 
+r200: !ruby/object:Position 
   components: []
+
   height: 13
   name: r200
   width: 44
   x: 136
   y: 180
-- !ruby/object:Position 
+c20: !ruby/object:Position 
   components: []
+
   height: 69
   name: c20
   width: 33
   x: 338
   y: 25
-- !ruby/object:Position 
+c19: !ruby/object:Position 
   components: []
+
   height: 11
   name: c19
   width: 26
   x: 240
   y: 316
-- !ruby/object:Position 
+c41: !ruby/object:Position 
   components: []
+
   height: 28
   name: c41
   width: 38
   x: 120
   y: 475
-- !ruby/object:Position 
+c21: !ruby/object:Position 
   components: []
-  height: 51
-  name: l1
-  width: 75
-  x: 403
-  y: 389
-- !ruby/object:Position 
-  components: []
-  height: 27
-  name: r25
-  width: 6
-  x: 185
-  y: 157
-- !ruby/object:Position 
-  components: []
-  height: 63
-  name: c6
-  width: 59
-  x: 442
-  y: 155
-- !ruby/object:Position 
-  components: []
-  height: 9
-  name: r201
-  width: 37
-  x: 141
-  y: 210
-- !ruby/object:Position 
-  components: []
-  height: 32
-  name: c42
-  width: 41
-  x: 214
-  y: 44
-- !ruby/object:Position 
-  components: []
+
   height: 11
   name: c21
   width: 27
   x: 141
   y: 315
-- !ruby/object:Position 
+c42: !ruby/object:Position 
   components: []
-  height: 25
-  name: r26
-  width: 8
-  x: 211
-  y: 159
-- !ruby/object:Position 
+
+  height: 32
+  name: c42
+  width: 41
+  x: 214
+  y: 44
+r201: !ruby/object:Position 
   components: []
-  height: 26
-  name: c43
-  width: 15
-  x: 262
-  y: 417
-- !ruby/object:Position 
+
+  height: 9
+  name: r201
+  width: 37
+  x: 141
+  y: 210
+c6: !ruby/object:Position 
   components: []
-  height: 46
-  name: c7
-  width: 49
-  x: 304
-  y: 330
-- !ruby/object:Position 
+
+  height: 63
+  name: c6
+  width: 59
+  x: 442
+  y: 155
+r25: !ruby/object:Position 
   components: []
-  height: 21
-  name: r47
+
+  height: 27
+  name: r25
   width: 6
-  x: 131
-  y: 416
-- !ruby/object:Position 
+  x: 185
+  y: 157
+l1: !ruby/object:Position 
   components: []
-  height: 52
-  name: l2
-  width: 74
+
+  height: 51
+  name: l1
+  width: 75
   x: 403
-  y: 98
-- !ruby/object:Position 
+  y: 389
+c22: !ruby/object:Position 
   components: []
+
   height: 26
   name: c22
   width: 13
   x: 182
   y: 194
-- !ruby/object:Position 
+l2: !ruby/object:Position 
   components: []
+
+  height: 52
+  name: l2
+  width: 74
+  x: 403
+  y: 98
+r47: !ruby/object:Position 
+  components: []
+
   height: 21
-  name: r48
-  width: 10
-  x: 139
-  y: 415
-- !ruby/object:Position 
+  name: r47
+  width: 6
+  x: 131
+  y: 416
+c7: !ruby/object:Position 
   components: []
-  height: 23
-  name: r27
-  width: 8
-  x: 250
-  y: 160
-- !ruby/object:Position 
+
+  height: 46
+  name: c7
+  width: 49
+  x: 304
+  y: 330
+c43: !ruby/object:Position 
   components: []
+
   height: 26
-  name: c44
-  width: 13
-  x: 265
-  y: 118
-- !ruby/object:Position 
+  name: c43
+  width: 15
+  x: 262
+  y: 417
+r26: !ruby/object:Position 
   components: []
-  height: 69
-  name: c23
-  width: 32
-  x: 339
-  y: 443
-- !ruby/object:Position 
+
+  height: 25
+  name: r26
+  width: 8
+  x: 211
+  y: 159
+c8: !ruby/object:Position 
   components: []
-  height: 51
-  name: l3
-  width: 75
-  x: 326
-  y: 389
-- !ruby/object:Position 
-  components: []
+
   height: 63
   name: c8
   width: 59
   x: 301
   y: 156
-- !ruby/object:Position 
+l3: !ruby/object:Position 
   components: []
-  height: 25
-  name: r28
+
+  height: 51
+  name: l3
+  width: 75
+  x: 326
+  y: 389
+c23: !ruby/object:Position 
+  components: []
+
+  height: 69
+  name: c23
+  width: 32
+  x: 339
+  y: 443
+c44: !ruby/object:Position 
+  components: []
+
+  height: 26
+  name: c44
+  width: 13
+  x: 265
+  y: 118
+r27: !ruby/object:Position 
+  components: []
+
+  height: 23
+  name: r27
   width: 8
-  x: 273
-  y: 161
-- !ruby/object:Position 
+  x: 250
+  y: 160
+r48: !ruby/object:Position 
   components: []
-  height: 50
-  name: l4
-  width: 74
-  x: 327
-  y: 99
-- !ruby/object:Position 
+
+  height: 21
+  name: r48
+  width: 10
+  x: 139
+  y: 415
+c24: !ruby/object:Position 
   components: []
+
   height: 71
   name: c24
   width: 34
   x: 433
   y: 24
-- !ruby/object:Position 
+l4: !ruby/object:Position 
   components: []
-  height: 23
-  name: r29
-  width: 8
-  x: 194
-  y: 159
-- !ruby/object:Position 
+
+  height: 50
+  name: l4
+  width: 74
+  x: 327
+  y: 99
+r28: !ruby/object:Position 
   components: []
+
   height: 25
-  name: r30
+  name: r28
   width: 8
-  x: 221
+  x: 273
   y: 161
-- !ruby/object:Position 
+c825: !ruby/object:Position 
   components: []
-  height: 70
-  name: c25
-  width: 33
-  x: 434
-  y: 443
-- !ruby/object:Position 
-  components: []
-  height: 12
-  name: l5
-  width: 43
-  x: 279
-  y: 486
-- !ruby/object:Position 
-  components: []
+
   height: 27
   name: c825
   width: 15
   x: 206
   y: 317
-- !ruby/object:Position 
+l5: !ruby/object:Position 
   components: []
-  height: 155
-  name: c26
-  width: 151
-  x: 553
-  y: 80
-- !ruby/object:Position 
+
+  height: 12
+  name: l5
+  width: 43
+  x: 279
+  y: 486
+c25: !ruby/object:Position 
   components: []
-  height: 26
-  name: r31
-  width: 7
-  x: 240
+
+  height: 70
+  name: c25
+  width: 33
+  x: 434
+  y: 443
+r30: !ruby/object:Position 
+  components: []
+
+  height: 25
+  name: r30
+  width: 8
+  x: 221
+  y: 161
+r29: !ruby/object:Position 
+  components: []
+
+  height: 23
+  name: r29
+  width: 8
+  x: 194
   y: 159
-- !ruby/object:Position 
+r9: !ruby/object:Position 
   components: []
-  height: 10
-  name: r10
-  width: 23
-  x: 371
-  y: 208
-- !ruby/object:Position 
-  components: []
+
   height: 8
   name: r9
   width: 18
   x: 384
   y: 324
-- !ruby/object:Position 
+r10: !ruby/object:Position 
   components: []
-  height: 13
-  name: led
-  width: 26
-  x: 194
-  y: 464
-- !ruby/object:Position 
+
+  height: 10
+  name: r10
+  width: 23
+  x: 371
+  y: 208
+r31: !ruby/object:Position 
   components: []
+
   height: 26
-  name: r32
-  width: 8
-  x: 262
-  y: 159
-- !ruby/object:Position 
-  components: []
-  height: 17
-  name: r11
+  name: r31
   width: 7
-  x: 226
-  y: 354
-- !ruby/object:Position 
+  x: 240
+  y: 159
+c26: !ruby/object:Position 
   components: []
-  height: 151
-  name: c27
+
+  height: 155
+  name: c26
   width: 151
-  x: 555
-  y: 308
-- !ruby/object:Position 
+  x: 553
+  y: 80
+d3: !ruby/object:Position 
   components: []
+
   height: 14
   name: d3
   width: 16
   x: 200
   y: 444
+c27: !ruby/object:Position 
+  components: []
+
+  height: 151
+  name: c27
+  width: 151
+  x: 555
+  y: 308
+r11: !ruby/object:Position 
+  components: []
+
+  height: 17
+  name: r11
+  width: 7
+  x: 226
+  y: 354
+r32: !ruby/object:Position 
+  components: []
+
+  height: 26
+  name: r32
+  width: 8
+  x: 262
+  y: 159
+led: !ruby/object:Position 
+  components: []
+
+  height: 13
+  name: led
+  width: 26
+  x: 194
+  y: 464

@@ -56,8 +56,9 @@ class Shoes::App
     @boards ||= []
     @boardsToFilenames ||= {}
     @bag_contents ||= {}
-	  datapackFiles = Dir["datapacks/#{datapackName}.helperdeck/*"]
+	  datapackFiles = Dir["#{datapackName}/*"]# Dir["datapacks/#{datapackName}.helperdeck/*"]
 	  datapackFiles.each do | file |
+	    debug file
 	    if File.directory?(file)
         # debug "#{file} is a directory"
 	      if file =~ /bags$/
@@ -67,6 +68,7 @@ class Shoes::App
           # @bagControllers ||= {}
           #           @bagWins ||= {}
           bagDirContents.each do | bagFile |
+            debug bagFile
             bagName = bagFile.split("/")[-1].gsub(".yaml", "")
             # debug "Bag name: '#{bagName}', loading ..."
             bagContents = YAML::load_file(bagFile)
@@ -227,8 +229,9 @@ Shoes.app(:width => 480, :height => 50) do
   @selectedPosition = SelectedPosition.new(@liveComponentWin, self)
   
 	# loadDatapack("amp32")
-  loadDatapack("amp4")
+  # loadDatapack("amp4")
   # loadDatapack("amp15-ps")
+  loadDatapack(ask_open_folder)
  
   # @uglyBagModel = YAML::load_file("Amp15_BagsAndComponents.yaml")
   #   # debug "bags: #{@uglyBagModel.keys()}"

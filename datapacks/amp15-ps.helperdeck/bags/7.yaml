@@ -6,21 +6,24 @@
   positions: 
   - IC1
   spec: TA3020
-  type: ""- !ruby/object:Component 
+  type: ""
+- !ruby/object:Component 
   comment: Led driver
   extraInfo: "7 hmt\xC2\xA4 LED 3mm Hi-eff Red Diffused 1 D3 "
   longname: Red LED 1
   positions: 
   - led
   spec: "Spec:"
-  type: ""- !ruby/object:Component 
+  type: ""
+- !ruby/object:Component 
   comment: 5V regulator
   extraInfo: "7 hmt\xC2\xA4 Voltage Reg Pos Adj 100mA TO-92 1 IC3 "
   longname: Pos Reg Adj 100mA TO-92 1
   positions: 
   - IC3
   spec: LM317LZ
-  type: ""- !ruby/object:Component 
+  type: ""
+- !ruby/object:Component 
   comment: Pre-regulators
   extraInfo: "7 hmt\xC2\xA4 Trans NPN 3A 100V TO-220AB TIP31 2 Q3,Q4 "
   longname: NPN 3A 100V TO-220AB TIP31 2
@@ -28,7 +31,8 @@
   - Q3
   - Q4
   spec: 100V NPN TO220
-  type: ""- !ruby/object:Component 
+  type: ""
+- !ruby/object:Component 
   comment: Boot diodes, gate overshoot protection
   extraInfo: "7 smt\xC2\xA4 Diode U-fast1A 200V SMB 4 D1,D2, D6,D7 "
   longname: Diode U-fast1A 200V SMB 4
@@ -46,14 +50,16 @@
   positions: 
   - D4
   spec: 10V
-  type: ""- !ruby/object:Component 
+  type: ""
+- !ruby/object:Component 
   comment: VN10 Pre-reg Voltage setting
   extraInfo: "7 hmt\xC2\xA4 Diode Zener 15V 500mW DO35 1 D5 "
   longname: Zener 15V 500mW DO35 1
   positions: 
   - D5
   spec: 15V zener
-  type: ""- !ruby/object:Component 
+  type: ""
+- !ruby/object:Component 
   comment: Power diodes
   extraInfo: "7 hmt\xC2\xA4 Diode Dual Ser. Ult-fast 2x8A 200V TO-220 2 D10,D11 "
   longname: Diode Dual 2x8A 200V TO-220 2
@@ -61,7 +67,8 @@
   - D10
   - D11
   spec: Dual Diode Series TO220
-  type: ""- !ruby/object:Component 
+  type: ""
+- !ruby/object:Component 
   comment: Regulator protection
   extraInfo: "7 hmt\xC2\xA4 Diode 1N4003 2 D8,D9 "
   longname: Diode 1N4003 2
@@ -69,7 +76,8 @@
   - D8
   - D9
   spec: 1N4003
-  type: ""- !ruby/object:Component 
+  type: ""
+- !ruby/object:Component 
   comment: 10V regulator
   extraInfo: "7 hmt Voltage Reg Pos 10V 100mA TO-92 1 IC2 "
   longname: Pos Reg 10V 100mA TO-92 1
