@@ -43,19 +43,19 @@ class Bag
       update()
     end
   end
-  def selectPosition(position)
+  def selectPosition(position, immediateUpdate = true)
     # debug "Selecting components for position #{position} in bag #{id}"
-    shouldUpdate = false
+    @shouldUpdate = false
     if (@positions[position.downcase().split("-")[0].split("x")[0]])
       @positions[position.downcase().split("-")[0].split("x")[0]].each do | component |
         unless @selectedComponents.include?(component)
           @selectedComponents << component
           # debug "Found component for #{position}"
-          shouldUpdate = true
+          @shouldUpdate = true
         end
       end
     end
-    if (shouldUpdate)
+    if (@shouldUpdate && immediateUpdate)
       # debug "Should be updating ..."
       update()
     end

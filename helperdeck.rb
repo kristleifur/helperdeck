@@ -43,9 +43,8 @@ class Shoes::App
 	    @bagnowin_model.values.each do | bag |
 	      bag.selectPosition(positionName.downcase().split("-")[0].split("x")[0])
       end
-      debug "Helperdeck - select position - calling bags_window.update()"
-	    @bags_window.update()  
 		end
+		@bags_window.update()
 	end
 	
 	def loadDatapack(datapackName)
@@ -224,6 +223,13 @@ end
 Shoes.app(:width => 480, :height => 50) do
 	Shoes.show_log()
 	
+	welcomeWindow = window :title => "Welcome to helperdeck", :width => 400, :height => 247 do
+		welcomeButton = button :text => "Please open a .helperdeck directory"
+		welcomeButton.click do 
+			loadDatapack(ask_open_folder)
+		end
+	end
+	
 	@liveComponentWin = window :title => "Selected position", :width => 250, :height => 60 do
   end
   @selectedPosition = SelectedPosition.new(@liveComponentWin, self)
@@ -231,7 +237,7 @@ Shoes.app(:width => 480, :height => 50) do
 	# loadDatapack("amp32")
   # loadDatapack("amp4")
   # loadDatapack("amp15-ps")
-  loadDatapack(ask_open_folder)
+  # loadDatapack(ask_open_folder)
  
   # @uglyBagModel = YAML::load_file("Amp15_BagsAndComponents.yaml")
   #   # debug "bags: #{@uglyBagModel.keys()}"
