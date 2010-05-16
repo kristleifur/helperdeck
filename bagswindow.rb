@@ -20,7 +20,7 @@ class BagsWindow
     update()
   end
   def update()
-    debug "bagswindow update"
+    # debug "bagswindow update"
     @bigflow.clear()
     @bigflow = @win.flow :width => "100%" do
       @win.flow do
