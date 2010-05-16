@@ -1,4 +1,4 @@
-#!/usr/bin/env shoes
+#!/usr/bin/env ruby
 
 require 'yaml'
 
@@ -15,6 +15,7 @@ def selectComponent(componentName)
 end
 
 class Shoes::App
+  attr_accessor :datapacks
   def clearSelections()
     @boards.each do | boardSide |
       boardSide.selectedPositions.clear()
@@ -45,6 +46,24 @@ class Shoes::App
       end
 		end
 		@bags_window.update()
+	end
+	
+	def findDatapacks(dirname = "")
+	  @datapacks ||= []
+	  @datapacks.clear()
+		if (dirname == "")
+			dirname = Dir.getwd()
+		end
+		debug dirname
+		dirname += "/datapacks"
+		debug dirname
+		debug Dir[dirname]
+		debug Dir[dirname + "/*"]
+		Dir[dirname + "/*.helperdeck"].each do | helperdeck_dir |
+		  debug "Found #{helperdeck_dir}"
+		  @datapacks << helperdeck_dir
+	  end
+	  debug @datapacks
 	end
 	
 	def loadDatapack(datapackName)
@@ -218,16 +237,32 @@ class Shoes::App
     @bags_window = BagsWindow.new(@bags_window_window, self, @bag_contents, @bagnowin_model)
     @bags_window.update()
   end
+  
+  def go()
+  end
 end
 
-Shoes.app(:width => 480, :height => 50) do
+Shoes.app(:width => 480, :height => 100) do
 	Shoes.show_log()
 	
-	welcomeWindow = window :title => "Welcome to helperdeck", :width => 400, :height => 247 do
-		welcomeButton = button :text => "Please open a .helperdeck directory"
-		welcomeButton.click do 
-			loadDatapack(ask_open_folder)
-		end
+	findDatapacks()
+	
+	debug "outside of method, @datapacks:"
+	debug @datapacks
+	
+	datapack_buttons ||= []
+	datapack_buttons.clear()
+	@datapacks.each do | datapack_dir |
+	  btn_str = "Open #{datapack_dir.gsub(".helperdeck", "").split("/")[-1].upcase()}"
+	  teh_button = button :text => btn_str
+	  teh_button.click do
+	    loadDatapack(datapack_dir)
+    end
+	  datapack_buttons << teh_button
+  end
+  welcomeButton = button :text => "Open a .helperdeck directory"
+	welcomeButton.click do 
+		loadDatapack(ask_open_folder)
 	end
 	
 	@liveComponentWin = window :title => "Selected position", :width => 250, :height => 60 do
