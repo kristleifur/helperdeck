@@ -1,12 +1,4 @@
 --- 
-"33": !ruby/object:Position 
-  components: []
-
-  height: 42
-  name: c13
-  width: 15
-  x: 336
-  y: 71
 j5: !ruby/object:Position 
   components: []
 
@@ -47,11 +39,11 @@ r4: !ruby/object:Position
   width: 8
   x: 379
   y: 196
-ta2020: !ruby/object:Position 
+q1: !ruby/object:Position 
   components: []
 
   height: 27
-  name: ta2020
+  name: q1
   width: 253
   x: 154
   y: 263
@@ -71,6 +63,14 @@ c22: !ruby/object:Position
   width: 38
   x: 229
   y: 81
+c12: !ruby/object:Position 
+  components: []
+
+  height: 43
+  name: c12
+  width: 14
+  x: 100
+  y: 71
 r6: !ruby/object:Position 
   components: []
 
@@ -111,6 +111,14 @@ l1: !ruby/object:Position
   width: 61
   x: 109
   y: 122
+c13: !ruby/object:Position 
+  components: []
+
+  height: 42
+  name: c13
+  width: 15
+  x: 336
+  y: 71
 d5: !ruby/object:Position 
   components: []
 
@@ -223,14 +231,6 @@ j2: !ruby/object:Position
   width: 26
   x: 439
   y: 149
-"32": !ruby/object:Position 
-  components: []
-
-  height: 43
-  name: c12
-  width: 14
-  x: 100
-  y: 71
 j3: !ruby/object:Position 
   components: []
 

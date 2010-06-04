@@ -24,7 +24,7 @@ class SimpleBomEat
 	    # fill component ...
 	    component.type = "" # line[0].split(" ")[1]
 	    
-	    component.longname = "#{line[3]} + #{line[2]}"
+	    component.longname = "#{line[4]} - #{line[3]}"
       component.longname.strip!()
       
       component.positions = []
@@ -50,6 +50,13 @@ if ARGV.size != 1
 end
 
 bags = SimpleBomEat.eatBom(File.read(ARGV[0]).split("\n"))
-puts bags.to_yaml()
+bags.each do | bagname, contents |
+  puts "Bag '#{bagname}':"
+  File.open("#{ARGV[0]}.bag.#{bagname}.yaml", "w") do | file |
+    file.puts contents.to_yaml()
+  end
+  puts
+end
+# puts bags.to_yaml()
 # puts bags.keys()
 
