@@ -1,0 +1,70 @@
+Bag 2
+Comment: Spec:
+Bag 2
+Comment: Spec:
+Bag 3
+Comment: Spec:
+Bag 3
+Comment: Spec:
+Bag 3
+Comment: Spec:
+Bag 3
+Comment: Spec:
+Bag 3
+Comment: Spec:
+Bag 3
+Comment: Spec:
+Bag 4
+Comment: Spec:
+Bag 4
+Comment: Spec:
+Bag 4
+Comment: Spec:
+Bag 4
+Comment: Spec:
+Bag 4
+
+
+Res Ax. Met. Film 1W	1 hmt 6.5mm 15ohm
+LP filter for pre-regulator 15 ohm 1W
+Cap 50V Elect 22uF U-Low	1	hmt ESR D5 RM2
+Regulator adj pin stabilizing 22 uF 10V
+Trim pot Cerm 5Kohm	1	hmt 25TRN Top
+Trimmer for output offset 5K multiturn Cermet 5K
+Res 510Kohm 1/10W 0.5%	2	smt 0805
+Output trimmer limiting 510K
+Res 22.0Kohm 1/10W 0.5%	4	smt 0805
+Input and input feedback 1% 22K low noise
+Res 20R 1/4W 5% 1206	1	smt SMD
+Output snubber 20 ohm 0.25W 1206
+Cap 50V Cer 33pF NP0	1	smt 0805
+Input EMI damping 33pF 0805 NPO
+Res Ax. Met. Film 2W 10mm 1	hmt 15R
+Output zobel filter 15 ohm 2W axial
+Res 39.0Kohm 1/10W 0.5%	3	smt 0805
+Blanking for unused channel 39K 0805
+Cap 50V Elect 1000uF U-	2	hmt low ESR D16
+Close-up bulk capacitors
+Ultra low ESR >=1000uF 50V rad 16mm, RM7.5
+Res 220Kohm 1/10W 0.5%	2	smt 0805
+Rail voltage sensing 220K 1% 0805
+Res 8.25Kohm 1/10W 0.5%	3	smt 0805
+REF voltage and Modulator feedback
+Res 1.0Kohm 1/10W 0.5%	4	smt 0805
+Feedback network
+
+
+
+R2
+C91
+POT1
+R4,R26
+R29,R31,alternate values
+R51
+C90
+R50
+R19,R27 + alt for R29, R31
+C101,C102
+R52,R54
+R5,(R103,R114 alt value)
+R22,R30, (R3,R12 alt value)
