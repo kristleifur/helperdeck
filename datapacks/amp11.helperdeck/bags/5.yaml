@@ -1,0 +1,81 @@
+--- 
+- !ruby/object:Component 
+  comment: Decoupling
+  longname: Cap 50V Cer 0.1uF X7R 0805
+  positions: 
+  - C3
+  - C4
+  - C7
+  - C10
+  - C12
+  - C14
+  - C18
+  - C21
+  - C22
+  - C24
+  - C30
+  - C31
+  - C35
+  - C110
+  - C112
+  spec: 0.1 uF 50V X7R
+  type: smt
+- !ruby/object:Component 
+  comment: Output snubber
+  longname: Cap 100V Cer 330pF NP0 0805
+  positions: 
+  - C13
+  spec: 330 pF 100V
+  type: smt
+- !ruby/object:Component 
+  comment: Modulator feedback
+  longname: Res 5.6Kohm 1/10W 0.5% 0805
+  positions: 
+  - R103
+  - R114
+  spec: 5.6K 1% low noise
+  type: smt
+- !ruby/object:Component 
+  comment: Feedback and pullup
+  longname: Res 10Kohm 1/10W 0.5% 0805
+  positions: 
+  - R37
+  - R40
+  - R45
+  - R53
+  - R103
+  - R114
+  spec: 1% low noise for feedback
+  type: smt
+- !ruby/object:Component 
+  comment: Voltage regulator setpoints
+  longname: "Res 750R 1/10W 0.5% 0805 "
+  positions: 
+  - R56
+  - R111
+  spec: 750 ohms 1% low noise
+  type: smt
+- !ruby/object:Component 
+  comment: Output filter
+  longname: Toroid T80-2
+  positions: 
+  - L1
+  - L3
+  spec: Iron powder type 2, diameter 20 mm, 15uH
+  type: "-"
+- !ruby/object:Component 
+  comment: 5V secondary decoupling
+  longname: Cap 10V Cer 1.0uF X7R 0805
+  positions: 
+  - C55
+  - C56
+  spec: 1 uF 10V X7R
+  type: smt
+- !ruby/object:Component 
+  comment: For winding inductors
+  longname: Copper wire 0.6mm x 1.25m x 2
+  positions: 
+  - L1
+  - L3
+  spec: 0.6 mm 1.2 m
+  type: "-"

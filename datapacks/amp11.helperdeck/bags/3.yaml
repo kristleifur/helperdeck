@@ -1,0 +1,45 @@
+--- 
+- !ruby/object:Component 
+  comment: Trimmer for output offset
+  longname: Trim pot Cerm 5Kohm 25TRN Top
+  positions: 
+  - POT1
+  spec: 5K multiturn Cermet 5K
+  type: hmt
+- !ruby/object:Component 
+  comment: Output trimmer limiting
+  longname: Res 510Kohm 1/10W 0.5% 0805
+  positions: 
+  - R4
+  - R26
+  spec: 510K
+  type: smt
+- !ruby/object:Component 
+  comment: Input and input feedback
+  longname: Res 22.0Kohm 1/10W 0.5% 0805
+  positions: 
+  - R29-ALT
+  - R31-ALT
+  spec: 1% 22K low noise
+  type: smt
+- !ruby/object:Component 
+  comment: Output snubber
+  longname: Res 20R 1/4W 5% 1206 SMD
+  positions: 
+  - R51
+  spec: 20 ohm 0.25W 1206
+  type: smt
+- !ruby/object:Component 
+  comment: Input EMI damping
+  longname: Cap 50V Cer 33pF NP0 0805
+  positions: 
+  - C90
+  spec: 33pF 0805 NPO
+  type: smt
+- !ruby/object:Component 
+  comment: Output zobel filter
+  longname: Res Ax. Met. Film 2W 10mm 15R
+  positions: 
+  - R50
+  spec: 15 ohm 2W axial
+  type: hmt

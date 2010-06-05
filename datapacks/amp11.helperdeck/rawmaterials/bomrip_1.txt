@@ -1,0 +1,55 @@
+Bag 1
+Cap 160V Film 0.22uF Polyprop RM10
+3 hmt C25,C36,C28
+Comment: Output filter
+Spec: Film cap, 0.22 uF RM5 to RM10
+Bag 1
+Cap 160V Film 0.1uF Polyprop RM10 5x13mm
+1 hmt C32
+Comment: Output filter
+Spec: 0.1 uF 100V RM5 to RM10
+Bag 1
+Cap 50V Elect 3.3uF Low ESR D5
+1 hmt C200
+Comment: Input DC blocking cap
+Spec: 3.3uF. Size can be decreased if Rin is increased above 22K
+Bag 1
+Cap 10V Elect 1000uF Low ESR
+1 hmt C1
+Comment: 5V decoupling
+Spec: 1000uF 10V low ESR
+Bag 1
+Cap 50V Elect 180uF U-Low ESR D8
+2 hmt C50,C51
+Comment: 5V preregulator bulk caps
+Spec:
+Bag 2
+Res 2.2Kohm 1/10W 0.5% 0805
+7 smt R3,R12,R59,R81,R82,R83,R84
+Comment: Feedback network
+Spec: 2.2K low noise 1%
+Bag 2
+Ferrite chip 60 Ohm 3000mA 0805
+1 smt L5
+Comment: Separates AGND <=> GND
+Spec: HF choke 100MHz 60 ohm
+Bag 2
+Res 47Kohm 1/10W 0.5% 0805
+2 smt R29-ALT,R31-ALT,
+Comment: Alternate input / feedback
+Spec: 47K 1% low noise
+Bag 2
+Res 120R 1/10W 0.5% 0805
+1 smt R57
+Comment: Pre-regulator ref voltage
+Spec: 120 ohm 1%
+Bag 2
+Cap 50V Cer 1000pF X7R 0805
+2 smt C81,C82
+Comment: Output EMI damping
+Spec: 1000 pF 50V NPO 0805
+Bag 2
+Cap 50V Cer 390pF NP0/COG 0805
+2 smt C40,C41
+Comment: Feeedback damping, Outpt snubber
+Spec: 330pF or 390 pF NPO 5%

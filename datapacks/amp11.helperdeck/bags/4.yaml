@@ -1,0 +1,61 @@
+--- 
+- !ruby/object:Component 
+  comment: Blanking for unused channel
+  longname: Res 39.0Kohm 1/10W 0.5% 0805
+  positions: 
+  - R19
+  - R27
+  - R29-ALT
+  - R31-ALT
+  spec: 39K 0805
+  type: smt
+- !ruby/object:Component 
+  comment: Close-up bulk capacitors
+  longname: Cap 50V Elect 1000uF UlowESR D16
+  positions: 
+  - C101
+  - C102
+  spec: Ultra low ESR >=1000uF 50V rad 16mm, RM7.5
+  type: hmt
+- !ruby/object:Component 
+  comment: Rail voltage sensing
+  longname: Res 220Kohm 1/10W 0.5% 0805
+  positions: 
+  - R52
+  - R54
+  spec: 220K 1% 0805
+  type: smt
+- !ruby/object:Component 
+  comment: REF voltage and Modulator feedback
+  longname: Res 8.25Kohm 1/10W 0.5% 0805
+  positions: 
+  - R5
+  - R103-ALT
+  - R114-ALT
+  spec: ""
+  type: smt
+- !ruby/object:Component 
+  comment: Feedback network
+  longname: Res 1.0Kohm 1/10W 0.5% 0805
+  positions: 
+  - R22
+  - R30
+  - R3-ALT
+  - R12-ALT
+  spec: 1K 1% low noise
+  type: smt
+- !ruby/object:Component 
+  comment: +5V setpoint
+  longname: Res 249R 1/10W 0.5% 0805
+  positions: 
+  - R110
+  spec: 1% 750 ohm
+  type: smt
+- !ruby/object:Component 
+  comment: Alternate feedback
+  longname: Res 12.0K ohm 1/10W 0.5% 0805
+  positions: 
+  - R103-ALT
+  - R114-ALT
+  spec: ""
+  type: smt
