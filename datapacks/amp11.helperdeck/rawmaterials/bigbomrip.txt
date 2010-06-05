@@ -1,0 +1,205 @@
+Bag 1
+Cap 160V Film 0.22uF Polyprop RM10
+3 hmt C25,C36,C28
+Comment: Output filter
+Spec: Film cap, 0.22 uF RM5 to RM10
+Bag 1
+Cap 160V Film 0.1uF Polyprop RM10 5x13mm
+1 hmt C32
+Comment: Output filter
+Spec: 0.1 uF 100V RM5 to RM10
+Bag 1
+Cap 50V Elect 3.3uF Low ESR D5
+1 hmt C200
+Comment: Input DC blocking cap
+Spec: 3.3uF. Size can be decreased if Rin is increased above 22K
+Bag 1
+Cap 10V Elect 1000uF Low ESR
+1 hmt C1
+Comment: 5V decoupling
+Spec: 1000uF 10V low ESR
+Bag 1
+Cap 50V Elect 180uF U-Low ESR D8
+2 hmt C50,C51
+Comment: 5V preregulator bulk caps
+Spec:
+Bag 2
+Res 2.2Kohm 1/10W 0.5% 0805
+7 smt R3,R12,R59,R81,R82,R83,R84
+Comment: Feedback network
+Spec: 2.2K low noise 1%
+Bag 2
+Ferrite chip 60 Ohm 3000mA 0805
+1 smt L5
+Comment: Separates AGND <=> GND
+Spec: HF choke 100MHz 60 ohm
+Bag 2
+Res 47Kohm 1/10W 0.5% 0805
+2 smt R29-ALT,R31-ALT,
+Comment: Alternate input / feedback
+Spec: 47K 1% low noise
+Bag 2
+Res 120R 1/10W 0.5% 0805
+1 smt R57
+Comment: Pre-regulator ref voltage
+Spec: 120 ohm 1%
+Bag 2
+Cap 50V Cer 1000pF X7R 0805
+2 smt C81,C82
+Comment: Output EMI damping
+Spec: 1000 pF 50V NPO 0805
+Bag 2
+Cap 50V Cer 390pF NP0/COG 0805
+2 smt C40,C41
+Comment: Feeedback damping, Outpt snubber
+Spec: 330pF or 390 pF NPO 5%
+Bag 2
+Res Ax. Met. Film 1W 6.5mm 15ohm
+1 hmt R2
+Comment: LP filter for pre-regulator
+Spec: 15 ohm 1W
+Bag 2
+Cap 50V Elect 22uF U-Low ESR D5 RM2
+1 hmt C91
+Comment: Regulator adj pin stabilizing
+Spec: 22 uF 10V
+Bag 3
+Trim pot Cerm 5Kohm 25TRN Top
+1 hmt POT1
+Comment: Trimmer for output offset
+Spec: 5K multiturn Cermet 5K
+Bag 3
+Res 510Kohm 1/10W 0.5% 0805
+2 smt R4,R26
+Comment: Output trimmer limiting
+Spec: 510K
+Bag 3
+Res 22.0Kohm 1/10W 0.5% 0805
+4 smt R29-ALT,R31-ALT
+Comment: Input and input feedback
+Spec: 1% 22K low noise
+Bag 3
+Res 20R 1/4W 5% 1206 SMD
+1 smt R51
+Comment: Output snubber
+Spec: 20 ohm 0.25W 1206
+Bag 3
+Cap 50V Cer 33pF NP0 0805
+1 smt C90
+Comment: Input EMI damping
+Spec: 33pF 0805 NPO
+Bag 3
+Res Ax. Met. Film 2W 10mm 15R
+1 hmt R50
+Comment: Output zobel filter
+Spec: 15 ohm 2W axial
+Bag 4
+Res 39.0Kohm 1/10W 0.5% 0805
+3 smt R19,R27,R29-ALT,R31-ALT
+Comment: Blanking for unused channel
+Spec: 39K 0805
+Bag 4
+Cap 50V Elect 1000uF UlowESR D16
+2 hmt C101,C102
+Comment: Close-up bulk capacitors
+Spec: Ultra low ESR >=1000uF 50V rad 16mm, RM7.5
+Bag 4
+Res 220Kohm 1/10W 0.5% 0805
+2 smt R52,R54
+Comment: Rail voltage sensing
+Spec: 220K 1% 0805
+Bag 4
+Res 8.25Kohm 1/10W 0.5% 0805
+3 smt R5,R103-ALT,R114-ALT
+Comment: REF voltage and Modulator feedback
+Spec:
+Bag 4
+Res 1.0Kohm 1/10W 0.5% 0805
+4 smt R22,R30,R3-ALT,R12-ALT
+Comment: Feedback network
+Spec: 1K 1% low noise
+Bag 4
+Res 249R 1/10W 0.5% 0805
+1 smt R110
+Comment: +5V setpoint
+Spec: 1% 750 ohm
+Bag 4
+Res 12.0K ohm 1/10W 0.5% 0805
+2 smt R103-ALT,R114-ALT
+Comment: Alternate feedback
+Spec:
+Bag 5
+Cap 50V Cer 0.1uF X7R 0805
+15 smt C3,C4,C7,C10,C12,C14,C18,C21,C22,C24,C30,C31,C35,C110,C112
+Comment: Decoupling
+Spec: 0.1 uF 50V X7R
+Bag 5
+Cap 100V Cer 330pF NP0 0805
+1 smt C13
+Comment: Output snubber
+Spec: 330 pF 100V
+Bag 5
+Res 5.6Kohm 1/10W 0.5% 0805
+2 smt R103,R114
+Comment: Modulator feedback
+Spec: 5.6K 1% low noise
+Bag 5
+Res 10Kohm 1/10W 0.5% 0805
+6 smt R37,R40,R45,R53,R103,R114
+Comment: Feedback and pullup
+Spec: 1% low noise for feedback
+Bag 5
+Res 750R 1/10W 0.5% 0805 
+2 smt R56,R111
+Comment: Voltage regulator setpoints
+Spec: 750 ohms 1% low noise
+Bag 5
+Toroid T80-2
+2 - L1,L3
+Comment: Output filter
+Spec: Iron powder type 2, diameter 20 mm, 15uH
+Bag 5
+Cap 10V Cer 1.0uF X7R 0805
+2 smt C55,C56
+Comment: 5V secondary decoupling
+Spec: 1 uF 10V X7R
+Bag 5
+Copper wire 0.6mm x 1.25m x 2
+1 - L1,L3
+Comment: For winding inductors
+Spec: 0.6 mm 1.2 m
+Bag 6
+Tripath TP2050
+1 smt¤ U2
+Comment: Tripath Power stage
+Spec: Tripath Power stage
+Bag 6
+LED 3mm Hi-eff Red Diffused
+4 hmt¤ led1,led2,led3,led4
+Comment: Status LEDs
+Spec: Low power LED
+Bag 6
+MCP101 Superv. 4.85V Ahigh D-bond TO-92
+1 hmt¤ U10
+Comment: +5V supervisor
+Spec: 4.75V Active high TO92
+Bag 6
+MOSFET P-ch 50V 130mA
+3 smt¤ Q4,Q5,Q6
+Comment: LED drivers
+Spec: P-chan SOT23 50V 100mA
+Bag 6
+Voltage Reg Adj 1.5A TO-220
+1 hmt¤ Q10
+Comment: Pre-regulator 9V. Metal surface is conducting. Do NOT ground!
+Spec: LM317 TO-220
+Bag 6
+Voltage Reg Pos Adj 100mA TO-92
+1 hmt¤ Q2
+Comment: Regulator for +5V
+Spec: LM317L, TO92
+Bag 6
+Tripath TC2001
+1 smt¤ U1
+Comment: Tripath signal processor
+Spec: No substitute

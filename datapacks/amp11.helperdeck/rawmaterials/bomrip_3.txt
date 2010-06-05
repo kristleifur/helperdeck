@@ -1,0 +1,68 @@
+Bag 4
+Res 249R 1/10W 0.5% 0805
+1 smt R110
+Comment: +5V setpoint
+Spec: 1% 750 ohm
+Bag 4
+Res 12.0K ohm 1/10W 0.5% 0805
+2 smt R103-ALT,R114-ALT
+Comment: Alternate feedback
+Spec:
+Bag 5
+Cap 50V Cer 0.1uF X7R 0805
+15 smt C3,C4,C7,C10,C12,C14,C18,C21,C22,C24,C30,C31,C35,C110,C112
+Comment: Decoupling
+Spec: 0.1 uF 50V X7R
+Bag 5
+Cap 100V Cer 330pF NP0 0805
+1 smt C13
+Comment: Output snubber
+Spec: 330 pF 100V
+Bag 5
+Res 5.6Kohm 1/10W 0.5% 0805
+2 smt R103,R114
+Comment: Modulator feedback
+Spec: 5.6K 1% low noise
+Bag 5
+Res 10Kohm 1/10W 0.5% 0805
+6 smt R37,R40,R45,R53,R103,R114
+Comment: Feedback and pullup
+Spec: 1% low noise for feedback
+Bag 5
+Res 750R 1/10W 0.5% 0805 
+2 smt R56,R111
+Comment: Voltage regulator setpoints
+Spec: 750 ohms 1% low noise
+Bag 5 Toroid T80-2
+2 - L1,L3
+Comment: Output filter
+Spec: Iron powder type 2, diameter 20 mm, 15uH
+Bag 5
+Cap 10V Cer 1.0uF X7R 0805
+2 smt C55,C56
+Comment: 5V secondary decoupling
+Spec: 1 uF 10V X7R
+Bag 5
+Copper wire 0.6mm x 1.25m x 2
+1 - L1,L3
+Comment: For winding inductors
+Spec: 0.6 mm 1.2 m
+Bag 6 Tripath TP2050
+1 smt¤ U2
+Comment: Tripath Power stage
+Spec: Tripath Power stage
+Bag 6
+LED 3mm Hi-eff Red Diffused
+4 hmt¤ led1,led2,led3,led4
+Comment: Status LEDs
+Spec: Low power LED
+Bag 6
+MCP101 Superv. 4.85V Ahigh D-bond TO-92
+1 hmt¤ U10
+Comment: +5V supervisor
+Spec: 4.75V Active high TO92
+Bag 6
+MOSFET P-ch 50V 130mA
+3 smt¤ Q4,Q5,Q6
+Comment: LED drivers
+Spec: P-chan SOT23 50V 100mA

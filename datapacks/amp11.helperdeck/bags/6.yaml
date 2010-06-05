@@ -1,0 +1,69 @@
+--- 
+- !ruby/object:Component 
+  comment: Tripath Power stage
+  longname: Tripath TP2050
+  positions: 
+  - U2
+  spec: Tripath Power stage
+  type: !binary |
+    c210wqQ=
+
+- !ruby/object:Component 
+  comment: Status LEDs
+  longname: LED 3mm Hi-eff Red Diffused
+  positions: 
+  - led1
+  - led2
+  - led3
+  - led4
+  spec: Low power LED
+  type: !binary |
+    aG10wqQ=
+
+- !ruby/object:Component 
+  comment: +5V supervisor
+  longname: MCP101 Superv. 4.85V Ahigh D-bond TO-92
+  positions: 
+  - U10
+  spec: 4.75V Active high TO92
+  type: !binary |
+    aG10wqQ=
+
+- !ruby/object:Component 
+  comment: LED drivers
+  longname: MOSFET P-ch 50V 130mA
+  positions: 
+  - Q4
+  - Q5
+  - Q6
+  spec: P-chan SOT23 50V 100mA
+  type: !binary |
+    c210wqQ=
+
+- !ruby/object:Component 
+  comment: Pre-regulator 9V. Metal surface is conducting. Do NOT ground!
+  longname: Voltage Reg Adj 1.5A TO-220
+  positions: 
+  - Q10
+  spec: LM317 TO-220
+  type: !binary |
+    aG10wqQ=
+
+- !ruby/object:Component 
+  comment: Regulator for +5V
+  longname: Voltage Reg Pos Adj 100mA TO-92
+  positions: 
+  - Q2
+  spec: LM317L, TO92
+  type: !binary |
+    aG10wqQ=
+
+- !ruby/object:Component 
+  comment: Tripath signal processor
+  longname: Tripath TC2001
+  positions: 
+  - U1
+  spec: No substitute
+  type: !binary |
+    c210wqQ=
+

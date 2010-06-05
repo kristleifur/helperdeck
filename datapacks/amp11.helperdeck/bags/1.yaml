@@ -1,0 +1,39 @@
+--- 
+- !ruby/object:Component 
+  comment: Output filter
+  longname: Cap 160V Film 0.22uF Polyprop RM10
+  positions: 
+  - C25
+  - C36
+  - C28
+  spec: Film cap, 0.22 uF RM5 to RM10
+  type: hmt
+- !ruby/object:Component 
+  comment: Output filter
+  longname: Cap 160V Film 0.1uF Polyprop RM10 5x13mm
+  positions: 
+  - C32
+  spec: 0.1 uF 100V RM5 to RM10
+  type: hmt
+- !ruby/object:Component 
+  comment: Input DC blocking cap
+  longname: Cap 50V Elect 3.3uF Low ESR D5
+  positions: 
+  - C200
+  spec: 3.3uF. Size can be decreased if Rin is increased above 22K
+  type: hmt
+- !ruby/object:Component 
+  comment: 5V decoupling
+  longname: Cap 10V Elect 1000uF Low ESR
+  positions: 
+  - C1
+  spec: 1000uF 10V low ESR
+  type: hmt
+- !ruby/object:Component 
+  comment: 5V preregulator bulk caps
+  longname: Cap 50V Elect 180uF U-Low ESR D8
+  positions: 
+  - C50
+  - C51
+  spec: ""
+  type: hmt

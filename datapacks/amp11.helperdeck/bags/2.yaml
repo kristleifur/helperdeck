@@ -1,0 +1,66 @@
+--- 
+- !ruby/object:Component 
+  comment: Feedback network
+  longname: Res 2.2Kohm 1/10W 0.5% 0805
+  positions: 
+  - R3
+  - R12
+  - R59
+  - R81
+  - R82
+  - R83
+  - R84
+  spec: 2.2K low noise 1%
+  type: smt
+- !ruby/object:Component 
+  comment: Separates AGND <=> GND
+  longname: Ferrite chip 60 Ohm 3000mA 0805
+  positions: 
+  - L5
+  spec: HF choke 100MHz 60 ohm
+  type: smt
+- !ruby/object:Component 
+  comment: Alternate input / feedback
+  longname: Res 47Kohm 1/10W 0.5% 0805
+  positions: 
+  - R29-ALT
+  - R31-ALT
+  spec: 47K 1% low noise
+  type: smt
+- !ruby/object:Component 
+  comment: Pre-regulator ref voltage
+  longname: Res 120R 1/10W 0.5% 0805
+  positions: 
+  - R57
+  spec: 120 ohm 1%
+  type: smt
+- !ruby/object:Component 
+  comment: Output EMI damping
+  longname: Cap 50V Cer 1000pF X7R 0805
+  positions: 
+  - C81
+  - C82
+  spec: 1000 pF 50V NPO 0805
+  type: smt
+- !ruby/object:Component 
+  comment: Feeedback damping, Outpt snubber
+  longname: Cap 50V Cer 390pF NP0/COG 0805
+  positions: 
+  - C40
+  - C41
+  spec: 330pF or 390 pF NPO 5%
+  type: smt
+- !ruby/object:Component 
+  comment: LP filter for pre-regulator
+  longname: Res Ax. Met. Film 1W 6.5mm 15ohm
+  positions: 
+  - R2
+  spec: 15 ohm 1W
+  type: hmt
+- !ruby/object:Component 
+  comment: Regulator adj pin stabilizing
+  longname: Cap 50V Elect 22uF U-Low ESR D5 RM2
+  positions: 
+  - C91
+  spec: 22 uF 10V
+  type: hmt

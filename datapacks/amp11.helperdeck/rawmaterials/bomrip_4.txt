@@ -1,0 +1,16 @@
+Bag 6
+Voltage Reg Adj 1.5A TO-220
+1 hmt¤ Q10
+Comment:
+Pre-regulator 9V. Metal surface is conducting. Do NOT ground!
+Spec: LM317 TO-220
+Bag 6
+Voltage Reg Pos Adj 100mA TO-92
+1 hmt¤ Q2
+Comment: Regulator for +5V
+Spec: LM317L, TO92
+Bag 6
+Tripath TC2001
+1 smt¤ U1
+Comment: Tripath signal processor
+Spec: No substitute
