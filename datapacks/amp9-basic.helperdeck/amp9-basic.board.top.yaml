@@ -71,14 +71,6 @@ d30: !ruby/object:Position
   width: 9
   x: 103
   y: 48
-kill: !ruby/object:Position 
-  components: []
-
-  height: 21
-  name: kill
-  width: 20
-  x: 106
-  y: 12
 r3: !ruby/object:Position 
   components: []
 
@@ -359,14 +351,6 @@ l2: !ruby/object:Position
   width: 62
   x: 307
   y: 130
-c66666kill: !ruby/object:Position 
-  components: []
-
-  height: 18
-  name: c66666kill
-  width: 19
-  x: 81
-  y: 14
 c4: !ruby/object:Position 
   components: []
 
