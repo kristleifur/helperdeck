@@ -175,7 +175,8 @@ class Shoes::App
       tmpStageComponents = {}
     
       @numberOfStages.times do | i |
-        tmpWin = window :title => "Stage #{i + 1}", :width => 250, :height => 60 do
+        stagename = @stageDirContents[i].split("/")[-1].gsub(".txt","")
+        tmpWin = window :title => "Stage #{stagename}", :width => 250, :height => 60 do
           # ;
         end
         @stageWindows << tmpWin
@@ -183,7 +184,7 @@ class Shoes::App
         # debug @stages[0]
         # @stageComponents[@stages[i].stagename] = @stages[i].positions
       
-        @stages[i].stagename = @stageDirContents[i].split("/")[-1].gsub(".txt","")
+        @stages[i].stagename = stagename
         tmpStageComponents[i] = File.read(@stageDirContents[i]).strip().split(" ")
         # debug tmpStageComponents[i]
       end
