@@ -1,12 +1,12 @@
 --- 
-"55": !ruby/object:Position 
+r15: !ruby/object:Position 
   components: []
 
-  height: 8
-  name: r7
+  height: 9
+  name: r15
   width: 15
-  x: 100
-  y: 170
+  x: 101
+  y: 194
 d40: !ruby/object:Position 
   components: []
 
@@ -39,14 +39,6 @@ c41: !ruby/object:Position
   width: 31
   x: 178
   y: 189
-"56": !ruby/object:Position 
-  components: []
-
-  height: 9
-  name: r6
-  width: 17
-  x: 99
-  y: 182
 c31: !ruby/object:Position 
   components: []
 
@@ -95,22 +87,22 @@ d41: !ruby/object:Position
   width: 9
   x: 115
   y: 90
-"57": !ruby/object:Position 
+c54: !ruby/object:Position 
   components: []
 
-  height: 9
-  name: r15
-  width: 15
-  x: 101
-  y: 194
-"46": !ruby/object:Position 
+  height: 17
+  name: c54
+  width: 16
+  x: 107
+  y: 14
+ic2: !ruby/object:Position 
   components: []
 
-  height: 48
-  name: j1
-  width: 24
-  x: 9
-  y: 63
+  height: 17
+  name: ic2
+  width: 20
+  x: 74
+  y: 270
 c43: !ruby/object:Position 
   components: []
 
@@ -159,7 +151,15 @@ c21: !ruby/object:Position
   width: 31
   x: 340
   y: 190
-"58": !ruby/object:Position 
+r5: !ruby/object:Position 
+  components: []
+
+  height: 8
+  name: r5
+  width: 16
+  x: 100
+  y: 159
+ic3: !ruby/object:Position 
   components: []
 
   height: 30
@@ -167,14 +167,6 @@ c21: !ruby/object:Position
   width: 103
   x: 10
   y: 220
-"47": !ruby/object:Position 
-  components: []
-
-  height: 35
-  name: j2
-  width: 24
-  x: 9
-  y: 133
 d21: !ruby/object:Position 
   components: []
 
@@ -231,30 +223,14 @@ c33: !ruby/object:Position
   width: 32
   x: 260
   y: 214
-"60": !ruby/object:Position 
-  components: []
-
-  height: 17
-  name: c7
-  width: 19
-  x: 101
-  y: 269
-"59": !ruby/object:Position 
+c56: !ruby/object:Position 
   components: []
 
   height: 16
-  name: c5
-  width: 17
-  x: 38
-  y: 270
-"48": !ruby/object:Position 
-  components: []
-
-  height: 36
-  name: j3
-  width: 25
-  x: 9
-  y: 168
+  name: c56
+  width: 18
+  x: 81
+  y: 15
 d11: !ruby/object:Position 
   components: []
 
@@ -287,30 +263,14 @@ c23: !ruby/object:Position
   width: 31
   x: 340
   y: 213
-"61": !ruby/object:Position 
+r6: !ruby/object:Position 
   components: []
 
-  height: 17
-  name: ic2
-  width: 20
-  x: 74
-  y: 270
-"50": !ruby/object:Position 
-  components: []
-
-  height: 8
-  name: r8
-  width: 16
-  x: 52
-  y: 158
-"49": !ruby/object:Position 
-  components: []
-
-  height: 7
-  name: r9
-  width: 16
-  x: 53
-  y: 147
+  height: 9
+  name: r6
+  width: 17
+  x: 99
+  y: 182
 l1: !ruby/object:Position 
   components: []
 
@@ -335,14 +295,22 @@ c13: !ruby/object:Position
   width: 31
   x: 421
   y: 213
-"51": !ruby/object:Position 
+r7: !ruby/object:Position 
   components: []
 
-  height: 9
-  name: r13
-  width: 14
-  x: 53
+  height: 8
+  name: r7
+  width: 15
+  x: 100
   y: 170
+"62": !ruby/object:Position 
+  components: []
+
+  height: 48
+  name: ic3socket
+  width: 91
+  x: 17
+  y: 210
 l2: !ruby/object:Position 
   components: []
 
@@ -359,14 +327,22 @@ c4: !ruby/object:Position
   width: 38
   x: 37
   y: 114
-"52": !ruby/object:Position 
+r8: !ruby/object:Position 
   components: []
 
-  height: 6
-  name: r12
+  height: 8
+  name: r8
+  width: 16
+  x: 52
+  y: 158
+r11: !ruby/object:Position 
+  components: []
+
+  height: 8
+  name: r11
   width: 15
-  x: 53
-  y: 183
+  x: 52
+  y: 195
 d25: !ruby/object:Position 
   components: []
 
@@ -399,14 +375,30 @@ l3: !ruby/object:Position
   width: 61
   x: 226
   y: 132
-"53": !ruby/object:Position 
+r9: !ruby/object:Position 
   components: []
 
-  height: 8
-  name: r11
-  width: 15
-  x: 52
-  y: 195
+  height: 7
+  name: r9
+  width: 16
+  x: 53
+  y: 147
+c5: !ruby/object:Position 
+  components: []
+
+  height: 16
+  name: c5
+  width: 17
+  x: 38
+  y: 270
+j1: !ruby/object:Position 
+  components: []
+
+  height: 48
+  name: j1
+  width: 24
+  x: 9
+  y: 63
 c72: !ruby/object:Position 
   components: []
 
@@ -423,14 +415,22 @@ l4: !ruby/object:Position
   width: 62
   x: 145
   y: 132
-"54": !ruby/object:Position 
+r12: !ruby/object:Position 
   components: []
 
-  height: 8
-  name: r5
-  width: 16
-  x: 100
-  y: 159
+  height: 6
+  name: r12
+  width: 15
+  x: 53
+  y: 183
+j2: !ruby/object:Position 
+  components: []
+
+  height: 35
+  name: j2
+  width: 24
+  x: 9
+  y: 133
 j10: !ruby/object:Position 
   components: []
 
@@ -455,6 +455,30 @@ r1: !ruby/object:Position
   width: 27
   x: 390
   y: 213
+r13: !ruby/object:Position 
+  components: []
+
+  height: 9
+  name: r13
+  width: 14
+  x: 53
+  y: 170
+c7: !ruby/object:Position 
+  components: []
+
+  height: 17
+  name: c7
+  width: 19
+  x: 101
+  y: 269
+j3: !ruby/object:Position 
+  components: []
+
+  height: 36
+  name: j3
+  width: 25
+  x: 9
+  y: 168
 j4: !ruby/object:Position 
   components: []
 

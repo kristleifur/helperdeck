@@ -197,6 +197,7 @@ class BoardSide
       
       # @liveCompBox.text = ""
       if (@selectedPositions.size == 1)
+        debug @selectedPositions[0]
         @selectedPositionWindowHandler.livePosition = @selectedPositions[0]
         @selectedPositionWindowHandler.update()
         @liveString.delete!(@liveString)

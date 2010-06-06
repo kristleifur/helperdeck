@@ -1,0 +1,29 @@
+--- 
+- !ruby/object:Component 
+  comment: Misc. Decoupling capacitors
+  longname: Misc. Decoupling capacitors - 0.1 uF RM 2.5
+  positions: 
+  - C16
+  - C17
+  - C20
+  - C21
+  - C26
+  - C50
+  spec: 0.1 uF RM 2.5
+  type: ""
+- !ruby/object:Component 
+  comment: "Reference voltage resistor "
+  longname: Reference voltage resistor  - 8.2K
+  positions: 
+  - R3
+  - R7
+  spec: 8.2K
+  type: ""
+- !ruby/object:Component 
+  comment: Signal input resistors
+  longname: Signal input resistors - 22K
+  positions: 
+  - R2
+  - R4
+  spec: 22K
+  type: ""

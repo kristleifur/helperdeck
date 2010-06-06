@@ -1,0 +1,43 @@
+--- 
+- !ruby/object:Component 
+  comment: Fuse AG2 / 5x15mm / 4A slow
+  longname: Fuse AG2 / 5x15mm / 4A slow - Fuse holder and fuse
+  positions: 
+  - f1
+  spec: Fuse holder and fuse
+  type: ""
+- !ruby/object:Component 
+  comment: Speaker connectors
+  longname: Speaker connectors - Screw terminal header
+  positions: 
+  - j1
+  spec: Screw terminal header
+  type: ""
+- !ruby/object:Component 
+  comment: Power supply jack
+  longname: Power supply jack - Power Jack 2.6 X 5.5mm
+  positions: 
+  - j3
+  spec: Power Jack 2.6 X 5.5mm
+  type: ""
+- !ruby/object:Component 
+  comment: Signal jack
+  longname: Signal jack - Stereo jack 3.5mm mini
+  positions: 
+  - j5
+  spec: Stereo jack 3.5mm mini
+  type: ""
+- !ruby/object:Component 
+  comment: Sleep and mute jumpers
+  longname: Sleep and mute jumpers - Header & jumper 2.5mm
+  positions: 
+  - j2
+  spec: Header & jumper 2.5mm
+  type: ""
+- !ruby/object:Component 
+  comment: Main supply decoupling
+  longname: Main supply decoupling - 1500uF 16V
+  positions: 
+  - c1819
+  spec: 1500uF 16V
+  type: ""

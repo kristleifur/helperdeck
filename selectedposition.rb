@@ -13,11 +13,16 @@ class SelectedPosition
     end
   end
   def livePosition=(position)
-    # debug "SelectedPosition.livePosition="
+    debug "SelectedPosition.livePosition="
+    debug position
+    debug position.name
     @livePosition = position
     update()
   end
   def update()
+    debug "selectedposition.rb:"
+    debug @livePosition
+    debug @livePosition.name
     @nameLine.text = @livePosition.name if @livePosition
   end
 end

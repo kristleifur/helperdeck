@@ -1,0 +1,37 @@
+--- 
+- !ruby/object:Component 
+  comment: Output clamping diodes
+  longname: Output clamping diodes - Diode size SMB Ultra-fast
+  positions: 
+  - d5
+  - d6
+  - d7
+  - d8
+  - d9
+  - d10
+  - d11
+  - d12
+  spec: Diode size SMB Ultra-fast
+  type: ""
+- !ruby/object:Component 
+  comment: Power supply polarity protection
+  longname: Power supply polarity protection - Diode size SMC
+  positions: 
+  - d1
+  spec: Diode size SMC
+  type: ""
+- !ruby/object:Component 
+  comment: Decoupling of power supply
+  longname: Decoupling of power supply - 0.1 uF RM 5
+  positions: 
+  - c6
+  - c7
+  spec: 0.1 uF RM 5
+  type: ""
+- !ruby/object:Component 
+  comment: Tripath chip amp
+  longname: Tripath chip amp - Tripath TA2020
+  positions: 
+  - q1
+  spec: Tripath TA2020
+  type: ""

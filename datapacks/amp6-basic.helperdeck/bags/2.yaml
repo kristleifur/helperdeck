@@ -1,0 +1,38 @@
+--- 
+- !ruby/object:Component 
+  comment: Sleep pull-up resistor
+  longname: Sleep pull-up resistor - 1M
+  positions: 
+  - r1
+  spec: 1M
+  type: ""
+- !ruby/object:Component 
+  comment: Signal feedback resistors
+  longname: Signal feedback resistors - 56K
+  positions: 
+  - r5
+  - r6
+  spec: 56K
+  type: ""
+- !ruby/object:Component 
+  comment: Charge pump capacitor
+  longname: Charge pump capacitor - 1 uF RM2
+  positions: 
+  - c5
+  spec: 1 uF RM2
+  type: ""
+- !ruby/object:Component 
+  comment: Signal input capacitors
+  longname: Signal input capacitors - 3.3 uF RM2
+  positions: 
+  - c14
+  - c15
+  spec: 3.3 uF RM2
+  type: ""
+- !ruby/object:Component 
+  comment: 5V supply decoupling
+  longname: 5V supply decoupling - 10 uF 10V
+  positions: 
+  - c2
+  spec: 10 uF 10V
+  type: ""

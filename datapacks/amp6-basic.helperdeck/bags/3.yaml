@@ -1,0 +1,35 @@
+--- 
+- !ruby/object:Component 
+  comment: Output filter resistors
+  longname: Output filter resistors - 10 ohm 1W
+  positions: 
+  - r9
+  - r10
+  spec: 10 ohm 1W
+  type: ""
+- !ruby/object:Component 
+  comment: Output filter capacitors
+  longname: Output filter capacitors - 0.22 uF
+  positions: 
+  - c12
+  - c13
+  spec: 0.22 uF
+  type: ""
+- !ruby/object:Component 
+  comment: Output filter capacitors
+  longname: Output filter capacitors - 0.47 uF
+  positions: 
+  - c22
+  - c25
+  - c27
+  - c28
+  spec: 0.47 uF
+  type: ""
+- !ruby/object:Component 
+  comment: Output filter inductors
+  longname: Output filter inductors - Inductor 10uH dual
+  positions: 
+  - l1
+  - l2
+  spec: Inductor 10uH dual
+  type: ""

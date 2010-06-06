@@ -1,0 +1,96 @@
+--- 
+- !ruby/object:Component 
+  comment: Output EMI filter caps
+  longname: Cap 50V Cer 0.010uF X7R 10% RM2.5
+  positions: 
+  - C14
+  - C15
+  - C24
+  - C25
+  - C34
+  - C35
+  - C44
+  - C45
+  spec: ""
+  type: HMt
+- !ruby/object:Component 
+  comment: Misc decoupling
+  longname: Cap 50V Cer 0.10uF X7R 10% RM2.5
+  positions: 
+  - C6
+  - C9
+  - C38
+  - C39
+  - C51
+  - C53
+  - C57
+  - C61
+  - C62
+  - C63
+  - C64
+  spec: ""
+  type: HMt
+- !ruby/object:Component 
+  comment: Stand-off spacers
+  longname: "Spacer nylon nat 9 mm round #4"
+  positions: 
+  - Mounting
+  spec: Nylon 9mm
+  type: Other
+- !ruby/object:Component 
+  comment: Screw
+  longname: Screw machine Phil 4-40x1/2 SS
+  positions: 
+  - Mounting
+  spec: ""
+  type: Other
+- !ruby/object:Component 
+  comment: Nut
+  longname: Nut HEX 4-40 SS
+  positions: 
+  - Mounting
+  spec: ""
+  type: Other
+- !ruby/object:Component 
+  comment: Current limit for control signals
+  longname: Res Ax. Met film 0.4W 3.4mm 100R
+  positions: 
+  - R5
+  - R9
+  - R15
+  spec: 100 ohm 0.25W
+  type: HMt
+- !ruby/object:Component 
+  comment: LED current limit
+  longname: Res Ax. Met film 0.4W 3.4mm 2.2Kohm
+  positions: 
+  - R11
+  - R12
+  - R13
+  spec: Depends on LEDs used
+  type: HMt
+- !ruby/object:Component 
+  comment: Signal Pull-up
+  longname: Res Ax. Met film 0.4W 3.4mm 56Kohm
+  positions: 
+  - R6
+  - R8
+  spec: ""
+  type: HMt
+- !ruby/object:Component 
+  comment: Unmute delay w C5
+  longname: Res Ax. Met film 0.4W 3.4mm 220Kohm
+  positions: 
+  - R7
+  spec: 220K
+  type: HMt
+- !ruby/object:Component 
+  comment: Output filter. Mount vertical
+  longname: Res Ax. 2W 10mm Met. Film 10R
+  positions: 
+  - R1
+  - R2
+  - R3
+  - R4
+  spec: 10 ohm 2W
+  type: HMt

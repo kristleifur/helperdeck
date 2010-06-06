@@ -1,0 +1,69 @@
+--- 
+- !ruby/object:Component 
+  comment: Main Tripath Chip
+  longname: Tripath TAA4100A
+  positions: 
+  - IC1
+  spec: ""
+  type: HMt
+- !ruby/object:Component 
+  comment: Output clamping
+  longname: Diode Schottky 1A 60V SMA
+  positions: 
+  - D51
+  - D52
+  - D53
+  - D54
+  - D55
+  - D56
+  - D57
+  - D58
+  - D59
+  - D60
+  - D61
+  - D62
+  - D63
+  - D64
+  - D65
+  - D66
+  spec: Ultra fast or schottky 50V, SMA
+  type: SMT
+- !ruby/object:Component 
+  comment: Power polarity protection
+  longname: Diode Schottky 30V 4A SMC
+  positions: 
+  - D1
+  - D2
+  - D3
+  spec: 4A schottky, 30V
+  type: SMT
+- !ruby/object:Component 
+  comment: 5V regulator for digital signals
+  longname: Reg 5V 100mA 78L05 TO-92
+  positions: 
+  - IC2
+  spec: 78L05 TO-92
+  type: HMt
+- !ruby/object:Component 
+  comment: Input clamping and charge pump
+  longname: Diode Switch 100V 200mA DO-35
+  positions: 
+  - D10
+  - D11
+  - D20
+  - D21
+  - D25
+  - D30
+  - D31
+  - D36
+  - D40
+  - D41
+  spec: 1N4148 switching
+  type: HMt
+- !ruby/object:Component 
+  comment: Signal buffer
+  longname: HEX Bus Buffer 16-DIP M74HC365B1R
+  positions: 
+  - IC3
+  spec: M74HC365B1R
+  type: HMt

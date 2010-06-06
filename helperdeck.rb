@@ -63,6 +63,13 @@ class Shoes::App
 	end
 	
 	def loadDatapack(datapackName)
+	  
+  	@liveComponentWin = window :title => "Selected position", :width => 250, :height => 60 do
+    end
+    @selectedPosition = SelectedPosition.new(@liveComponentWin, self)
+    debug "@selectedPosition created"
+    
+	  
 	  debug "Loading '#{datapackName}'"
 	  # @bagControllers ||= {}
 	  @bagnowin_model = {}
@@ -133,6 +140,7 @@ class Shoes::App
             boardWin = window :title => wintitle, :width => width, :height => height do
             end
             tehBoard = BoardSide.new(boardWin, imagename, self, @selectedPosition)
+            debug "@selectedPosition put in BoardSide object"
             # debug "Load Board Posn's"
             freshPositions = YAML.load_file(file)
             tehBoard.positions = {}
@@ -238,10 +246,6 @@ class Shoes::App
   
   def go()
     @datapack_button_flow.clear()
-    
-  	@liveComponentWin = window :title => "Selected position", :width => 250, :height => 60 do
-    end
-    @selectedPosition = SelectedPosition.new(@liveComponentWin, self)
 
   	# loadDatapack("amp32")
     # loadDatapack("amp4")
@@ -285,8 +289,7 @@ class Shoes::App
     begin
     end
 
-    @selectedPosition = nil # Position.new() #TODO: fix / use / toss
-    @data
+    # @selectedPosition = nil # Position.new() #TODO: fix / use / toss
   end
 end
 

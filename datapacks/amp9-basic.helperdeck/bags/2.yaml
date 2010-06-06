@@ -1,0 +1,55 @@
+--- 
+- !ruby/object:Component 
+  comment: Signal Input
+  longname: Cap 50V Film 1.0uF Polyester RM5
+  positions: 
+  - C1
+  - C2
+  - C3
+  - C4
+  spec: 1uF polyester
+  type: HMt
+- !ruby/object:Component 
+  comment: Power supp, close-up bulk
+  longname: Cap 35V Elect 1800uF U-low ESR D16
+  positions: 
+  - C71
+  - C72
+  spec: 1500uF 35V U-low ESR
+  type: HMt
+- !ruby/object:Component 
+  comment: Decoupling and time delays
+  longname: Cap 50V Elect 3.3uF Low ESR
+  positions: 
+  - C5
+  - C7
+  - C8
+  - C52
+  - C54
+  - C56
+  spec: 3.3uF 50V
+  type: HMt
+- !ruby/object:Component 
+  comment: Output filter
+  longname: Cap 50V Film 0.22uF Polyester RM5
+  positions: 
+  - C13
+  - C23
+  - C33
+  - C43
+  spec: Film, 0.22uf / 50V
+  type: HMt
+- !ruby/object:Component 
+  comment: Output filter
+  longname: Cap 50V Film 0.47uF Polyester RM5
+  positions: 
+  - C11
+  - C12
+  - C21
+  - C22
+  - C31
+  - C32
+  - C41
+  - C42
+  spec: 0.47uF Plastic film 50V
+  type: HMt

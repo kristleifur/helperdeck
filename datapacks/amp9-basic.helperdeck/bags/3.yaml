@@ -1,0 +1,39 @@
+--- 
+- !ruby/object:Component 
+  comment: Separates agnd <=> gnd
+  longname: Choke bead core 3.5X5mm Axial
+  positions: 
+  - L5
+  spec: ""
+  type: HMt
+- !ruby/object:Component 
+  comment: Output filters
+  longname: Dual inductor 10uH 10A SMT
+  positions: 
+  - L1
+  - L2
+  - L3
+  - L4
+  spec: Shielded linear audio inductors
+  type: SMT
+- !ruby/object:Component 
+  comment: Power input, speaker out
+  longname: Term Block 2 Pos 5.0mm w. pins
+  positions: 
+  - J10
+  spec: c/c 5.08mm (.2") 16A
+  type: HMt
+- !ruby/object:Component 
+  comment: Socket for IC
+  longname: Socket IC Open frame 16-DIP
+  positions: 
+  - ic3socket
+  spec: DIL 16 Conn header 2x6 pin
+  type: HMt
+- !ruby/object:Component 
+  comment: Signal connector 2x6
+  longname: 2.54mm str gold
+  positions: 
+  - J3
+  spec: 2x6 gold 2.54 (0.1")
+  type: HMt
