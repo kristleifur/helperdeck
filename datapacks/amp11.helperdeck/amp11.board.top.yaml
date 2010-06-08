@@ -111,6 +111,14 @@ c1: !ruby/object:Position
   width: 37
   x: 316
   y: 203
+r19: !ruby/object:Position 
+  components: []
+
+  height: 14
+  name: r19
+  width: 24
+  x: 292
+  y: 108
 c101: !ruby/object:Position 
   components: []
 
@@ -215,14 +223,6 @@ c36: !ruby/object:Position
   width: 30
   x: 57
   y: 198
-"41": !ruby/object:Position 
-  components: []
-
-  height: 14
-  name: r19
-  width: 24
-  x: 292
-  y: 108
 j1: !ruby/object:Position 
   components: []
 
@@ -239,6 +239,14 @@ l3: !ruby/object:Position
   width: 48
   x: 97
   y: 169
+"42": !ruby/object:Position 
+  components: []
+
+  height: 13
+  name: l5
+  width: 24
+  x: 297
+  y: 290
 j20: !ruby/object:Position 
   components: []
 
