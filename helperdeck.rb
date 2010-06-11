@@ -171,7 +171,7 @@ class Shoes::App
     end
     if @stageDirContents
       @stages = []
-      @stageWindows = []
+      # @stageWindows = []
       @stageComponents = {}
 
       @numberOfStages = @stageDirContents.size
@@ -182,11 +182,11 @@ class Shoes::App
     
       @numberOfStages.times do | i |
         stagename = @stageDirContents[i].split("/")[-1].gsub(".txt","")
-        tmpWin = window :title => "Stage #{stagename}", :width => 250, :height => 60 do
+        # tmpWin = window :title => "Stage #{stagename}", :width => 250, :height => 60 do
           # ;
-        end
-        @stageWindows << tmpWin
-        @stages << BuildStage.new(tmpWin, self)
+        # end
+        # @stageWindows << tmpWin
+        # @stages << BuildStage.new(tmpWin, self)
         @stagenowin_model[stagename] = BuildStageNoWin.new()
         @stagenowin_model[stagename].stagename = stagename
         # debug @stages[0]
@@ -234,7 +234,7 @@ class Shoes::App
             # debug pos
             # debug "Putting pos '#{pos}' into @stages[#{stagename}]"
             if (pos)
-              debug "'stagename': #{stagename}"
+              # debug "'stagename': #{stagename}"
               @stagenowin_model[stagename].positions << pos
               # @stages[stagename].positions << pos
             end
@@ -249,12 +249,12 @@ class Shoes::App
       debug "Stage dir contents are none ... hmm"
     end
     # tmpWin = window :title => "Stage #{i + 1}", :width => 250, :height => 60 do
-    @bags_window_window = window do end
+    @bags_window_window = window :title => "Bags" do end
     # @bagnowin_model = {}
     @bags_window = BagsWindow.new(@bags_window_window, self, @bag_contents, @bagnowin_model)
     @bags_window.update()
     
-    @stages_window_window = window do
+    @stages_window_window = window :title => "Build Stages" do
       # dur
     end
     @stages_window = StagesWindow.new(@stages_window_window, self, @stage_name_to_positions, @stagenowin_model)

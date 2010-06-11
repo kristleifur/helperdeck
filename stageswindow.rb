@@ -20,28 +20,28 @@ class StagesWindow
     @stagenowin_model.each do | blah |
       # debug blah.inspect
     end
-    @autoflow = false
+    # @autoflow = false
     update()
   end
   def update()
     # debug "bagswindow update"
     @bigflow.clear()
     @bigflow = @win.flow :width => "100%" do
-      @win.flow do
-        flow_check = @win.check
-        flow_check.click do
-          @autoflow = !@autoflow
-          update()
-        end
-        flow_check.checked = @autoflow
-        flow_link = @win.link "Autoflow"
-        flow_link.click do
-          @autoflow = !@autoflow
-          update()
-        end
-        flow_para = @win.para flow_link
-        flow_para.style(:size => "xx-small", :weight => "bold")
-      end
+      # @win.flow do
+      #   flow_check = @win.check
+      #   flow_check.click do
+      #     @autoflow = !@autoflow
+      #     update()
+      #   end
+      #   flow_check.checked = @autoflow
+      #   flow_link = @win.link "Autoflow"
+      #   flow_link.click do
+      #     @autoflow = !@autoflow
+      #     update()
+      #   end
+      #   flow_para = @win.para flow_link
+      #   flow_para.style(:size => "xx-small", :weight => "bold")
+      # end
       @stagenowin_model.keys().sort().each do | stagename |
         # @win.para "stagename: #{stagename}"
         stage = @stagenowin_model[stagename]
@@ -54,16 +54,24 @@ class StagesWindow
             stage_hidden = @stacks_hidden[stagename]
           end
           
-          link = @win.link "Stage #{stagename} #{stage_hidden ? "►" : "▼" }", :underline => "none", :stroke => @win.black
-          link.click do
+          stage_link = @win.link "Stage #{stagename} ▼", :stroke => @win.black
+          stage_link.click do
+            #select all in stage
+            @mainApp.clearSelections()
+            stage.positions.each do | pos |
+              @mainApp.selectPosition(pos.name.downcase().split("-")[0].split("x")[0])
+            end
+          end
+          fold_link = @win.link "BINGBONG #{stage_hidden ? "►" : "▼" }", :underline => "none", :stroke => @win.black
+          fold_link.click do
             @stacks_hidden[stagename] = !@stacks_hidden[stagename]
             update()
           end
           if stage_hidden
-            linkPara = @win.para link #, "\n"
+            linkPara = @win.para stage_link, fold_link
             linkPara.style(:weight => 900) #, :color => "black", :underline => "none")
           else
-            linkPara = @win.para link, "\n"
+            linkPara = @win.para stage_link, "\n"
             linkPara.style(:weight => 900)
           end
           # BAG SPECIFIC STILL:

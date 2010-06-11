@@ -116,7 +116,7 @@ class BagsWindow
               if (bag.selectedComponents.include?(component))
                 tehLink.style(:fill => @win.white)                
                 tehLink.style(:underline => "error")
-                tehLink.style(:undercolor => @win.turquoise)
+                tehLink.style(:undercolor => @win.red)
                 tehLink.style(:stroke => @win.black)
                 if !component_odd
                   # tehLink.style(:weight => 900, :fill => @win.white, :stroke => @win.darkblue) #, :background => @win.white) # 900 is ultrabold (bold is 800)
