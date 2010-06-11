@@ -73,6 +73,7 @@ class Shoes::App
 	  debug "Loading '#{datapackName}'"
 	  # @bagControllers ||= {}
 	  @bagnowin_model = {}
+	  @stagenowin_model = {}
     @bagWins ||= {}
     @boards ||= []
     @boardsToFilenames ||= {}
@@ -241,6 +242,9 @@ class Shoes::App
     # @bagnowin_model = {}
     @bags_window = BagsWindow.new(@bags_window_window, self, @bag_contents, @bagnowin_model)
     @bags_window.update()
+    
+    @stages_window_window = window do end
+    @stages_window = StagesWindow.new(@stages_window_window, self, @stage_name_to_positions, @stagenowin_model)
     
     go()
   end
