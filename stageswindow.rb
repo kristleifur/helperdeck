@@ -6,15 +6,19 @@ class StagesWindow
   def initialize(win, mainApp, stages_name_to_positions, stagenowin_model)
     @win = win
     @mainApp = mainApp
-    @stages_name_to_positions = componenthashes
+    @stages_name_to_positions = stages_name_to_positions
     @stagenowin_model = stagenowin_model
     @stacks = {} 
     @stacks_hidden = {}
     @stacks_autohidden = {}
     @bigflow = @win.flow
     @stages_name_to_positions.each do | stagename, stagepositions |
+      # @win.para "#{stagename}"
       @stacks_hidden[stagename] = false
       @stacks_autohidden[stagename] = true
+    end
+    @stagenowin_model.each do | blah |
+      # debug blah.inspect
     end
     @autoflow = false
     update()
@@ -39,6 +43,7 @@ class StagesWindow
         flow_para.style(:size => "xx-small", :weight => "bold")
       end
       @stagenowin_model.keys().sort().each do | stagename |
+        # @win.para "stagename: #{stagename}"
         stage = @stagenowin_model[stagename]
         @stacks[stagename].clear() if @stacks[stagename]
         @stacks[stagename] = @win.flow() do
@@ -69,9 +74,9 @@ class StagesWindow
           if stage_hidden
           else
             position_odd = true
-            stage.positions.each_with_index do | positions, posIndex |
+            stage.positions.each_with_index do | position, posIndex |
               str = "#{position.name}"
-              positions = positions.dup()
+              # positions = positions.dup()
               # component.positions.size.times do | i |
               #   if (i == 0)
               #     str << ": "
@@ -82,7 +87,7 @@ class StagesWindow
               #   end
               # end
               tehLink = @win.link str, :stroke => @win.black, :weight => "bold"#, :undercolor = @win.rgb(0.8, 0.8, 0.8)
-              if (compIndex != stage.positions.size - 1)
+              if (posIndex != stage.positions.size - 1)
                 tehPara = @win.para tehLink , "   |   "
               else
                 tehPara = @win.para tehLink
@@ -110,9 +115,11 @@ class StagesWindow
               # end
               tehLink.click do
                 @mainApp.clearSelections()
-                positions.each do | pos |
-                  @mainApp.selectPosition(pos.downcase().split("-")[0].split("x")[0])
-                end
+                pos = position
+                debug "Selecting pos.name: '#{pos.name}'" 
+                # stage.positions.each do | pos |
+                @mainApp.selectPosition(pos.name.downcase().split("-")[0].split("x")[0])
+                # end
               end
               position_odd = !position_odd
             end

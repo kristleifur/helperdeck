@@ -8,6 +8,8 @@ require 'position'
 require 'selectedposition'
 require 'stage'
 require 'bagswindow'
+require 'stageswindow'
+require 'stagenowin'
 
 def selectComponent(componentName)
   debug "Warning - helperdeck.selectComponent() called - inactive method"
@@ -78,6 +80,7 @@ class Shoes::App
     @boards ||= []
     @boardsToFilenames ||= {}
     @bag_contents ||= {}
+    @stage_name_to_positions ||= {}
 	  datapackFiles = Dir["#{datapackName}/*"]# Dir["datapacks/#{datapackName}.helperdeck/*"]
 	  datapackFiles.each do | file |
 	    debug file
@@ -174,6 +177,8 @@ class Shoes::App
       @numberOfStages = @stageDirContents.size
     
       tmpStageComponents = {}
+      
+      @stage_name_to_positions = tmpStageComponents
     
       @numberOfStages.times do | i |
         stagename = @stageDirContents[i].split("/")[-1].gsub(".txt","")
@@ -182,11 +187,14 @@ class Shoes::App
         end
         @stageWindows << tmpWin
         @stages << BuildStage.new(tmpWin, self)
+        @stagenowin_model[stagename] = BuildStageNoWin.new()
+        @stagenowin_model[stagename].stagename = stagename
         # debug @stages[0]
         # @stageComponents[@stages[i].stagename] = @stages[i].positions
       
-        @stages[i].stagename = stagename
-        tmpStageComponents[i] = File.read(@stageDirContents[i]).strip().split(" ")
+        # @stages[i].stagename = stagename
+        tmpStageComponents[stagename] = File.read(@stageDirContents[i]).strip().split(" ")
+        # tmpStageComponents[stagename] = tmpStageComponents[i]
         # debug tmpStageComponents[i]
       end
 
@@ -194,8 +202,8 @@ class Shoes::App
       # debug tmpStageComponents
       #   debug tmpStageComponents[0]
       #   debug tmpStageComponents[0].class()
-      tmpStageComponents.each do | stageNr, stage |
-        # debug "Populating stage '#{stageNr}'"
+      tmpStageComponents.each do | stagename, stage |
+        # debug "Populating stage '#{stagename}'"
         stage.each do | i |
           i.downcase!()
           # debug "Looking for position '#{i}'"
@@ -224,14 +232,17 @@ class Shoes::App
             # debug @stages[0].positions
             # debug "Pos:"
             # debug pos
-            # debug "Putting pos '#{pos}' into @stages[#{stageNr}]"
+            # debug "Putting pos '#{pos}' into @stages[#{stagename}]"
             if (pos)
-              @stages[stageNr].positions << pos
+              debug "'stagename': #{stagename}"
+              @stagenowin_model[stagename].positions << pos
+              # @stages[stagename].positions << pos
             end
           end
         end
-        # debug "Updating stage nr. #{stageNr}, name '#{@stages[stageNr].stagename}'"
-        @stages[stageNr].update()
+        # debug "Updating stage nr. #{stagename}, name '#{@stages[stagename].stagename}'"
+        # @stagesnowin_model[stagename].update()
+        # @stages[stagename].update()
       end
       # @stages[0].update
     else
@@ -243,8 +254,11 @@ class Shoes::App
     @bags_window = BagsWindow.new(@bags_window_window, self, @bag_contents, @bagnowin_model)
     @bags_window.update()
     
-    @stages_window_window = window do end
+    @stages_window_window = window do
+      # dur
+    end
     @stages_window = StagesWindow.new(@stages_window_window, self, @stage_name_to_positions, @stagenowin_model)
+    @stages_window.update()
     
     go()
   end

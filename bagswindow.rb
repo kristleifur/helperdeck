@@ -2,7 +2,7 @@
 
 require 'bagnowin'
 
-class BagsWindow§
+class BagsWindow
   def initialize(win, mainApp, componenthashes, bagnowin_model)
     @win = win
     @mainApp = mainApp
