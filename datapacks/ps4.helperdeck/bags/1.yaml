@@ -1,0 +1,51 @@
+--- 
+- !ruby/object:Component 
+  comment: Current limit / timeout, Frequency setting
+  longname: Res 220Kohm 1/10W 0.5% 0805
+  positions: 
+  - ron1
+  - rcl1
+  spec: ""
+  type: smt
+- !ruby/object:Component 
+  comment: Voltage setpoint
+  longname: Res 1.0Kohm 1/10W 0.5% 0805
+  positions: 
+  - r2
+  spec: 1K 1%
+  type: smt
+- !ruby/object:Component 
+  comment: Output node de-ringing
+  longname: Cap 50V Cer 10000pF X7R 0805
+  positions: 
+  - c4
+  spec: 0.01uF
+  type: smt
+- !ruby/object:Component 
+  comment: Feedback / output voltage setting
+  longname: Res 3.0Kohm 1/10W 0.5% 0805
+  positions: 
+  - r1
+  spec: (3K for U=10V with R2=1K)
+  type: smt
+- !ruby/object:Component 
+  comment: Power input decoupling
+  longname: Cap 100V Cer 1uF X7R 1206
+  positions: 
+  - c1
+  spec: 100V X7R 1uF
+  type: smt
+- !ruby/object:Component 
+  comment: Output / current sense
+  longname: Res 2R7 1/10W 1% 0805
+  positions: 
+  - r3
+  spec: 2R2 or 2R7 0805
+  type: smt
+- !ruby/object:Component 
+  comment: Main inductor
+  longname: Inductor SMT 330uF 0.54A
+  positions: 
+  - l1
+  spec: 330uH 0.5A
+  type: smt

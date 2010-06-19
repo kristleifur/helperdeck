@@ -1,0 +1,36 @@
+--- 
+- !ruby/object:Component 
+  comment: Alternate voltage setting
+  longname: Res 2.2Kohm 1/10W 0.5% 0805
+  positions: 
+  - r1-alt
+  spec: U=2.5*(R1/R2+1)
+  type: smt
+- !ruby/object:Component 
+  comment: Alternate voltage setting value
+  longname: Res 5.6Kohm 1/10W 0.5% 0805
+  positions: 
+  - r1-alt
+  spec: U=2.5x(R1/R2+1)
+  type: smt
+- !ruby/object:Component 
+  comment: Alternate value for frequency setting
+  longname: Res 392Kohm 1/8W 1% 0805
+  positions: 
+  - ron1-alt
+  spec: ""
+  type: smt
+- !ruby/object:Component 
+  comment: Alternate value for frequency setting
+  longname: Res 100Kohm 1/10W 0.5% 0805
+  positions: 
+  - ron1-alt
+  spec: ""
+  type: smt
+- !ruby/object:Component 
+  comment: Alternate value for lower load regulation
+  longname: Res 1R5 1/10W 1% prec 0805 thick film
+  positions: 
+  - r3-alt
+  spec: ""
+  type: smt

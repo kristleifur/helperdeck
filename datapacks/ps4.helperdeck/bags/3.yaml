@@ -1,0 +1,30 @@
+--- 
+- !ruby/object:Component 
+  comment: Output cap
+  longname: Cap 25V Cer 1uF X7R 10% 1206
+  positions: 
+  - c2
+  spec: Low ESR min 25V 1uF
+  type: smt
+- !ruby/object:Component 
+  comment: Regulator IC
+  longname: SMPS Reg Step-Down 100V 8-MSOP
+  positions: 
+  - u1
+  spec: LM5008
+  type: smt_ESD
+- !ruby/object:Component 
+  comment: Input and VCC decoupling
+  longname: Cap 100V Cer 0.1uF X7R 0805
+  positions: 
+  - c3
+  - c5
+  spec: 100V 0.1uF X7R
+  type: smt
+- !ruby/object:Component 
+  comment: Switch diode
+  longname: Diode 200V 1A SMA
+  positions: 
+  - d1
+  spec: Ultra-fast diode SMA
+  type: smt
