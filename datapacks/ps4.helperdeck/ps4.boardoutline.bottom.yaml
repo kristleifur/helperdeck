@@ -1,0 +1,25 @@
+--- 
+"1": !ruby/object:Position 
+  components: []
+
+  height: 29
+  name: c3
+  width: 16
+  x: 49
+  y: 59
+"2": !ruby/object:Position 
+  components: []
+
+  height: 29
+  name: r2
+  width: 17
+  x: 103
+  y: 59
+"3": !ruby/object:Position 
+  components: []
+
+  height: 76
+  name: l1
+  width: 75
+  x: 50
+  y: 92
