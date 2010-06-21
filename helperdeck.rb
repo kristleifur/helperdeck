@@ -10,6 +10,7 @@ require 'stage'
 require 'bagswindow'
 require 'stageswindow'
 require 'stagenowin'
+require 'allcomponentswindow'
 
 def selectComponent(componentName)
   debug "Warning - helperdeck.selectComponent() called - inactive method"
@@ -81,6 +82,7 @@ class Shoes::App
     @boardsToFilenames ||= {}
     @bag_contents ||= {}
     @stage_name_to_positions ||= {}
+    @allPositions_byFirstCharacter ||= {}
 	  datapackFiles = Dir["#{datapackName}/*"]# Dir["datapacks/#{datapackName}.helperdeck/*"]
 	  datapackFiles.each do | file |
 	    debug file
@@ -154,6 +156,9 @@ class Shoes::App
                   debug "Warning: position #{i.name} is duplicated"
                 end
                 tehBoard.positions[i.name] = i
+                firstCharacter = i.name[0..0].upcase
+                @allPositions_byFirstCharacter[firstCharacter] ||= []
+                @allPositions_byFirstCharacter[firstCharacter] << i.name
               end
             else
               # puts "WARNING: No position info found in '#{file}'"
@@ -248,6 +253,11 @@ class Shoes::App
     else
       debug "Stage dir contents are none ... hmm"
     end
+    @allPositions_byFirstCharacter.keys.each do | key |
+      @allPositions_byFirstCharacter[key].sort!()
+    end
+    @all_components_window_window = window :title => "All Components" do end
+    @all_components_window = AllComponentsWindow.new(@all_components_window_window, self, @allPositions_byFirstCharacter)
     # tmpWin = window :title => "Stage #{i + 1}", :width => 250, :height => 60 do
     @bags_window_window = window :title => "Bags" do end
     # @bagnowin_model = {}

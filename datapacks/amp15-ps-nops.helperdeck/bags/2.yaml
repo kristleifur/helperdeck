@@ -1,0 +1,12 @@
+--- 
+- !ruby/object:Component 
+  comment: Output filters
+  extraInfo: "2 hmt Inductor Single shielded 22uH 7A, Box 4 L1,L2,L3,L4 "
+  longname: "Inductor 22\xC2\xB5H, Box 4"
+  positions: 
+  - L1
+  - L2
+  - L3
+  - L4
+  spec: ""
+  type: hmt

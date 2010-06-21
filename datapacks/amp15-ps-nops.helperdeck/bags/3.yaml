@@ -1,0 +1,98 @@
+--- 
+- !ruby/object:Component 
+  comment: Current sensing
+  extraInfo: "3 smt Res 0.01ohm 2W 2% 0830 4 R1,R2,R3,R4 "
+  longname: "Res 0.01\xCE\xA9 2W 0830 4"
+  positions: 
+  - R1
+  - R2
+  - R3
+  - R4
+  spec: 0R01
+  type: smt
+- !ruby/object:Component 
+  comment: Gate drive
+  extraInfo: "3 hmt Res Ax. Met. Film 0.4W 3.4mm 5R6 4 R5,R6,R7,R8 "
+  longname: Res 5R6 4
+  positions: 
+  - R5
+  - R6
+  - R7
+  - R8
+  spec: 5R6
+  type: hmt
+- !ruby/object:Component 
+  comment: 5V setpoint, Power supply snubbers / filter
+  extraInfo: "3 hmt Res Ax. Met. Film 0.4W 3.4mm 120R 3 R47,R13,R20 "
+  longname: Res 120R 3
+  positions: 
+  - R47
+  - R13
+  - R20
+  spec: 120R
+  type: hmt
+- !ruby/object:Component 
+  comment: Boot cap current limit
+  extraInfo: "3 hmt Res Ax. Met. Film 0.4W 3.4mm 220R 2 R9,R10 "
+  longname: Res 220R 2
+  positions: 
+  - R9
+  - R10
+  spec: 220R
+  type: hmt
+- !ruby/object:Component 
+  comment: Feedback network
+  extraInfo: "3 hmt Res Ax. Met. Film 0.4W 3.4mm 1Kohm 4 R25,R26,R27,R28 "
+  longname: "Res 1K\xCE\xA9 4"
+  positions: 
+  - R25
+  - R26
+  - R27
+  - R28
+  spec: 1K
+  type: hmt
+- !ruby/object:Component 
+  comment: Led driver, voltage sensing
+  extraInfo: "3 hmt Res Ax. Met. Film 0.4W 3.4mm 2.2Kohm 3 R14,R15,R19-2 "
+  longname: "Res 2.2K\xCE\xA9 3"
+  positions: 
+  - R14
+  - R15
+  - R19-2
+  spec: 2.2K
+  type: hmt
+- !ruby/object:Component 
+  comment: Feedback network
+  extraInfo: "3 hmt Res Ax. Met. Film 0.4W 3.4mm 10Kohm 8 R33,R34,R35,R36,R39,R40,R42,R45 "
+  longname: "Res 10K\xCE\xA9 8"
+  positions: 
+  - R33
+  - R34
+  - R35
+  - R36
+  - R39
+  - R40
+  - R42
+  - R45
+  spec: 10K
+  type: hmt
+- !ruby/object:Component 
+  comment: Current sensing
+  extraInfo: "3 hmt Res Ax. Met. Film 0.4W 3.4mm 18Kohm 2 R11,R12 "
+  longname: "Res 18K\xCE\xA9 2"
+  positions: 
+  - R11
+  - R12
+  spec: 18K
+  type: hmt
+- !ruby/object:Component 
+  comment: Signal input and feedback
+  extraInfo: "3 hmt Res Ax. Met. Film 0.4W 3.4mm 22Kohm 4 R100,R101,R200,R201 "
+  longname: "Res 22K\xCE\xA9 4"
+  positions: 
+  - R100
+  - R101
+  - R200
+  - R201
+  spec: 22K
+  type: hmt
