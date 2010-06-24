@@ -71,14 +71,6 @@ c1: !ruby/object:Position
   width: 29
   x: 421
   y: 150
-q4: !ruby/object:Position 
-  components: []
-
-  height: 56
-  name: q4
-  width: 81
-  x: 756
-  y: 439
 d2: !ruby/object:Position 
   components: []
 
