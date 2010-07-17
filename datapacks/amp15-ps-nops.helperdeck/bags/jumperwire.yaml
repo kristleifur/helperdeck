@@ -1,0 +1,14 @@
+--- 
+- !ruby/object:Component 
+  comment: Wire Jumpers
+  extraInfo: "Wire Jumpers"
+  longname: "Wire Jumpers"
+  positions: 
+  - d9
+  - r44
+  - d8
+  - r41
+  - d4
+  - d5
+  spec: Reasonably Thick Wire Scrap
+  type: hmt
