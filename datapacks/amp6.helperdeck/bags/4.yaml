@@ -1,0 +1,36 @@
+--- 
+- !ruby/object:Component 
+  comment: Sleep pullup
+  longname: Res Ax. Met. Film 0.4W 3.4mm 1Mohm (1)
+  positions: 
+  - r1
+  spec: Between 3300K and 1.5M
+  type: hmt
+- !ruby/object:Component 
+  comment: Output filters
+  longname: Res Ax. Met. Film 1W 6.5mm 10ohm (2)
+  positions: 
+  - r9
+  - r10
+  spec: 1W 10 ohm axial
+  type: hmt
+- !ruby/object:Component 
+  comment: Output filter cores
+  longname: Toroid T60-2 (4)
+  positions: 
+  - l6
+  - l7
+  - l8
+  - l9
+  spec: T60-2
+  type: "-"
+- !ruby/object:Component 
+  comment: For winding inductors with toroid cores
+  longname: Copper wire 0.5mm x 0.75m x 4 (1)
+  positions: 
+  - l6
+  - l7
+  - l8
+  - l9
+  spec: 0.5 mm 0.75m insulated copper
+  type: "-"

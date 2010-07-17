@@ -1,0 +1,22 @@
+--- 
+- !ruby/object:Component 
+  comment: PCB mounting standoff
+  longname: Spacer nylon nat 6 mm diam 4/6 (4)
+  positions: []
+
+  spec: ""
+  type: "-"
+- !ruby/object:Component 
+  comment: Alternative value for voltage regulator
+  longname: Res Ax. Met. Film 0.4W 3.4mm 47R (1)
+  positions: 
+  - r102-alt
+  spec: 47 ohm 1%
+  type: hmt
+- !ruby/object:Component 
+  comment: Insulator washer for TO-220 package
+  longname: Heatpad insulator TO-220 (1)
+  positions: []
+
+  spec: ""
+  type: hmt

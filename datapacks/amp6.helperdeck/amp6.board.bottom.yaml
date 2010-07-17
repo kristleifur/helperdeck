@@ -1,0 +1,73 @@
+--- 
+c30: !ruby/object:Position 
+  components: []
+
+  height: 11
+  name: c30
+  width: 22
+  x: 219
+  y: 31
+d20: !ruby/object:Position 
+  components: []
+
+  height: 37
+  name: d20
+  width: 19
+  x: 301
+  y: 118
+d10: !ruby/object:Position 
+  components: []
+
+  height: 38
+  name: d10
+  width: 19
+  x: 258
+  y: 117
+d11: !ruby/object:Position 
+  components: []
+
+  height: 38
+  name: d11
+  width: 19
+  x: 216
+  y: 118
+c23: !ruby/object:Position 
+  components: []
+
+  height: 25
+  name: c23
+  width: 10
+  x: 29
+  y: 115
+d12: !ruby/object:Position 
+  components: []
+
+  height: 37
+  name: d12
+  width: 19
+  x: 238
+  y: 117
+c24: !ruby/object:Position 
+  components: []
+
+  height: 22
+  name: c24
+  width: 11
+  x: 28
+  y: 93
+c29: !ruby/object:Position 
+  components: []
+
+  height: 11
+  name: c29
+  width: 24
+  x: 172
+  y: 32
+d9: !ruby/object:Position 
+  components: []
+
+  height: 37
+  name: d9
+  width: 17
+  x: 281
+  y: 118

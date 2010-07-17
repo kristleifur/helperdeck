@@ -1,0 +1,73 @@
+--- 
+- !ruby/object:Component 
+  comment: Main chip
+  longname: Tripath TA2020 (1)
+  positions: 
+  - ta2020
+  spec: ""
+  type: !binary |
+    aG10wqQ=
+
+- !ruby/object:Component 
+  comment: Main power rectifier
+  longname: Rect Bridge 200V 8A GBU802 (1)
+  positions: 
+  - cmp15
+  spec: GBU inline 8A
+  type: !binary |
+    aG10wqQ=
+
+- !ruby/object:Component 
+  comment: Fault indicator
+  longname: LED 3mm Hi-eff Red Diffused (1)
+  positions: 
+  - d15
+  spec: ""
+  type: !binary |
+    aG10wqQ=
+
+- !ruby/object:Component 
+  comment: Main voltage reg
+  longname: Voltage Reg Adj Pos 5A LDO TO-220 (1)
+  positions: 
+  - q3
+  spec: LM1084 5A LDO TO220
+  type: !binary |
+    aG10wqQ=
+
+- !ruby/object:Component 
+  comment: Output clamping
+  longname: Diode Schottky 30V 1A SMB (9)
+  positions: 
+  - d5
+  - d6
+  - d7
+  - d8
+  - d9
+  - d10
+  - d11
+  - d12
+  - d20
+  spec: ""
+  type: !binary |
+    c210wqQ=
+
+- !ruby/object:Component 
+  comment: Unmute indicator
+  longname: LED 3mm Hi-eff Green Diffused (1)
+  positions: 
+  - d16
+  spec: Green LED 3 mA
+  type: !binary |
+    aG10wqQ=
+
+- !ruby/object:Component 
+  comment: LED driver
+  longname: MOSFET N-ch 2N7000 200mA 60V TO-92 (2)
+  positions: 
+  - q1
+  - q2
+  spec: 30V 100mA 2N7000
+  type: !binary |
+    aG10wqQ=
+

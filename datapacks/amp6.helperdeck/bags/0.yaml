@@ -1,0 +1,8 @@
+--- 
+- !ruby/object:Component 
+  comment: Main bulk capacitor
+  longname: Cap 25V Elect Snap-In 18000uF D30 (1)
+  positions: 
+  - c99
+  spec: Min 15.000 uF 25V Dmax 30 mm Snap-in 10 mm
+  type: hmt

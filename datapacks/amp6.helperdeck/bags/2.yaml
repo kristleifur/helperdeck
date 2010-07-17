@@ -1,0 +1,39 @@
+--- 
+- !ruby/object:Component 
+  comment: Decoupling
+  longname: Cap 50V Cer 0.1uF X7R 10% RM2.5 (6)
+  positions: 
+  - c16
+  - c17
+  - c20
+  - c26
+  - c50
+  - c102
+  spec: ""
+  type: hmt
+- !ruby/object:Component 
+  comment: Output filter
+  longname: Cap 50V Film 0.22uF Polyester RM5 (2)
+  positions: 
+  - c12
+  - c13
+  spec: ""
+  type: hmt
+- !ruby/object:Component 
+  comment: Output filter
+  longname: Cap 50V Film 0.47uF Polyester RM5 (4)
+  positions: 
+  - c22
+  - c25
+  - c27
+  - c28
+  spec: ""
+  type: hmt
+- !ruby/object:Component 
+  comment: Decoupling for Tripath chip power pins
+  longname: Cap 50V Cer 0.1uF X7R 10% RM5 (2)
+  positions: 
+  - c6
+  - c7
+  spec: ""
+  type: hmt

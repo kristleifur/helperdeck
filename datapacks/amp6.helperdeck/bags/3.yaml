@@ -1,0 +1,41 @@
+--- 
+- !ruby/object:Component 
+  comment: Voltage reg setpoint
+  longname: Res Ax. Met. Film 0.4W 3.4mm 1Kohm (1)
+  positions: 
+  - r101
+  spec: 1K 1%
+  type: hmt
+- !ruby/object:Component 
+  comment: LED drivers
+  longname: Res Ax. Met. Film 0.4W 3.4mm 5.6Kohm (2)
+  positions: 
+  - r200
+  - r201
+  spec: 5.6K / 3 mA from 13V
+  type: hmt
+- !ruby/object:Component 
+  comment: Ref resistor
+  longname: Res Ax. Met. Film 0.4W 3.4mm 8.2Kohm (1)
+  positions: 
+  - r7
+  spec: ""
+  type: hmt
+- !ruby/object:Component 
+  comment: Input resistors
+  longname: Res Ax. Met. Film 0.4W 3.4mm 22Kohm (4)
+  positions: 
+  - r2
+  - r4
+  - r5-alt
+  - r6-alt
+  spec: 22K 1%
+  type: hmt
+- !ruby/object:Component 
+  comment: Input feedback
+  longname: Res Ax. Met. Film 0.4W 3.4mm 56Kohm (2)
+  positions: 
+  - r5
+  - r6
+  spec: 56K 1% Value depends on expected input signal level
+  type: hmt

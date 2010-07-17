@@ -1,0 +1,31 @@
+--- 
+- !ruby/object:Component 
+  comment: Output EMI damping
+  longname: Cap 50V Cer 0.010uF X7R 10% RM2.5 (2)
+  positions: 
+  - c29
+  - c30
+  spec: ""
+  type: hmt
+- !ruby/object:Component 
+  comment: Separates AGND <=> GND
+  longname: Choke bead core 3.5X5mm Axial (1)
+  positions: 
+  - l11
+  spec: ""
+  type: hmt
+- !ruby/object:Component 
+  comment: Input EMI damping
+  longname: Cap 50V Cer 100pF NPO/COG 5% RM2.5 (2)
+  positions: 
+  - c23
+  - c24
+  spec: ""
+  type: hmt
+- !ruby/object:Component 
+  comment: Voltage regulator setpoint
+  longname: Res Ax. Met. Film 0.4W 3.4mm 68R (1)
+  positions: 
+  - r102
+  spec: ""
+  type: hmt
